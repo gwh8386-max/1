@@ -24,8 +24,8 @@ Yêu cầu của người dùng: $ARGUMENTS
    - `projects/<tên-video>/loi-thoai.md`
    - `projects/<tên-video>/HUONG-DAN-THU-AM.md`, chép từ `projects/tonkin-hook/HUONG-DAN-THU-AM.md` (tiếng Anh) hoặc `projects/vinh-bac-bo/HUONG-DAN-THU-AM.md` (tiếng Việt). Sửa phần riêng của video này: bảng ký hiệu, cách đọc từng dòng, và bản dán cho ElevenLabs v3.
    - Kiểm tra mọi dòng đều có (chỉ dẫn giọng) ở đầu dòng, và các câu chốt có *chữ nhấn* và [beat].
-4. Gửi người dùng hai file đó, kèm danh sách các chỗ [KIỂM CHỨNG].
-5. **Dừng lại, chờ người dùng duyệt hoặc sửa lời thoại.** Chưa duyệt thì không làm tiếp.
+4. Gửi người dùng hai file đó, kèm danh sách các chỗ [KIỂM CHỨNG]. Ngay trong tin nhắn, đặt bản cho ElevenLabs v4 trong **một khối code duy nhất** để bấm copy một lần.
+5. **Dừng lại, chờ người dùng xác nhận hoặc sửa lời thoại.** Chưa xác nhận thì không làm tiếp, kể cả khi yêu cầu ban đầu có nhắc tới bước sau.
 
 ## 2. Kế hoạch hoạt ảnh (Prompt C)
 1. Chạy `.venv/bin/python tools/audio/voice.py estimate projects/<tên-video>`.

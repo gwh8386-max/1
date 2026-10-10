@@ -22,20 +22,18 @@ Chỉ đọc phần chữ phía sau `L01:` ... `L04:`. Những ký hiệu sau l�
 - Đọc sai: vỗ tay một cái, nghỉ 1 giây, rồi đọc lại cả dòng đó.
 - Bắt đầu ghi thì im lặng 3 giây trước khi đọc.
 
-## Nếu dùng giọng AI (ElevenLabs v3)
-Dán nguyên đoạn dưới đây. Chữ trong ngoặc vuông là thẻ cảm xúc của v3, chữ IN HOA là chữ được nhấn, dấu "..." là chỗ ngắt. Nhớ nghe lại; giọng nào chưa đúng ý thì đổi thẻ hoặc tạo lại.
+## Nếu dùng giọng AI (ElevenLabs v4)
+Copy nguyên khối dưới đây, dán vào ElevenLabs v4. Thẻ trong ngoặc vuông là chỉ dẫn giọng, máy không đọc thành tiếng. Mỗi lần tạo, giọng ra hơi khác nhau, nên tạo 2–3 bản rồi chọn bản hay nhất.
 
 ```
-[softly] August fourth, nineteen sixty-four... The Gulf of TONKIN.
+[low, close to the mic, unhurried] August fourth, nineteen sixty-four. [pause] The Gulf of Tonkin. [pause]
 
-[tense] Two U.S. destroyers report TORPEDOES... and fire into the dark.
+[tense, picking up speed] Two U.S. destroyers report torpedoes, [pause] and fire into the dark. [pause]
 
-[deadpan] One problem... [whispers] The attack NEVER happened.
+[dry, deadpan] One problem. [pause] [quieter, stressing "never"] The attack never happened. [long pause]
 
-[serious] Congress hands the President a BLANK CHECK... [dramatically] Four hundred sixteen... to ZERO.
+[building, a touch faster] Congress hands the President a blank check. [pause] [punchy, hitting every number] Four hundred sixteen. [pause] To zero.
 ```
-
-Nếu đọc bằng giọng thật, cứ theo các ký hiệu ở bảng trên là đủ.
 
 ## Gửi file
 File mp3, m4a hay wav đều được: đính kèm vào chat, gửi tên file trên Google Drive, hoặc tải lên `video/public/projects/tonkin-hook/` trên GitHub.

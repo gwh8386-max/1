@@ -5,7 +5,11 @@ Repo này dựng video hoạt hình lịch sử bằng Remotion theo quy trình 
 ## Mặc định của kênh
 - **Ngôn ngữ video: tiếng Anh**, cho người xem quốc tế, trừ khi người dùng nói khác.
 - **Phong cách: lai Vox + hoạt hình**, dựng trên một bảng điều tra liền mạch. Mẫu: `video/src/projects/tonkin-hook/`. Không để khoảng trống, mỗi chữ nhấn có điểm nhấn hình.
-- **Lời thoại gửi người dùng luôn có ký hiệu biểu cảm giọng:** (chỉ dẫn) ở đầu mọi dòng, *chữ nhấn*, [beat]/[pause], theo mục "Ký hiệu biểu cảm giọng" của Prompt A. Kèm bản cho ElevenLabs v3 trong `HUONG-DAN-THU-AM.md`.
+- **Lời thoại gửi người dùng luôn có ký hiệu biểu cảm giọng:** (chỉ dẫn) ở đầu mọi dòng, *chữ nhấn*, [beat]/[pause], theo mục "Ký hiệu biểu cảm giọng" của Prompt A.
+- **Giọng đọc làm bằng ElevenLabs v4.** Bản dán cho ElevenLabs luôn nằm trong **một khối code duy nhất** ngay trong tin nhắn trả lời, để người dùng bấm copy một lần (theo mục "bản cho giọng AI" của Prompt A). Lưu thêm vào `HUONG-DAN-THU-AM.md`.
+
+## Luôn chờ xác nhận lời thoại
+Sau khi gửi lời thoại và bản cho ElevenLabs: **dừng lại, chờ người dùng xác nhận.** Chưa có xác nhận rõ ràng thì không dựng hoạt ảnh, không render, kể cả khi yêu cầu ban đầu có nhắc tới bước sau ("sau đó dựng video..."). Chỉ bỏ qua bước chờ khi chính người dùng nói rõ là không cần duyệt.
 
 ## Khi người dùng nhờ làm video mới
 Làm theo skill `lam-video` (`.claude/skills/lam-video/SKILL.md`), kể cả khi họ không gõ `/lam-video` mà chỉ nói "làm video về...".

@@ -121,12 +121,14 @@ Quy ước:
 - Mỗi cảnh 1–4 dòng, dài 4–12 giây.
 - Video ngắn (dưới 1 phút) có thể thêm `> tail: 2.5` (số giây giữ hình sau câu cuối) dưới dòng tiêu đề.
 
-## Sau lời thoại, gửi kèm bản cho giọng AI (ElevenLabs v3)
-Viết lại cùng nội dung nhưng chuyển ký hiệu sang dạng giọng AI hiểu được:
-- chỉ dẫn → thẻ cảm xúc trong ngoặc vuông: [softly], [tense], [deadpan], [whispers], [serious], [excited], [sarcastic]
-- chữ nhấn → IN HOA
-- nhịp ngắt → dấu "..."
-- số → viết bằng chữ ("nineteen sixty-four")
+## Sau lời thoại, gửi kèm bản cho giọng AI (ElevenLabs v4)
+Viết lại cùng nội dung, đặt trong **một khối code duy nhất** để người dùng bấm copy một lần là xong. Trong khối chỉ có chữ để dán, không kèm giải thích. Chuyển ký hiệu như sau:
+- (chỉ dẫn) → thẻ chỉ dẫn bằng lời trong ngoặc vuông, đặt ngay trước đoạn cần áp dụng; gộp được nhiều ý: [low, close to the mic, unhurried], [dry, deadpan], [whispering, fearful]
+- *chữ nhấn* → thêm vào thẻ ngay trước câu đó: [quieter, stressing "never"]
+- [beat] / [pause] → [pause]; [long pause] / [ngừng dài] → [long pause]. Dùng thẻ cho mọi chỗ ngắt, không trộn với dấu "...".
+- Cuối mỗi dòng thêm [pause], để khi ghép tôi tách dòng dễ hơn
+- Số và năm → viết bằng chữ ("nineteen sixty-four", "four hundred sixteen")
+- Không dùng thẻ SSML (`<break>`), vì v4 không hỗ trợ
 
 ## Viết xong, tự soát trước khi gửi
 1. Đọc thầm từng dòng như đang nói thành tiếng. Dòng nào vấp thì viết lại.
