@@ -1,0 +1,177 @@
+{
+  "radar_beep": {
+    "file": "sfx/radar_beep.wav",
+    "duration": 1.1,
+    "loop": false
+  },
+  "sonar_ping": {
+    "file": "sfx/sonar_ping.wav",
+    "duration": 4.8,
+    "loop": false
+  },
+  "alarm": {
+    "file": "sfx/alarm.wav",
+    "duration": 3.3,
+    "loop": false
+  },
+  "radio_static": {
+    "file": "sfx/radio_static.wav",
+    "duration": 3.0,
+    "loop": false
+  },
+  "heartbeat": {
+    "file": "sfx/heartbeat.wav",
+    "duration": 4.2,
+    "loop": false
+  },
+  "whoosh": {
+    "file": "sfx/whoosh.wav",
+    "duration": 0.7,
+    "loop": false
+  },
+  "whoosh_short": {
+    "file": "sfx/whoosh_short.wav",
+    "duration": 0.35,
+    "loop": false
+  },
+  "riser": {
+    "file": "sfx/riser.wav",
+    "duration": 2.5,
+    "loop": false
+  },
+  "hit": {
+    "file": "sfx/hit.wav",
+    "duration": 0.6,
+    "loop": false
+  },
+  "pop": {
+    "file": "sfx/pop.wav",
+    "duration": 0.15,
+    "loop": false
+  },
+  "tick": {
+    "file": "sfx/tick.wav",
+    "duration": 0.06,
+    "loop": false
+  },
+  "flash": {
+    "file": "sfx/flash.wav",
+    "duration": 2.1,
+    "loop": false
+  },
+  "tape_stop": {
+    "file": "sfx/tape_stop.wav",
+    "duration": 0.9,
+    "loop": false
+  },
+  "rewind": {
+    "file": "sfx/rewind.wav",
+    "duration": 1.2,
+    "loop": false
+  },
+  "rain_loop": {
+    "file": "sfx/rain_loop.wav",
+    "duration": 20.0,
+    "loop": true
+  },
+  "sea_loop": {
+    "file": "sfx/sea_loop.wav",
+    "duration": 30.0,
+    "loop": true
+  },
+  "wind_loop": {
+    "file": "sfx/wind_loop.wav",
+    "duration": 20.0,
+    "loop": true
+  },
+  "room_hum_loop": {
+    "file": "sfx/room_hum_loop.wav",
+    "duration": 14.0,
+    "loop": true
+  },
+  "ceiling_fan_loop": {
+    "file": "sfx/ceiling_fan_loop.wav",
+    "duration": 14.0,
+    "loop": true
+  },
+  "clock_loop": {
+    "file": "sfx/clock_loop.wav",
+    "duration": 8.0,
+    "loop": true
+  },
+  "thunder": {
+    "file": "sfx/thunder.wav",
+    "duration": 7.5,
+    "loop": false
+  },
+  "cannon": {
+    "file": "sfx/cannon.wav",
+    "duration": 5.8,
+    "loop": false
+  },
+  "explosion_far": {
+    "file": "sfx/explosion_far.wav",
+    "duration": 6.5,
+    "loop": false
+  },
+  "machinegun_far": {
+    "file": "sfx/machinegun_far.wav",
+    "duration": 4.0,
+    "loop": false
+  },
+  "flak": {
+    "file": "sfx/flak.wav",
+    "duration": 5.5,
+    "loop": false
+  },
+  "jet_flyby": {
+    "file": "sfx/jet_flyby.wav",
+    "duration": 4.5,
+    "loop": false
+  },
+  "plane_down": {
+    "file": "sfx/plane_down.wav",
+    "duration": 4.0,
+    "loop": false
+  },
+  "boat_engine": {
+    "file": "sfx/boat_engine.wav",
+    "duration": 4.0,
+    "loop": false
+  },
+  "typewriter": {
+    "file": "sfx/typewriter.wav",
+    "duration": 2.6,
+    "loop": false
+  },
+  "typewriter_bell": {
+    "file": "sfx/typewriter_bell.wav",
+    "duration": 1.5,
+    "loop": false
+  },
+  "pen_scratch": {
+    "file": "sfx/pen_scratch.wav",
+    "duration": 3.0,
+    "loop": false
+  },
+  "gavel": {
+    "file": "sfx/gavel.wav",
+    "duration": 1.6,
+    "loop": false
+  },
+  "teacup": {
+    "file": "sfx/teacup.wav",
+    "duration": 1.0,
+    "loop": false
+  },
+  "paper": {
+    "file": "sfx/paper.wav",
+    "duration": 0.5,
+    "loop": false
+  },
+  "crowd_murmur_loop": {
+    "file": "sfx/crowd_murmur_loop.wav",
+    "duration": 15.0,
+    "loop": true
+  }
+}

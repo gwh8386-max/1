@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+video/node_modules/
+video/out/
+# Âm thanh tổng hợp được tạo lại bằng tools/setup.sh
+video/public/sfx/*.wav
+video/public/music/*.wav

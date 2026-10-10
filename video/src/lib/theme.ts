@@ -1,0 +1,33 @@
+// Bảng màu chung của kênh. Đổi ở đây là đổi toàn bộ video.
+export const C = {
+  ink: '#161514',
+  paper: '#f3eee3',
+  white: '#ffffff',
+  skin: '#ffffff',
+  rust: '#b4421f',
+  mustard: '#f0b72f',
+  blood: '#c8281e',
+  radar: '#62ff8f',
+  radarDim: '#1f6b3b',
+  radarBg: '#06140c',
+  night: '#0b1626',
+  nightSea: '#12233a',
+  storm: '#1d2836',
+  steel: '#4b5866',
+  steelDark: '#2c343e',
+  steelLight: '#7d8b99',
+  navyShirt: '#7f9fc4',
+  navyDark: '#2b3a57',
+  khaki: '#c9b27f',
+  khakiDark: '#9c8657',
+  olive: '#6d6a3a',
+  suit: '#2c3442',
+  wood: '#9a6a3f',
+  woodDark: '#6e4a2a',
+  lamp: '#ffd98a',
+  day: '#9fd0ea',
+  daySea: '#2f6f9a',
+  sand: '#d8c49a',
+};
+
+export const STROKE = 7; // nét viền nhân vật ở 1080p
