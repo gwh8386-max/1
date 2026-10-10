@@ -9,7 +9,10 @@ Dựng (hoặc sửa) video `{tên-video}` bằng Remotion trong repo này, theo
 ## Đọc trước khi làm
 - `README.md`: quy trình và cấu trúc thư mục
 - `prompts/thu-vien-hieu-ung.md`: tên và cách gọi từng hiệu ứng
-- `video/src/projects/vinh-bac-bo/`: video mẫu đã chạy (cảnh, chuyển cảnh, nhạc), làm theo đúng cách tổ chức này
+- Video mẫu đã chạy, làm theo đúng cách tổ chức:
+  - `video/src/projects/tonkin-hook/`: phong cách lai Vox + hoạt hình, một bảng điều tra liền mạch, máy quay `WorldView` đi theo các điểm dừng
+  - `video/src/projects/vinh-bac-bo/`: chia cảnh, chuyển cảnh `SCENES`, nhạc `MUSIC`
+- Bộ Vox ở `video/src/vox/`, nhạc nền và phụ đề dùng chung ở `video/src/components/Mix.tsx`
 
 ## Chuẩn bị
 1. Lời thoại ở `projects/{tên-video}/loi-thoai.md`.
@@ -26,7 +29,9 @@ Dựng (hoặc sửa) video `{tên-video}` bằng Remotion trong repo này, theo
   - `@end:L17` → `c.end('L17')`
   - Lệch theo frame thì cộng/trừ số frame.
   - Không viết cứng giây hay frame tuyệt đối. Nhờ vậy, khi đổi giọng đọc, mọi thứ tự khớp lại.
-- **Chuyển cảnh** khai báo ở `enter` trong bảng `SCENES` của `Video.tsx`, không tự viết trong cảnh. Riêng chuyển giữa hai khung hình bên trong cùng một cảnh thì dùng kiểu `WhipBetween`.
+- **Chuyển cảnh** khai báo ở `enter` trong bảng `SCENES` của `Video.tsx`, không tự viết trong cảnh. Riêng chuyển giữa hai khung hình bên trong cùng một cảnh thì dùng kiểu `WhipBetween`. Với video bảng điều tra, chuyển cảnh là các điểm dừng của `WorldView`.
+- **Chữ nhấn** (`emph: true` trong `lines.json`, tức `*chữ*` trong lời thoại) phải có điểm nhấn hình đúng lúc đó.
+- **Không để khoảng trống:** nền luôn có lớp giấy tờ mờ (`<Board>`), mỗi khung có ít nhất 3 lớp, máy quay không đứng im.
 - **Nhạc nền** khai báo trong mảng `MUSIC`. SFX dùng `<Sfx name=... at=... />` với tên có trong `video/src/lib/sfx-manifest.json`. Cần tiếng mới thì thêm hàm vào `tools/audio/make_sfx.py` rồi chạy lại.
 - **Mọi thứ phải xác định**: cùng frame thì ra cùng hình. Dùng `random('khoá')` của Remotion, không dùng `Math.random()`.
 - **Dùng lại trước, dựng mới sau.** Thành phần mới đặt đúng chỗ:

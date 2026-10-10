@@ -4,6 +4,7 @@ import {Lab} from './Lab';
 import {loadFonts} from './lib/fonts';
 import {FPS, sec} from './lib/timeline';
 import {timeline as vbb, Video as VinhBacBo, VideoProps} from './projects/vinh-bac-bo/Video';
+import {timeline as tkh, TonkinHook, TonkinProps} from './projects/tonkin-hook/Video';
 
 loadFonts();
 
@@ -17,6 +18,15 @@ export const RemotionRoot: React.FC = () => (
       width={1920}
       height={1080}
       defaultProps={{} as VideoProps}
+    />
+    <Composition
+      id="TonkinHook"
+      component={TonkinHook}
+      durationInFrames={sec(tkh.duration)}
+      fps={FPS}
+      width={1920}
+      height={1080}
+      defaultProps={{} as TonkinProps}
     />
     <Composition id="Lab" component={Lab} durationInFrames={60} fps={FPS} width={1920} height={1080} />
   </>

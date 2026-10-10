@@ -179,6 +179,31 @@
     "duration": 1.6,
     "loop": false
   },
+  "stamp": {
+    "file": "sfx/stamp.wav",
+    "duration": 0.7,
+    "loop": false
+  },
+  "highlighter": {
+    "file": "sfx/highlighter.wav",
+    "duration": 0.55,
+    "loop": false
+  },
+  "page_flip": {
+    "file": "sfx/page_flip.wav",
+    "duration": 0.35,
+    "loop": false
+  },
+  "shutter": {
+    "file": "sfx/shutter.wav",
+    "duration": 0.9,
+    "loop": false
+  },
+  "lamp_click": {
+    "file": "sfx/lamp_click.wav",
+    "duration": 0.25,
+    "loop": false
+  },
   "crowd_murmur_loop": {
     "file": "sfx/crowd_murmur_loop.wav",
     "duration": 15.0,

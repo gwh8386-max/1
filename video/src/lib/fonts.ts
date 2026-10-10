@@ -15,12 +15,19 @@ const FAMILIES: {family: string; file: string; weights: number[]}[] = [
   {family: 'Anton', file: 'anton', weights: [400]},
   {family: 'Be Vietnam Pro', file: 'be-vietnam-pro', weights: [400, 600, 700, 800]},
   {family: 'Roboto Mono', file: 'roboto-mono', weights: [500, 700]},
+  // Bộ Vox (chỉ có chữ Latin, dùng cho video tiếng Anh)
+  {family: 'Special Elite', file: 'special-elite', weights: [400]},
+  {family: 'Permanent Marker', file: 'permanent-marker', weights: [400]},
+  {family: 'Caveat', file: 'caveat', weights: [600, 700]},
 ];
 
 export const FONT = {
   display: '"Anton", "Be Vietnam Pro", sans-serif',
   body: '"Be Vietnam Pro", sans-serif',
   mono: '"Roboto Mono", monospace',
+  typewriter: '"Special Elite", "Roboto Mono", monospace',
+  marker: '"Permanent Marker", "Anton", sans-serif',
+  script: '"Caveat", cursive',
 };
 
 let started = false;

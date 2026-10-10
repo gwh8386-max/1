@@ -5,14 +5,17 @@ prompts/                     A: viết lời thoại · B: gọt "mùi AI" · C:
                              D: dựng bằng Claude Code + Remotion · thu-vien-hieu-ung.md
 projects/<tên-video>/        Lời thoại + hướng dẫn thu âm của từng video
 tools/audio/                 Công cụ âm thanh (Python)
-  make_sfx.py                35 hiệu ứng âm thanh tổng hợp bằng code
+  make_sfx.py                42 hiệu ứng âm thanh tổng hợp bằng code
   make_music.py              3 nhạc nền: tension, drums, reflective
   voice.py                   ước lượng nhịp / khớp giọng đọc vào từng dòng
   test_align.py              kiểm tra voice.py bằng giọng giả lập
+tools/visual/make_textures.py  Vân nền cho bộ Vox (bảng, giấy, mực con dấu)
 video/                       Dự án Remotion
   src/components/            Nhân vật có khớp, chữ động, máy quay, chuyển cảnh, SFX
-  src/art/                   Bối cảnh vẽ bằng SVG (radar, biển, nội thất, địa điểm)
+  src/art/                   Bối cảnh vẽ bằng SVG (radar, biển, nội thất, địa điểm, bản đồ)
+  src/vox/                   Bộ Vox: bảng điều tra, giấy cắt dán, dây đỏ, con dấu, dạ quang, séc, biểu đồ
   src/projects/<tên-video>/  Các cảnh của từng video + lines.json (thời gian từng dòng)
+                             vinh-bac-bo: pilot tiếng Việt · tonkin-hook: pilot tiếng Anh phong cách lai
 ```
 
 ## Quy trình 5 bước

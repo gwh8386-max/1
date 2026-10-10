@@ -1,0 +1,345 @@
+{
+ "title": "The Battle That Never Was",
+ "lang": "en",
+ "source": "estimate",
+ "duration": 19.645,
+ "scenes": [
+  {
+   "id": "C01",
+   "title": "Cold open on the map",
+   "meta": {
+    "visual": "evidence board in near-darkness; a torn-paper map of the Gulf of Tonkin, a polaroid of USS Maddox pinned beside it",
+    "text": "stamp AUG 4, 1964 · hand-drawn red circle around the gulf",
+    "sfx": "low room tone, distant sea, stamp thud",
+    "transition": "fade up from black"
+   },
+   "lines": [
+    "L01"
+   ],
+   "start": 0.0,
+   "end": 4.721
+  },
+  {
+   "id": "C02",
+   "title": "Torpedoes in the dark",
+   "meta": {
+    "visual": "camera follows the red string to a comic panel of a sonar operator yelling; a second cut-out slaps down: two destroyers firing into black water",
+    "text": "typed tag \"REPORTED: TORPEDO ATTACK\"",
+    "sfx": "sonar ping, alarm, naval guns, rain",
+    "transition": "whip-pan along the string"
+   },
+   "lines": [
+    "L02"
+   ],
+   "start": 4.721,
+   "end": 8.935
+  },
+  {
+   "id": "C03",
+   "title": "The cable",
+   "meta": {
+    "visual": "everything freezes and drains of color; camera drops to the declassified cable; highlighter sweeps \"NO ACTUAL VISUAL SIGHTINGS\"",
+    "text": "stamp DECLASSIFIED · source tag",
+    "sfx": "tape stop, highlighter squeak, paper",
+    "transition": "freeze, then whip down"
+   },
+   "lines": [
+    "L03"
+   ],
+   "start": 8.935,
+   "end": 12.622
+  },
+  {
+   "id": "C04",
+   "title": "The blank check",
+   "meta": {
+    "visual": "tear-off calendar flips AUG 4 to AUG 7; a blank check slides in, signed \"U.S. Congress\"; a bar built from 416 tiny cartoon heads vs. an empty bar; camera pulls back to reveal the whole board",
+    "text": "416 – 0 · title stamp THE BATTLE THAT NEVER WAS",
+    "sfx": "page flips, pen signature, ticks, riser, final hit",
+    "transition": "pan along the board, final pull-back"
+   },
+   "lines": [
+    "L04"
+   ],
+   "start": 12.622,
+   "end": 19.645
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "scene": "C01",
+   "text": "August 4th, 1964. The Gulf of Tonkin.",
+   "dir": "low, close to the mic, unhurried",
+   "pause": "",
+   "start": 0.6,
+   "end": 4.509,
+   "words": [
+    {
+     "w": "August",
+     "s": 0.6,
+     "e": 1.111
+    },
+    {
+     "w": "4th,",
+     "s": 1.111,
+     "e": 1.367
+    },
+    {
+     "w": "1964.",
+     "s": 1.551,
+     "e": 2.828
+    },
+    {
+     "w": "The",
+     "s": 3.231,
+     "e": 3.486
+    },
+    {
+     "w": "Gulf",
+     "s": 3.486,
+     "e": 3.742
+    },
+    {
+     "w": "of",
+     "s": 3.742,
+     "e": 3.998
+    },
+    {
+     "w": "Tonkin.",
+     "s": 3.998,
+     "e": 4.509,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 3,
+     "s": 3.231
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "scene": "C02",
+   "text": "Two U.S. destroyers report torpedoes, and fire into the dark.",
+   "dir": "tense, picking up speed",
+   "pause": "",
+   "start": 5.039,
+   "end": 8.723,
+   "words": [
+    {
+     "w": "Two",
+     "s": 5.039,
+     "e": 5.24
+    },
+    {
+     "w": "U.S.",
+     "s": 5.24,
+     "e": 5.643
+    },
+    {
+     "w": "destroyers",
+     "s": 5.643,
+     "e": 6.046
+    },
+    {
+     "w": "report",
+     "s": 6.046,
+     "e": 6.448
+    },
+    {
+     "w": "torpedoes,",
+     "s": 6.448,
+     "e": 7.053,
+     "emph": true
+    },
+    {
+     "w": "and",
+     "s": 7.515,
+     "e": 7.716
+    },
+    {
+     "w": "fire",
+     "s": 7.716,
+     "e": 7.918
+    },
+    {
+     "w": "into",
+     "s": 7.918,
+     "e": 8.32
+    },
+    {
+     "w": "the",
+     "s": 8.32,
+     "e": 8.522
+    },
+    {
+     "w": "dark.",
+     "s": 8.522,
+     "e": 8.723
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 5,
+     "s": 7.515
+    }
+   ]
+  },
+  {
+   "id": "L03",
+   "scene": "C03",
+   "text": "One problem. The attack never happened.",
+   "dir": "dry, deadpan",
+   "pause": "pause",
+   "start": 9.253,
+   "end": 11.942,
+   "words": [
+    {
+     "w": "One",
+     "s": 9.253,
+     "e": 9.486
+    },
+    {
+     "w": "problem.",
+     "s": 9.486,
+     "e": 9.95
+    },
+    {
+     "w": "The",
+     "s": 10.316,
+     "e": 10.549
+    },
+    {
+     "w": "attack",
+     "s": 10.549,
+     "e": 11.013
+    },
+    {
+     "w": "never",
+     "s": 11.013,
+     "e": 11.478,
+     "emph": true
+    },
+    {
+     "w": "happened.",
+     "s": 11.478,
+     "e": 11.942
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 2,
+     "s": 10.316
+    },
+    {
+     "kind": "dir",
+     "text": "quieter, let it land",
+     "word": 2,
+     "s": 10.316
+    }
+   ]
+  },
+  {
+   "id": "L04",
+   "scene": "C04",
+   "text": "Congress hands the President a blank check. Four hundred sixteen. To zero.",
+   "dir": "building, a touch faster",
+   "pause": "",
+   "start": 12.972,
+   "end": 17.045,
+   "words": [
+    {
+     "w": "Congress",
+     "s": 12.972,
+     "e": 13.377
+    },
+    {
+     "w": "hands",
+     "s": 13.377,
+     "e": 13.579
+    },
+    {
+     "w": "the",
+     "s": 13.579,
+     "e": 13.781
+    },
+    {
+     "w": "President",
+     "s": 13.781,
+     "e": 14.387
+    },
+    {
+     "w": "a",
+     "s": 14.387,
+     "e": 14.59
+    },
+    {
+     "w": "blank",
+     "s": 14.59,
+     "e": 14.792,
+     "emph": true
+    },
+    {
+     "w": "check.",
+     "s": 14.792,
+     "e": 14.994,
+     "emph": true
+    },
+    {
+     "w": "Four",
+     "s": 15.312,
+     "e": 15.514
+    },
+    {
+     "w": "hundred",
+     "s": 15.514,
+     "e": 15.716
+    },
+    {
+     "w": "sixteen.",
+     "s": 15.716,
+     "e": 16.121
+    },
+    {
+     "w": "To",
+     "s": 16.439,
+     "e": 16.641
+    },
+    {
+     "w": "zero.",
+     "s": 16.641,
+     "e": 17.045,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 7,
+     "s": 15.312
+    },
+    {
+     "kind": "dir",
+     "text": "punchy, hit every number",
+     "word": 7,
+     "s": 15.312
+    },
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 10,
+     "s": 16.439
+    }
+   ]
+  }
+ ]
+}

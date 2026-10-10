@@ -1,6 +1,11 @@
-# Kênh hoạt hình lịch sử tiếng Việt
+# Kênh hoạt hình lịch sử (phong cách lai Vox + hoạt hình)
 
 Repo này dựng video hoạt hình lịch sử bằng Remotion theo quy trình trong `README.md`. Mọi trao đổi với người dùng bằng tiếng Việt.
+
+## Mặc định của kênh
+- **Ngôn ngữ video: tiếng Anh**, cho người xem quốc tế, trừ khi người dùng nói khác.
+- **Phong cách: lai Vox + hoạt hình**, dựng trên một bảng điều tra liền mạch. Mẫu: `video/src/projects/tonkin-hook/`. Không để khoảng trống, mỗi chữ nhấn có điểm nhấn hình.
+- **Lời thoại gửi người dùng luôn có ký hiệu biểu cảm giọng:** (chỉ dẫn) ở đầu mọi dòng, *chữ nhấn*, [beat]/[pause], theo mục "Ký hiệu biểu cảm giọng" của Prompt A. Kèm bản cho ElevenLabs v3 trong `HUONG-DAN-THU-AM.md`.
 
 ## Khi người dùng nhờ làm video mới
 Làm theo skill `lam-video` (`.claude/skills/lam-video/SKILL.md`), kể cả khi họ không gõ `/lam-video` mà chỉ nói "làm video về...".

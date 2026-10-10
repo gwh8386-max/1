@@ -11,7 +11,8 @@ import {H, W} from '../../art/common';
 import {CICRoom} from '../../art/Interior';
 import {geo, geoPct, GulfMap} from '../../art/Map';
 import {Blip, Radar, sweepHits} from '../../art/Radar';
-import {DaySea, Destroyer, NightSea, TorpedoBoat, Tracer} from '../../art/Sea';
+import {DaySea, Destroyer, TorpedoBoat} from '../../art/Sea';
+import {Firing, firingShots} from '../../art/Battle';
 import {C} from '../../lib/theme';
 import {useClock} from '../../lib/timeline';
 
@@ -162,38 +163,6 @@ export const S03: React.FC = () => {
 };
 
 // ---------------------------------------------------------------- C04 / C05
-/** Cảnh hai tàu bắn vào bóng tối; tách riêng để cảnh 5 dừng hình được. */
-const Firing: React.FC<{shots: number[]}> = ({shots}) => {
-  const frame = useCurrentFrame();
-  const flashLevel = shots.reduce((m, s) => {
-    const k = (frame - s) / 8;
-    return k >= 0 && k <= 1 ? Math.max(m, 1 - k) : m;
-  }, 0);
-  return (
-    <AbsoluteFill>
-      <NightSea horizon={600} flash={flashLevel}>
-        <Destroyer x={1180} y={620} s={0.5} flashes={shots.filter((_, i) => i % 3 === 2)} />
-        <Destroyer x={640} y={760} s={0.95} flashes={shots.filter((_, i) => i % 3 !== 2)} />
-        {shots.map((s, i) => (
-          <Tracer key={i} x0={i % 3 === 2 ? 1350 : 960} y0={i % 3 === 2 ? 570 : 650} x1={1950 + random(`tx${i}`) * 200} y1={420 + random(`ty${i}`) * 160} at={s + 1} />
-        ))}
-      </NightSea>
-      <Rain count={160} opacity={0.45} />
-    </AbsoluteFill>
-  );
-};
-
-const firingShots = (total: number) => {
-  const out: number[] = [];
-  let f = 6;
-  let i = 0;
-  while (f < total + 40) {
-    out.push(Math.round(f));
-    f += 9 + random(`shot${i++}`) * 14;
-  }
-  return out;
-};
-
 export const S04: React.FC = () => {
   const c = useClock();
   const shots = firingShots(c.total);

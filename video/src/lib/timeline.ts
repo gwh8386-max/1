@@ -1,6 +1,7 @@
 import React, {createContext, useContext} from 'react';
 
-export type Word = {w: string; s: number; e: number};
+export type Word = {w: string; s: number; e: number; emph?: boolean};
+export type Cue = {kind: string; text: string; word: number; s: number};
 export type LineT = {
   id: string;
   scene: string;
@@ -10,6 +11,7 @@ export type LineT = {
   start: number;
   end: number;
   words: Word[];
+  cues?: Cue[];
 };
 export type SceneT = {
   id: string;
@@ -21,6 +23,7 @@ export type SceneT = {
 };
 export type Timeline = {
   title: string;
+  lang?: string;
   source: 'estimate' | 'voice';
   duration: number;
   scenes: SceneT[];

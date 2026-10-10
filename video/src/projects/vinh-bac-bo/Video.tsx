@@ -1,12 +1,9 @@
 import React from 'react';
-import {AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Audio, Sequence, staticFile} from 'remotion';
+import {DraftBadge, MusicBed, SubtitleTrack} from '../../components/Mix';
 import {Grain} from '../../components/Overlays';
 import {SceneShell, Transition, transitionFrames} from '../../components/Shell';
-import {Subtitle} from '../../components/Text';
-import {FONT} from '../../lib/fonts';
-import {MUSIC_GAIN} from '../../lib/mix';
-import {C} from '../../lib/theme';
-import {activeLine, ClockProvider, FPS, SceneClock, sec, Timeline} from '../../lib/timeline';
+import {ClockProvider, SceneClock, sec, Timeline} from '../../lib/timeline';
 import data from './lines.json';
 import {S01, S02, S03, S04, S05, S06, S07} from './scenes-a';
 import {S08, S09, S10, S11, S12, S13, S14} from './scenes-b';
@@ -42,65 +39,8 @@ const MUSIC: Cue[] = [
   {track: 'reflective', from: 'C12', to: 'END', vol: 0.42, fadeIn: 45, fadeOut: 90},
 ];
 
-const DUCK = 0.55; // nhạc giảm còn 55% khi có lời
-
 const sceneFrame = (tl: Timeline, id: string) =>
   id === 'END' ? sec(tl.duration) : sec(tl.scenes.find((s) => s.id === id)!.start);
-
-const voiceActive = (tl: Timeline, tSec: number) => tl.lines.some((l) => tSec >= l.start - 0.15 && tSec <= l.end + 0.25);
-
-const MusicTrack: React.FC<{tl: Timeline; cue: Cue}> = ({tl, cue}) => {
-  const from = sceneFrame(tl, cue.from);
-  const to = sceneFrame(tl, cue.to);
-  const len = to - from;
-  return (
-    <Sequence from={from} durationInFrames={len} layout="none" name={`nhạc:${cue.track}`}>
-      <Audio
-        src={staticFile(`music/${cue.track}.wav`)}
-        loop
-        trimBefore={(cue.trim ?? 0) * FPS}
-        volume={(f) => {
-          const t = (from + f) / FPS;
-          // Ducking mượt: lấy trung bình trạng thái giọng trong ±0,2 s.
-          let on = 0;
-          for (const d of [-0.2, -0.1, 0, 0.1, 0.2]) {
-            on += voiceActive(tl, t + d) ? 1 : 0;
-          }
-          const duck = 1 - (1 - DUCK) * (on / 5);
-          const fi = cue.fadeIn ? interpolate(f, [0, cue.fadeIn], [0, 1], {extrapolateRight: 'clamp'}) : 1;
-          const fo = cue.fadeOut ? interpolate(f, [len - cue.fadeOut, len], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}) : 1;
-          return cue.vol * MUSIC_GAIN * duck * fi * fo;
-        }}
-      />
-    </Sequence>
-  );
-};
-
-const SubtitleTrack: React.FC<{tl: Timeline}> = ({tl}) => {
-  const frame = useCurrentFrame();
-  const t = frame / FPS;
-  const l = activeLine(tl, t);
-  return l ? <Subtitle words={l.words} tSec={t} /> : null;
-};
-
-const DraftBadge: React.FC = () => (
-  <div
-    style={{
-      position: 'absolute',
-      right: 24,
-      bottom: 24,
-      fontFamily: FONT.body,
-      fontWeight: 700,
-      fontSize: 22,
-      color: C.white,
-      background: 'rgba(180,66,31,0.85)',
-      padding: '6px 14px',
-      borderRadius: 8,
-    }}
-  >
-    BẢN NHÁP · thời lượng ước tính, chưa có giọng đọc
-  </div>
-);
 
 export type VideoProps = {subtitles?: boolean};
 
@@ -134,7 +74,7 @@ export const Video: React.FC<VideoProps> = ({subtitles}) => {
       <Grain opacity={0.07} />
       {!draft ? <Audio src={staticFile(`projects/${SLUG}/voice.wav`)} volume={1} /> : null}
       {MUSIC.map((cue, i) => (
-        <MusicTrack key={i} tl={tl} cue={cue} />
+        <MusicBed key={i} tl={tl} {...cue} from={sceneFrame(tl, cue.from)} to={sceneFrame(tl, cue.to)} />
       ))}
       {showSubs ? <SubtitleTrack tl={tl} /> : null}
       {draft ? <DraftBadge /> : null}

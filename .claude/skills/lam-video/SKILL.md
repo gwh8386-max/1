@@ -11,9 +11,10 @@ Yêu cầu của người dùng: $ARGUMENTS
 - Chưa có `.venv` hoặc `video/node_modules`: chạy `bash tools/setup.sh`.
 - Lấy thông tin video từ yêu cầu: chủ đề, dạng video, độ dài, góc nhìn.
 - Chỉ hỏi lại khi thiếu **chủ đề**. Các thứ khác dùng mặc định:
+  - ngôn ngữ: tiếng Anh
   - dạng video: chọn dạng hợp nhất với chủ đề trong 5 dạng ở Prompt A
   - độ dài: 8 phút
-  - giọng kênh: như video mẫu `vinh-bac-bo`
+  - phong cách hình: lai Vox + hoạt hình (mẫu `tonkin-hook`)
 - Đặt tên thư mục `<tên-video>`: không dấu, nối bằng gạch ngang, ví dụ `bach-dang-938`.
 
 ## 1. Lời thoại (Prompt A rồi Prompt B)
@@ -21,7 +22,8 @@ Yêu cầu của người dùng: $ARGUMENTS
 2. Tự soát bản vừa viết theo `prompts/B-soat-va-got.md`: chẩn đoán, viết lại, và sửa hết những chỗ còn dấu hiệu văn AI.
 3. Lưu:
    - `projects/<tên-video>/loi-thoai.md`
-   - `projects/<tên-video>/HUONG-DAN-THU-AM.md`, chép từ `projects/vinh-bac-bo/HUONG-DAN-THU-AM.md` rồi sửa phần riêng của video này (các dòng cần đọc đặc biệt, cách đọc tên riêng)
+   - `projects/<tên-video>/HUONG-DAN-THU-AM.md`, chép từ `projects/tonkin-hook/HUONG-DAN-THU-AM.md` (tiếng Anh) hoặc `projects/vinh-bac-bo/HUONG-DAN-THU-AM.md` (tiếng Việt). Sửa phần riêng của video này: bảng ký hiệu, cách đọc từng dòng, và bản dán cho ElevenLabs v3.
+   - Kiểm tra mọi dòng đều có (chỉ dẫn giọng) ở đầu dòng, và các câu chốt có *chữ nhấn* và [beat].
 4. Gửi người dùng hai file đó, kèm danh sách các chỗ [KIỂM CHỨNG].
 5. **Dừng lại, chờ người dùng duyệt hoặc sửa lời thoại.** Chưa duyệt thì không làm tiếp.
 
@@ -32,7 +34,10 @@ Yêu cầu của người dùng: $ARGUMENTS
 
 ## 3. Dựng bản nháp (Prompt D)
 1. Đọc `prompts/D-dung-canh-remotion.md` và làm theo, với kế hoạch ở bước 2.
-2. Video mẫu để làm theo: `video/src/projects/vinh-bac-bo/`. Tên và cách gọi hiệu ứng: `prompts/thu-vien-hieu-ung.md`.
+2. Video mẫu để làm theo:
+   - phong cách lai, bảng điều tra liền mạch: `video/src/projects/tonkin-hook/`
+   - chia cảnh kiểu hoạt hình: `video/src/projects/vinh-bac-bo/`
+   Tên và cách gọi hiệu ứng: `prompts/thu-vien-hieu-ung.md`.
 3. Render bản nháp (chưa có giọng, có phụ đề), nén 720p dưới 30 MB, gửi người dùng kèm danh sách mốc thời gian nên xem.
 4. Commit và push lên `main`.
 5. Nhắc người dùng thu âm theo `HUONG-DAN-THU-AM.md` và gửi file giọng. Việc tiếp theo (khớp giọng, góp ý) làm theo `CLAUDE.md`.

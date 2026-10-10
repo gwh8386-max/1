@@ -66,7 +66,7 @@ const BORDER_LA: LL[] = [
 ];
 
 type Label = {t: string; ll: LL; size?: number; sea?: boolean; dot?: boolean; anchor?: 'start' | 'middle' | 'end'; dx?: number; dy?: number};
-const LABELS: Label[] = [
+const LABELS_VI: Label[] = [
   {t: 'TRUNG QUỐC', ll: [110.6, 22.0], size: 46},
   {t: 'LÀO', ll: [103.7, 19.0], size: 46},
   {t: 'ĐẢO HẢI NAM', ll: [109.85, 19.15], size: 34},
@@ -75,6 +75,17 @@ const LABELS: Label[] = [
   {t: 'HẢI PHÒNG', ll: [106.68, 20.86], size: 28, dot: true, anchor: 'start', dx: 14, dy: 10},
   {t: 'VINH', ll: [105.68, 18.67], size: 28, dot: true, anchor: 'end', dx: -14, dy: 10},
   {t: 'ĐỒNG HỚI', ll: [106.6, 17.48], size: 26, dot: true, anchor: 'end', dx: -14, dy: 8},
+];
+const LABELS_EN: Label[] = [
+  {t: 'CHINA', ll: [110.6, 22.0], size: 46},
+  {t: 'LAOS', ll: [103.7, 19.0], size: 46},
+  {t: 'NORTH VIETNAM', ll: [104.9, 21.55], size: 40},
+  {t: 'HAINAN', ll: [109.85, 19.15], size: 36},
+  {t: 'GULF OF TONKIN', ll: [108.0, 18.5], size: 52, sea: true},
+  {t: 'HANOI', ll: [105.85, 21.03], size: 32, dot: true, anchor: 'end', dx: -14, dy: 10},
+  {t: 'HAIPHONG', ll: [106.68, 20.86], size: 28, dot: true, anchor: 'start', dx: 14, dy: 10},
+  {t: 'VINH', ll: [105.68, 18.67], size: 28, dot: true, anchor: 'end', dx: -14, dy: 10},
+  {t: 'DONG HOI', ll: [106.6, 17.48], size: 26, dot: true, anchor: 'end', dx: -14, dy: 8},
 ];
 
 export type MapArrow = {pts: LL[]; from: number; to: number; color?: string; width?: number; label?: string; labelAt?: number};
@@ -162,7 +173,8 @@ const Marker: React.FC<{m: MapMarker}> = ({m}) => {
 };
 
 /** Bản đồ vịnh Bắc Bộ, vẽ phẳng như bản đồ in trên giấy. */
-export const GulfMap: React.FC<{arrows?: MapArrow[]; markers?: MapMarker[]; dmz?: boolean}> = ({arrows = [], markers = [], dmz = true}) => {
+export const GulfMap: React.FC<{arrows?: MapArrow[]; markers?: MapMarker[]; dmz?: boolean; lang?: 'vi' | 'en'}> = ({arrows = [], markers = [], dmz = true, lang = 'vi'}) => {
+  const LABELS = lang === 'en' ? LABELS_EN : LABELS_VI;
   const coast = smooth(COAST.map(([lo, la]) => geo(lo, la)), 6);
   const land: XY[] = [geo(101.5, 23.5), geo(114.5, 23.5), ...coast, geo(108.4, 15.5), geo(101.5, 15.5)];
   const hainan = smooth([...HAINAN, HAINAN[0]].map(([lo, la]) => geo(lo, la)), 6);
@@ -203,7 +215,7 @@ export const GulfMap: React.FC<{arrows?: MapArrow[]; markers?: MapMarker[]; dmz?
         <g>
           <line x1={dx0} y1={dy} x2={dx1} y2={dy} stroke={C.rust} strokeWidth={5} strokeDasharray="16 10" />
           <text x={dx1 + 12} y={dy + 10} fontFamily="Anton" fontSize={28} fill={C.rust} stroke={C.paper} strokeWidth={7} paintOrder="stroke">
-            VĨ TUYẾN 17
+            {lang === 'en' ? '17TH PARALLEL' : 'VĨ TUYẾN 17'}
           </text>
         </g>
       ) : null}
@@ -238,7 +250,7 @@ export const GulfMap: React.FC<{arrows?: MapArrow[]; markers?: MapMarker[]; dmz?
         <path d="M 0 -42 L 14 8 L 0 0 L -14 8 Z" fill={C.ink} />
         <path d="M 0 42 L 14 -8 L 0 0 L -14 -8 Z" fill="#b9ad93" />
         <text y={-62} textAnchor="middle" fontFamily="Anton" fontSize={30} fill={C.ink}>
-          B
+          {lang === 'en' ? 'N' : 'B'}
         </text>
       </g>
       {arrows.map((a, i) => (

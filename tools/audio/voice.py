@@ -36,13 +36,15 @@ from scriptfmt import Line, Script, parse  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 
 # Nhịp thiết kế (giây).
-RATE = 4.4             # âm tiết/giây khi ước lượng
+RATE = {'vi': 4.4, 'en': 4.0}   # âm tiết/giây khi ước lượng
 LEAD_IN = 0.6          # im lặng đầu video trước câu đầu tiên
 TAIL = 3.0             # đuôi video sau câu cuối
 GAP_LINE = (0.25, 0.55)  # khoảng nghỉ giữa hai dòng cùng cảnh: kẹp giọng tự nhiên vào khoảng này
 GAP_SCENE_EXTRA = 0.18   # cộng thêm khi sang cảnh mới
-GAP_PAUSE = 0.85       # [ngừng]
-GAP_PAUSE_LONG = 1.6   # [ngừng dài]
+GAP_BEAT = 0.45        # [beat]
+GAP_PAUSE = 0.85       # [pause] / [ngừng]
+GAP_PAUSE_LONG = 1.6   # [long pause] / [ngừng dài]
+INLINE_PAUSE = {'beat': 0.35, 'pause': 0.7, 'long': 1.3}  # ngắt giữa câu khi ước lượng
 PAD_PRE, PAD_POST = 0.05, 0.10   # giữ lại trước/sau mỗi câu khi cắt
 COMMA_PAUSE = 0.16     # trọng số khoảng ngắt ở dấu phẩy khi chia thời gian từng chữ
 
@@ -68,13 +70,15 @@ def project_paths(project: Path) -> tuple[str, Path, Path, Path]:
     return slug, script, lines_json, voice_wav
 
 
-def designed_gap(cur: Line, nxt: Line | None, natural: float | None) -> float:
+def designed_gap(cur: Line, nxt: Line | None, natural: float | None, tail: float = TAIL) -> float:
     if nxt is None:
-        return TAIL
-    if cur.pause == 'ngừng dài':
+        return tail
+    if cur.pause == 'long':
         g = max(GAP_PAUSE_LONG, natural or 0)
-    elif cur.pause == 'ngừng':
+    elif cur.pause == 'pause':
         g = max(GAP_PAUSE, min(natural or 0, GAP_PAUSE_LONG))
+    elif cur.pause == 'beat':
+        g = max(GAP_BEAT, min(natural or 0, GAP_PAUSE))
     else:
         lo, hi = GAP_LINE
         g = float(np.clip(natural if natural is not None else 0.35, lo, hi))
@@ -83,24 +87,39 @@ def designed_gap(cur: Line, nxt: Line | None, natural: float | None) -> float:
     return g
 
 
-def word_times(line: Line, start: float, end: float) -> list[dict]:
-    """Chia thời gian câu cho từng chữ theo số âm tiết, có tính chỗ ngắt dấu phẩy."""
-    weights = []
-    for w, syl in line.words:
-        weights.append(syl)
+def word_times(line: Line, start: float, end: float, rate: float) -> tuple[list[dict], list[dict]]:
+    """Chia thời gian câu cho từng chữ theo số âm tiết, có tính chỗ ngắt dấu phẩy và [beat]/[pause] giữa câu."""
+    gaps_before = {}
+    for cue in line.cues:
+        if cue['kind'] in INLINE_PAUSE:
+            gaps_before[cue['at']] = gaps_before.get(cue['at'], 0) + INLINE_PAUSE[cue['kind']]
+    weights: list[tuple[str, float, int]] = []  # ('w'|'gap', trọng số, chỉ số chữ)
+    for i, (w, syl) in enumerate(line.words):
+        if i in gaps_before:
+            weights.append(('gap', gaps_before[i] * rate, i))
+        weights.append(('w', syl, i))
         if w[-1:] in ',:;':
-            weights.append(-COMMA_PAUSE * RATE)  # số âm ghi nhận khoảng ngắt
-    total = sum(abs(x) for x in weights) or 1
+            weights.append(('gap', COMMA_PAUSE * rate, i))
+    total = sum(x for _, x, _ in weights) or 1
     span = max(0.05, end - start)
-    out, t, wi = [], start, 0
-    for x in weights:
-        d = span * abs(x) / total
-        if x > 0:
-            w, _ = line.words[wi]
-            out.append({'w': w, 's': round(t, 3), 'e': round(t + d, 3)})
-            wi += 1
+    out, t = [], start
+    word_start: dict[int, float] = {}
+    for kind, x, i in weights:
+        d = span * x / total
+        if kind == 'w':
+            w = line.words[i][0]
+            item = {'w': w, 's': round(t, 3), 'e': round(t + d, 3)}
+            if line.emph and line.emph[i]:
+                item['emph'] = True
+            out.append(item)
+            word_start[i] = t
         t += d
-    return out
+    cues = []
+    for cue in line.cues:
+        at = cue['at']
+        s = word_start.get(at, end)
+        cues.append({'kind': cue['kind'], 'text': cue['text'], 'word': at, 's': round(s, 3)})
+    return out, cues
 
 
 def scenes_json(script: Script, timed: dict[str, tuple[float, float]], duration: float) -> list[dict]:
@@ -122,14 +141,30 @@ def scenes_json(script: Script, timed: dict[str, tuple[float, float]], duration:
 def write_lines_json(path: Path, script: Script, timed: dict[str, tuple[float, float]],
                      duration: float, source: str) -> None:
     lines = []
+    rate = script_rate(script)
     for l in script.lines:
         s, e = timed[l.id]
+        words, cues = word_times(l, s, e, rate)
         lines.append({'id': l.id, 'scene': l.scene, 'text': l.text, 'dir': l.direction, 'pause': l.pause,
-                      'start': round(s, 3), 'end': round(e, 3), 'words': word_times(l, s, e)})
-    data = {'title': script.title, 'source': source, 'duration': round(duration, 3),
+                      'start': round(s, 3), 'end': round(e, 3), 'words': words, 'cues': cues})
+    data = {'title': script.title, 'lang': script.lang, 'source': source, 'duration': round(duration, 3),
             'scenes': scenes_json(script, timed, duration), 'lines': lines}
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding='utf-8')
+
+
+def script_rate(script: Script) -> float:
+    return float(script.meta.get('rate', RATE.get(script.lang, 4.2)))
+
+
+def script_tail(script: Script) -> float:
+    return float(script.meta.get('tail', TAIL))
+
+
+def line_weight(l: Line, rate: float) -> float:
+    """Thời lượng tương đối của một dòng (tính bằng 'âm tiết'), gồm cả các nhịp ngắt giữa câu."""
+    inline = sum(INLINE_PAUSE[c['kind']] for c in l.cues if c['kind'] in INLINE_PAUSE)
+    return l.syllables / l.rate + inline * rate
 
 
 # ---------------------------------------------------------------- ước lượng
@@ -137,14 +172,15 @@ def write_lines_json(path: Path, script: Script, timed: dict[str, tuple[float, f
 def estimate(project: Path) -> None:
     slug, script_path, lines_json, _ = project_paths(project)
     script = parse(script_path)
+    rate = script_rate(script)
     t = LEAD_IN
     timed = {}
     for i, l in enumerate(script.lines):
         commas = sum(1 for w, _ in l.words if w[-1:] in ',:;')
-        d = l.syllables / (RATE * l.rate) + commas * COMMA_PAUSE
+        d = line_weight(l, rate) / rate + commas * COMMA_PAUSE
         timed[l.id] = (t, t + d)
         nxt = script.lines[i + 1] if i + 1 < len(script.lines) else None
-        t += d + designed_gap(l, nxt, None)
+        t += d + designed_gap(l, nxt, None, script_tail(script))
     write_lines_json(lines_json, script, timed, t, 'estimate')
     print(f'[ước lượng] {len(script.lines)} dòng, {len(script.scenes)} cảnh, tổng {t:.1f}s -> {lines_json}')
 
@@ -253,7 +289,7 @@ def group_segments(segs: list[Seg], lines: list[Line]) -> list[tuple[int, int]]:
     ranh giới giữa hai nhóm được thưởng khi khoảng lặng ở đó dài.
     """
     m, n = len(segs), len(lines)
-    w = np.array([l.syllables / l.rate for l in lines])
+    w = np.array([line_weight(l, 4.2) for l in lines])
     k = sum(s.dur for s in segs) / w.sum()
     expected = k * w
     gaps = [segs[i + 1].start - segs[i].end for i in range(m - 1)]
@@ -369,7 +405,7 @@ def align(project: Path, audio: Path, denoise: bool = True) -> None:
     out_parts = [np.zeros(int(LEAD_IN * SR))]
     t = LEAD_IN
     timed: dict[str, tuple[float, float]] = {}
-    w = np.array([l.syllables / l.rate for l in lines])
+    w = np.array([line_weight(l, 4.2) for l in lines])
     k = sum(segs[b].end - segs[a].start for a, b in groups) / w.sum()
     warn = []
     for i, ((a, b), l) in enumerate(zip(groups, lines)):
@@ -389,7 +425,7 @@ def align(project: Path, audio: Path, denoise: bool = True) -> None:
         t += len(chunk) / SR
         nxt = lines[i + 1] if i + 1 < len(lines) else None
         natural = (next_start - e0) if nxt else None
-        g = designed_gap(l, nxt, natural) - (PAD_POST if nxt else 0) - (PAD_PRE if nxt else 0)
+        g = designed_gap(l, nxt, natural, script_tail(script)) - (PAD_POST if nxt else 0) - (PAD_PRE if nxt else 0)
         g = max(0.08, g)
         out_parts.append(np.zeros(int(g * SR)))
         t += g

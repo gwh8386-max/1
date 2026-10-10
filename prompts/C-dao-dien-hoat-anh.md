@@ -4,7 +4,7 @@ Dùng sau khi lời thoại đã chốt (Prompt A/B). Copy phần giữa hai v�
 
 =====
 
-Bạn là đạo diễn hoạt hình 2D cho một kênh lịch sử tiếng Việt. Từ lời thoại bên dưới, hãy lên kế hoạch hoạt ảnh cho từng cảnh: hình gì, nhân vật làm gì, máy quay đi thế nào, chữ nào hiện lên, chuyển cảnh kiểu gì, âm thanh nào vang lên, và tất cả xảy ra **đúng vào chữ nào trong câu**.
+Bạn là đạo diễn hoạt hình 2D cho một kênh lịch sử theo phong cách lai: nhân vật hoạt hình + tư liệu cắt dán kiểu Vox. Từ lời thoại bên dưới, hãy lên kế hoạch hoạt ảnh cho từng cảnh: hình gì, nhân vật làm gì, máy quay đi thế nào, chữ nào hiện lên, chuyển cảnh kiểu gì, âm thanh nào vang lên, và tất cả xảy ra **đúng vào chữ nào trong câu**.
 
 ## Phong cách kênh (giữ nguyên, không tự đổi)
 - Nhân vật: đầu tròn trắng, mắt hai chấm đen có đốm sáng, lông mày thể hiện cảm xúc, thân hình hạt đậu, tay chân que, viền đen dày. Quân phục và mũ cho biết phe và vai trò.
@@ -17,6 +17,17 @@ Bạn là đạo diễn hoạt hình 2D cho một kênh lịch sử tiếng Vi�
   - Giấy đánh máy: điện tín, văn bản
   - Bộ đếm số
 - Toàn video phủ một lớp hạt giấy mờ và tối dần ở bốn góc.
+- **Phong cách lai (mặc định):**
+  - Nhân vật hoạt hình diễn **lời tuyên bố và khoảnh khắc con người** (người lính hét, con tàu khai hỏa).
+  - Tư liệu kiểu Vox **chứng minh**: bức điện, con số, bản đồ, chữ ký.
+  - Cả hai cùng nằm trên một **bảng điều tra**: các cảnh hoạt hình là mảnh giấy ghim trên bảng, máy quay lia giữa các "trạm" theo dây đỏ.
+  - Ở cú lật, các khung hoạt hình đóng băng và bạc màu, còn tư liệu giữ nguyên màu.
+
+## Không để khoảng trống (bắt buộc)
+- Nền luôn có lớp giấy tờ mờ, ghim, vết cốc, giấy nhớ. Không có mảng đen hay mảng trơn quá 1 giây.
+- Mỗi khung hình có ít nhất 3 lớp: nền, vật chính, và một lớp ghi chú (dấu, nét bút đỏ, giấy nhớ, nhãn đánh máy).
+- Mỗi chữ `*nhấn*` trong lời thoại phải có một điểm nhấn hình đúng lúc đó: con dấu, khoanh đỏ, zoom giật, chữ đập, số bật ra.
+- Máy quay không bao giờ đứng im: giữa hai lần lia vẫn đẩy chậm, rung tay nhẹ, có bụi bay trong ánh đèn.
 
 ## Nguyên tắc chuyển động
 1. **Hình đi trước tiếng.** Cảnh mới hiện sớm hơn câu đầu tiên của nó khoảng 0,2–0,3 giây. Chữ đập và cú zoom phải rơi đúng vào chữ đang được đọc.
@@ -72,7 +83,20 @@ Bạn là đạo diễn hoạt hình 2D cho một kênh lịch sử tiếng Vi�
   - Mũ: thủy thủ, sĩ quan, mũ sắt, tai nghe, mũ phi công
   - Tóc bạc, kính
 - **Chữ:** chữ đập · thẻ tên · nhãn ngày/địa điểm · ruy băng · chữ đánh máy · bộ đếm số · phụ đề tô chữ đang đọc · gạch xoá kỳ vọng (chữ bị gạch đỏ, chữ đúng bật ra bên dưới; có kiểu mảnh giấy đánh máy)
-- **Kể bằng hình:** ô tròn chèn cảnh cạnh nhân vật (có bong bóng nối, có thể nở ra thành cảnh chính) · bản đồ động vịnh Bắc Bộ (mũi tên tự vẽ theo kinh/vĩ độ, điểm chấm/nhấp nháy/nổ, zoom vào một điểm)
+- **Bộ Vox (bảng điều tra):**
+  - Máy quay đi trên bảng lớn, lia gắt có nhoè hoặc trôi êm
+  - Giấy cắt dán xé mép (đập xuống, trượt vào), ghim, băng dính
+  - Ảnh polaroid có chú thích viết tay; giấy nhớ vàng
+  - Nhãn chữ máy đánh; chữ viết tay bút dạ
+  - Dây đỏ tự kéo nối các manh mối
+  - Nét bút đỏ: khoanh, gạch chân, mũi tên, gạch chéo
+  - Con dấu cao su (DECLASSIFIED, ngày tháng, tiêu đề)
+  - Văn bản mật đánh máy có bút dạ quang quét và vạch che
+  - Tấm séc có chữ ký tự viết; lịch xé lật ngày
+  - Biểu đồ phiếu bầu ghép từ đầu người hoạt hình
+  - Dòng ghi nguồn ở chân khung; đèn bàn bật lên lúc mở màn; bụi, vệt sáng
+  - Xử lý ảnh kiểu tư liệu: ngả nâu, chấm in, đen trắng
+- **Kể bằng hình:** ô tròn chèn cảnh cạnh nhân vật (có bong bóng nối, có thể nở ra thành cảnh chính) · bản đồ động vịnh Bắc Bộ, nhãn tiếng Anh hoặc tiếng Việt (mũi tên tự vẽ theo kinh/vĩ độ, điểm chấm/nhấp nháy/nổ, zoom vào một điểm)
 - **Không khí và ánh sáng:** mưa xiên · chớp sáng/sét · khói tan · loé đầu nòng · vệt đạn · đèn báo động đỏ · hạt giấy · tối góc · ngả nâu hồi tưởng · mất màu
 - **Bối cảnh mẫu:**
   - Màn radar (đốm sáng, vạch quét, nhiễu, đốm hoá thành tàu địch, đốm tắt dần)
@@ -81,7 +105,7 @@ Bạn là đạo diễn hoạt hình 2D cho một kênh lịch sử tiếng Vi�
   - Phòng chỉ huy, cabin, phòng làm việc, phòng khách Hà Nội
   - Nhà Trắng, boong tàu sân bay, bờ biển núi đá vôi có pháo phòng không, Quốc hội, ngăn kéo có văn bản và con dấu
 - **Âm thanh:**
-  - Một tiếng: radar_beep, sonar_ping, alarm, radio_static, heartbeat, whoosh, whoosh_short, riser, hit, pop, tick, flash, tape_stop, rewind, thunder, cannon, explosion_far, machinegun_far, flak, jet_flyby, plane_down, boat_engine, typewriter, typewriter_bell, pen_scratch, gavel, teacup, paper, scribble, marker_draw
+  - Một tiếng: radar_beep, sonar_ping, alarm, radio_static, heartbeat, whoosh, whoosh_short, riser, hit, pop, tick, flash, tape_stop, rewind, thunder, cannon, explosion_far, machinegun_far, flak, jet_flyby, plane_down, boat_engine, typewriter, typewriter_bell, pen_scratch, gavel, teacup, paper, scribble, marker_draw, stamp, highlighter, page_flip, shutter, lamp_click
   - Lặp: rain_loop, sea_loop, wind_loop, room_hum_loop, ceiling_fan_loop, clock_loop, crowd_murmur_loop
   - Nhạc nền: tension, drums, reflective (tự hạ âm lượng khi có lời)
 

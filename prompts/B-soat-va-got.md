@@ -15,6 +15,7 @@ Làm theo đúng ba bước:
    - Không thêm dữ kiện mới. Câu nào cần một chi tiết cụ thể mới sống được thì ghi [CẦN CHI TIẾT: ...] thay vì tự bịa ra.
    - Phá nhịp đều: xen câu dài dựng cảnh với câu ngắn chốt, thêm [ngừng] đúng chỗ.
    - Câu chốt ưu tiên kết bằng thanh trắc. Câu muốn ngân thì kết bằng thanh bằng.
+   - Giữ hoặc bổ sung ký hiệu biểu cảm giọng: (chỉ dẫn) ở đầu mọi dòng, *chữ nhấn*, [beat]/[pause].
 
 3. SO SÁNH: chọn 5 chỗ sửa đáng giá nhất, trình bày dạng "Trước → Sau".
 
@@ -24,6 +25,7 @@ Danh sách cấm:
 - Cấu trúc: "Không chỉ... mà còn...", "Đây không chỉ là X mà là Y", bộ ba tính từ, câu hỏi tu từ rồi tự trả lời, đoạn nào cũng kết bằng câu triết lý.
 - Ngữ pháp dịch: "Việc + động từ" làm chủ ngữ, "được/bị" thừa, "một cách + tính từ", mở câu bằng "Điều này".
 - Dấu câu: gạch ngang dài (—), lạm dụng "..." và "!".
+- Nếu bản nháp là tiếng Anh: delve, tapestry, testament to, pivotal, unravel, shrouded in mystery, game-changer, "In a world where", "Little did they know", "Let's dive in", "It's important to note", "In conclusion", "It's not just X, it's Y".
 
 Phép thử cuối cùng: nếu bạn sẽ không bao giờ nói câu đó với một người bạn ngồi cùng bàn cà phê, thì viết lại.
 

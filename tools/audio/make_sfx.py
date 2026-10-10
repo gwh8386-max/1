@@ -418,6 +418,58 @@ def marker_draw():
     return stereo(x * 0.7)
 
 
+@sfx('stamp')
+def stamp():
+    """Con dấu cao su đập xuống bàn: tiếng thịch gỗ + giấy."""
+    t = t_axis(0.5)
+    thud = np.sin(2 * np.pi * (140 - 70 * np.clip(t / 0.08, 0, 1)) * t) * env_ad(len(t), 0.001, 0.12, 5)
+    knock = bandpass(white(0.5, 161), 200, 1600) * env_ad(len(t), 0.0005, 0.05, 6) * 0.9
+    slap = highpass(white(0.5, 162), 2500) * env_ad(len(t), 0.0005, 0.02, 6) * 0.4
+    return stereo(reverb(softclip(thud + knock + slap, 1.4), 0.5, 0.15)[: int(0.7 * SR)])
+
+
+@sfx('highlighter')
+def highlighter():
+    """Bút dạ quang kéo một đường: tiếng rít nhẹ của đầu bút."""
+    d = 0.55
+    t = t_axis(d)
+    squeak = np.sin(2 * np.pi * np.cumsum(2600 + 300 * np.sin(2 * np.pi * 9 * t)) / SR) * 0.08
+    rub = bandpass(white(d, 163), 2000, 7000) * 0.5
+    x = (squeak + rub) * np.sin(np.pi * np.clip(t / d, 0, 1)) ** 0.5
+    return stereo(fade(x, 0.01, 0.06))
+
+
+@sfx('page_flip')
+def page_flip():
+    d = 0.35
+    t = t_axis(d)
+    x = sweep_bandpass(white(d, 164), 900 + 4000 * np.sin(np.pi * t / d), q=1.2) * env_ad(len(t), 0.02, 0.3, 3)
+    snap = highpass(white(d, 165), 3000) * env_ad(len(t), 0.0005, 0.01, 6) * 0.6
+    return stereo(fade(x + np.roll(snap, int(0.22 * SR)), 0.003, 0.03))
+
+
+@sfx('shutter')
+def shutter():
+    """Màn trập máy ảnh polaroid: hai tiếng tách + tiếng đẩy phim."""
+    out = np.zeros(int(0.9 * SR))
+    tt = t_axis(0.03)
+    click = highpass(white(0.03, 166), 1500) * env_ad(len(tt), 0.0003, 0.008, 6)
+    place(out, click, 0.0, 1.0)
+    place(out, click, 0.06, 0.7)
+    whirr = bandpass(white(0.5, 167), 600, 2400) * 0.25 * env_ad(int(0.5 * SR), 0.05, 0.45, 2)
+    place(out, whirr, 0.2)
+    return stereo(out)
+
+
+@sfx('lamp_click')
+def lamp_click():
+    t = t_axis(0.25)
+    x = highpass(white(0.25, 168), 1200) * env_ad(len(t), 0.0003, 0.01, 6)
+    x += np.sin(2 * np.pi * 1800 * t) * env_ad(len(t), 0.0005, 0.02, 6) * 0.4
+    hum = np.sin(2 * np.pi * 120 * t) * env_ad(len(t), 0.03, 0.2, 2) * 0.08
+    return stereo(x + hum)
+
+
 @sfx('crowd_murmur_loop', loop=True)
 def crowd_murmur_loop():
     d = 16.0

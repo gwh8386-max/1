@@ -1,6 +1,6 @@
 # Thư viện hoạt ảnh và hiệu ứng
 
-Mỗi mục ghi: tên gọi, dùng khi nào, cách gọi trong code, và mốc thời gian nó xuất hiện trong **bản nháp pilot Vịnh Bắc Bộ** để bạn mở ra xem. Mốc tính theo bản nháp (thời lượng ước tính); có giọng thật thì sẽ xê dịch một chút.
+Mỗi mục ghi: tên gọi, dùng khi nào, cách gọi trong code, và mốc thời gian nó xuất hiện trong **bản nháp pilot Vịnh Bắc Bộ** để bạn mở ra xem. Riêng mục 6 (bộ Vox), mốc thời gian lấy trong video **"The Battle That Never Was"** (`TonkinHook`). Mốc tính theo bản nháp (thời lượng ước tính); có giọng thật thì sẽ xê dịch một chút.
 
 Khi góp ý, chỉ cần nói tên hiệu ứng kèm mốc thời gian. Ví dụ: "1:07 đổi lia nhanh thành zoom xuyên", "0:18 chữ đập to hơn".
 
@@ -107,7 +107,37 @@ Khi góp ý, chỉ cần nói tên hiệu ứng kèm mốc thời gian. Ví dụ
 - Xem ở: 0:33.7 đường đi của Maddox tự vẽ; 0:36.5 zoom vào Hòn Mê; 0:38.4 ba mũi tên tàu phóng lôi và điểm đụng độ.
 - Bản đồ vùng khác: chép `Map.tsx`, đổi khung kinh/vĩ độ (`LON0..LAT1`) và danh sách điểm bờ biển.
 
-## 6. Không khí, ánh sáng, màu
+## 6. Bộ Vox: bảng điều tra (phong cách lai)
+
+Mẫu đầy đủ: `video/src/projects/tonkin-hook/Video.tsx`. Cả video là **một bảng điều tra lớn** (4200×2700 px). Các cảnh hoạt hình là mảnh giấy ghim trên bảng, máy quay lia giữa các "trạm" theo dây đỏ. Các thành phần nằm trong `video/src/vox/`.
+
+| Tên | Dùng khi | Gọi | Xem ở |
+|---|---|---|---|
+| Máy quay thế giới | Đi từ manh mối này sang manh mối khác, không cần cắt | `<WorldView keys={[{at, x, y, z, dur, ease: 'whip'\|'smooth'}]} shakes>`; giữa hai điểm vẫn đẩy chậm, lia gắt thì tự nhoè | 0:05.0, 0:07.5, 0:09.9, 0:13.1, 0:15.3 |
+| Kéo ra toàn bảng | Kết video: lộ ra toàn bộ manh mối và dây nối | điểm dừng cuối, `z` khoảng 0.45, `ease: 'smooth'` | 0:17.1 |
+| Giấy cắt dán | Mọi tư liệu: bản đồ, ảnh, văn bản | `<Cutout x y w h rot at enter="drop\|left\|right" tear texture="paper\|kraft\|check" pin tape>` | 0:07.5 khung tàu bắn đập xuống |
+| Nhúng cảnh hoạt hình | Đặt một cảnh 1920×1080 vào mảnh giấy | `<Fit169 w h>{cảnh}</Fit169>` | 0:05.0 khung truyện tranh |
+| Ảnh tư liệu cũ | Ảnh, bản đồ trông như in trên giấy cũ | `<Aged sepia gray dots>` | 0:01.2 ảnh Maddox đen trắng |
+| Polaroid | Ảnh nhân vật, con tàu, địa điểm | `<Polaroid caption="..." at enter>` | 0:01.2 |
+| Giấy nhớ | Ghi chú lấp khoảng trống, kể thêm một ý | `<Sticky text at rot>` | "Aug 2: a real clash", "Who checked the facts?" |
+| Nhãn đánh máy | Lời tuyên bố, tên gọi chính thức | `<TypedTag text at color>` | 0:06.5 REPORTED: TORPEDO ATTACK |
+| Dây đỏ | Nối manh mối, dẫn đường cho máy quay | `<Strings items={[{a, b, from, to, sag}]}>`, vẽ xong đúng lúc máy quay tới | 0:02.6, 0:05.0, 0:09.9 |
+| Nét bút đỏ | Khoanh, gạch chân, mũi tên, gạch chéo | `<Marks items={[{kind: 'circle'\|'underline'\|'arrow'\|'cross', ...}]}>` | 0:03.5 khoanh vịnh, 0:11.5 khoanh dòng |
+| Chữ viết tay | Ghi chú của "người điều tra" | `<HandLabel text at size rot>` | 0:04.1 |
+| Con dấu | Ngày tháng, DECLASSIFIED, tiêu đề cuối | `<Stamp text sub at rot color size>` | 0:00.7, 0:12.0, 0:18.0 |
+| Văn bản mật + bút dạ quang | Trích văn bản gốc, tô đúng câu đắt | `<DocPage header meta lines={[['...', {t: '...', hl: frame}]]}>`; vạch che: `{t, redact: true}` | 0:09.9, 0:11.0 |
+| Tấm séc | Ẩn dụ "trao quyền", "cái giá" | `<BlankCheck amount payee date memo signer amountAt signAt>` | 0:13.2, chữ ký 0:14.1 |
+| Lịch xé | Thời gian trôi vài ngày | `<TearCalendar month days flips>` | 0:13.1 AUG 4 → AUG 7 |
+| Biểu đồ đầu người | Con số về người: phiếu bầu, thương vong, quân số | `<HeadsVote yes no start end zeroAt title note>` | 0:15.3, số 0 bật ra 0:16.6 |
+| Đóng băng + bạc màu khung hoạt hình | Cú lật: lời tuyên bố "chết", tư liệu giữ màu | `<Freeze frame active>` + `filter: grayscale()` trên mảnh giấy | 0:09.3 |
+| Đèn bàn bật | Mở màn từ bóng tối | `<Spotlight on={frame}>` + SFX `lamp_click` | 0:00.1 |
+| Bụi, vệt sáng | Không khí phòng làm việc, khung không bao giờ chết | `<Dust />`, `<LightLeak />` | cả video |
+| Dòng ghi nguồn | Mỗi khi đưa bằng chứng | `<SourceTag text at out>` | 0:10.1, 0:15.4 |
+| Bản đồ tiếng Anh | Video cho người xem quốc tế | `<GulfMap lang="en">` | 0:00–0:05 |
+
+**Chữ nhấn trong lời thoại = điểm nhấn hình.** Các chữ `*Tonkin*`, `*torpedoes*`, `*never*`, `*blank check*`, `*zero*` lần lượt có: khoanh vịnh, nhãn đánh máy, vệt dạ quang + zoom, khoanh ô số tiền, số 0 bật ra.
+
+## 7. Không khí, ánh sáng, màu
 
 | Tên | Gọi | Xem ở |
 |---|---|---|
@@ -124,7 +154,7 @@ Khi góp ý, chỉ cần nói tên hiệu ứng kèm mốc thời gian. Ví dụ
 | Đốm radar hoá tàu địch | `morphAt` của `Radar` | 0:47.4 |
 | Đốm radar tắt dần | `fadeAt` của `Radar` | 2:00–2:05 |
 
-## 7. Âm thanh
+## 8. Âm thanh
 
 - Một tiếng: `<Sfx name="hit" at={c.at('L05','ngư')} volume={0.9} />`
 - Lặp: `<Sfx name="rain_loop" at={0} dur={c.total} volume={0.4} fadeIn={20} />`
@@ -132,12 +162,12 @@ Khi góp ý, chỉ cần nói tên hiệu ứng kèm mốc thời gian. Ví dụ
 - Nhạc nền theo cảnh: mảng `MUSIC` trong `Video.tsx` (tension, drums, reflective), tự hạ âm lượng khi có lời
 - Cắt nhạc ở cú lật: kết thúc cue ngay đầu cảnh dừng hình (0:26.4)
 - Tên SFX có sẵn:
-  - Một tiếng: radar_beep, sonar_ping, alarm, radio_static, heartbeat, whoosh, whoosh_short, riser, hit, pop, tick, flash, tape_stop, rewind, thunder, cannon, explosion_far, machinegun_far, flak, jet_flyby, plane_down, boat_engine, typewriter, typewriter_bell, pen_scratch, gavel, teacup, paper, scribble (nét gạch xoá), marker_draw (bút dạ vẽ bản đồ)
+  - Một tiếng: radar_beep, sonar_ping, alarm, radio_static, heartbeat, whoosh, whoosh_short, riser, hit, pop, tick, flash, tape_stop, rewind, thunder, cannon, explosion_far, machinegun_far, flak, jet_flyby, plane_down, boat_engine, typewriter, typewriter_bell, pen_scratch, gavel, teacup, paper, scribble (nét gạch xoá), marker_draw (bút dạ vẽ bản đồ), stamp (con dấu), highlighter (bút dạ quang), page_flip (lật lịch), shutter (máy ảnh), lamp_click (bật đèn)
   - Lặp: rain_loop, sea_loop, wind_loop, room_hum_loop, ceiling_fan_loop, clock_loop, crowd_murmur_loop
 
 ---
 
-## 8. Chưa có, có thể dựng thêm
+## 9. Chưa có, có thể dựng thêm
 Những thứ dưới đây chưa có trong bản nháp. Ghi tên vào mục "Thành phần mới cần dựng" của Prompt C là Claude Code sẽ dựng.
 
 | Tên | Mô tả | Vì sao đáng làm |
