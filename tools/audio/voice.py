@@ -87,6 +87,19 @@ def designed_gap(cur: Line, nxt: Line | None, natural: float | None, tail: float
     return g
 
 
+def word_times_spans(line: Line, spans: list[tuple[float, float, int, int]], rate: float) -> tuple[list[dict], list[dict]]:
+    """Như word_times, nhưng dùng các đoạn con đo từ giọng thật: (bắt đầu, kết thúc, chữ đầu, chữ cuối + 1)."""
+    words: list[dict] = []
+    for s0, e0, i0, i1 in spans:
+        sub_line = Line(id=line.id, scene=line.scene, text='', spoken='', words=line.words[i0:i1],
+                        emph=line.emph[i0:i1] if line.emph else [], cues=[])
+        ws, _ = word_times(sub_line, s0, e0, rate)
+        words.extend(ws)
+    starts = {i: w['s'] for i, w in enumerate(words)}
+    cues = [{'kind': c['kind'], 'text': c['text'], 'word': c['at'], 's': round(starts.get(c['at'], spans[-1][1]), 3)} for c in line.cues]
+    return words, cues
+
+
 def word_times(line: Line, start: float, end: float, rate: float) -> tuple[list[dict], list[dict]]:
     """Chia thời gian câu cho từng chữ theo số âm tiết, có tính chỗ ngắt dấu phẩy và [beat]/[pause] giữa câu."""
     gaps_before = {}
@@ -139,12 +152,15 @@ def scenes_json(script: Script, timed: dict[str, tuple[float, float]], duration:
 
 
 def write_lines_json(path: Path, script: Script, timed: dict[str, tuple[float, float]],
-                     duration: float, source: str) -> None:
+                     duration: float, source: str, spans: dict[str, list] | None = None) -> None:
     lines = []
     rate = script_rate(script)
     for l in script.lines:
         s, e = timed[l.id]
-        words, cues = word_times(l, s, e, rate)
+        if spans and l.id in spans and len(spans[l.id]) > 1:
+            words, cues = word_times_spans(l, spans[l.id], rate)
+        else:
+            words, cues = word_times(l, s, e, rate)
         lines.append({'id': l.id, 'scene': l.scene, 'text': l.text, 'dir': l.direction, 'pause': l.pause,
                       'start': round(s, 3), 'end': round(e, 3), 'words': words, 'cues': cues})
     data = {'title': script.title, 'lang': script.lang, 'source': source, 'duration': round(duration, 3),
@@ -408,6 +424,7 @@ def align(project: Path, audio: Path, denoise: bool = True) -> None:
     w = np.array([line_weight(l, 4.2) for l in lines])
     k = sum(segs[b].end - segs[a].start for a, b in groups) / w.sum()
     warn = []
+    spans: dict[str, list] = {}
     for i, ((a, b), l) in enumerate(zip(groups, lines)):
         s0, e0 = segs[a].start, segs[b].end
         prev_end = segs[groups[i - 1][1]].end if i else 0.0
@@ -421,6 +438,15 @@ def align(project: Path, audio: Path, denoise: bool = True) -> None:
         speech_start = t + (s0 - cs)
         speech_end = speech_start + (e0 - s0)
         timed[l.id] = (speech_start, speech_end)
+        # Các chỗ ngắt giữa câu trong kịch bản <-> các khoảng lặng lớn nhất bên trong nhóm đoạn.
+        cut_words = sorted({c['at'] for c in l.cues if c['kind'] in INLINE_PAUSE and 0 < c['at'] < len(l.words)})
+        inner = [(segs[k + 1].start - segs[k].end, k) for k in range(a, b)]
+        if cut_words and len(inner) >= len(cut_words):
+            chosen = sorted(k for _, k in sorted(inner, reverse=True)[: len(cut_words)])
+            bounds = [a] + [k + 1 for k in chosen] + [b + 1]
+            idx = [0] + cut_words + [len(l.words)]
+            off = speech_start - s0
+            spans[l.id] = [(segs[bounds[j]].start + off, segs[bounds[j + 1] - 1].end + off, idx[j], idx[j + 1]) for j in range(len(bounds) - 1)]
         out_parts.append(chunk)
         t += len(chunk) / SR
         nxt = lines[i + 1] if i + 1 < len(lines) else None
@@ -440,7 +466,7 @@ def align(project: Path, audio: Path, denoise: bool = True) -> None:
         master(tmp, voice_wav)
 
     duration = len(voice) / SR
-    write_lines_json(lines_json, script, timed, duration, 'voice')
+    write_lines_json(lines_json, script, timed, duration, 'voice', spans)
     plot(ROOT / 'video' / 'out' / f'{slug}-align.png', x, segs, groups, lines, removed)
 
     print(f'  mức nền {floor_db:.0f} dB, ngưỡng {thr:.0f} dB, {len(segs)} đoạn -> {len(lines)} dòng')
