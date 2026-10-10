@@ -330,24 +330,88 @@ export const SnowCross: React.FC<{w: number; h: number; packAt: number; iceAt: n
   );
 };
 
-/** Hơi thở bị gạch đỏ (giữ tuyết trong miệng). */
+/**
+ * Hơi thở: đầu xạ thủ nhìn nghiêng trong mũ trùm, hơi nước bốc lên thành mây (lộ vị trí).
+ * Tới `crossAt`: một nắm tuyết vào miệng, hơi nước tắt, vệt đỏ gạch chỗ mây cũ.
+ */
 export const Breath: React.FC<{w: number; h: number; crossAt: number}> = ({w, h, crossAt}) => {
   const frame = useCurrentFrame();
   const k = interpolate(frame, [crossAt, crossAt + 10], [0, 1], clamp);
+  const snow = interpolate(frame, [crossAt - 8, crossAt], [0, 1], {...clamp, easing: Easing.out(Easing.back(2))});
+  const ink = {stroke: C.ink, strokeWidth: 6, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
   const puff = (i: number) => {
-    const p = ((frame + i * 14) % 42) / 42;
-    return <circle key={i} cx={w * 0.45 + p * w * 0.35} cy={h * 0.45 - p * 40} r={20 + p * 50} fill="#ffffff" opacity={(1 - p) * 0.9} stroke="#c9d2db" strokeWidth={3} />;
+    const p = ((frame + i * 16) % 48) / 48;
+    const x = 372 + p * 250;
+    const y = 300 - p * 120 + Math.sin(p * 6 + i) * 10;
+    const r = 18 + p * 44;
+    const op = (1 - p) * (1 - k);
+    if (op <= 0.01) {
+      return null;
+    }
+    return (
+      <g key={i} opacity={op}>
+        <circle cx={x} cy={y} r={r} fill="#ffffff" stroke="#9fb0be" strokeWidth={4} />
+        <circle cx={x + r * 0.7} cy={y + r * 0.2} r={r * 0.7} fill="#ffffff" stroke="#9fb0be" strokeWidth={4} />
+        <circle cx={x - r * 0.5} cy={y + r * 0.35} r={r * 0.6} fill="#ffffff" stroke="#9fb0be" strokeWidth={4} />
+      </g>
+    );
   };
   return (
-    <svg width={w} height={h} style={{position: 'absolute', inset: 0}}>
-      <circle cx={w * 0.25} cy={h * 0.5} r={h * 0.28} fill="#f4f6f8" stroke={C.ink} strokeWidth={6} />
-      <circle cx={w * 0.31} cy={h * 0.47} r={h * 0.2} fill={C.skin} stroke={C.ink} strokeWidth={5} />
-      <circle cx={w * 0.36} cy={h * 0.42} r={8} fill={C.ink} />
-      <path d={`M ${w * 0.38} ${h * 0.56} L ${w * 0.43} ${h * 0.55}`} stroke={C.ink} strokeWidth={6} strokeLinecap="round" />
+    <svg width={w} height={h} viewBox="0 0 760 500" preserveAspectRatio="xMidYMid meet" style={{position: 'absolute', inset: 0}}>
+      <defs>
+        <linearGradient id="brSky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#c3cfda" />
+          <stop offset="1" stopColor="#eef2f5" />
+        </linearGradient>
+      </defs>
+      <rect width={760} height={500} fill="url(#brSky)" />
+      <path d="M 0 430 Q 380 400 760 425 L 760 500 L 0 500 Z" fill="#ffffff" {...ink} strokeWidth={4} />
+      {/* thân áo choàng */}
+      <path d="M 40 500 Q 60 400 150 372 Q 230 352 300 380 Q 330 430 340 500 Z" fill="#f4f6f8" {...ink} />
+      <path d="M 120 400 Q 140 450 130 500 M 250 380 Q 270 440 262 500" fill="none" stroke="#c4ced8" strokeWidth={5} />
+      {/* mũ trùm phía sau */}
+      <path d="M 110 300 Q 90 170 200 140 Q 300 120 330 200 Q 345 250 320 330 Q 290 380 210 380 Q 130 380 110 300 Z" fill="#f4f6f8" {...ink} />
+      {/* mặt nhìn nghiêng */}
+      <path d="M 232 190 Q 300 180 318 232 L 322 252 L 348 276 L 324 286 Q 330 300 326 306 Q 336 314 324 322 Q 318 350 280 352 Q 240 352 228 330 Q 214 260 232 190 Z" fill={C.skin} {...ink} strokeWidth={5} />
+      <path d="M 120 290 Q 150 170 236 186" fill="none" stroke="#c4ced8" strokeWidth={6} />
+      <ellipse cx={292} cy={242} rx={8} ry={11} fill={C.ink} />
+      <circle cx={295} cy={238} r={3} fill="#fff" />
+      <path d="M 270 216 L 308 222" {...ink} strokeWidth={6} />
+      <path d={k > 0.5 ? 'M 312 314 Q 320 318 326 314' : 'M 310 312 Q 320 320 330 312'} fill="none" {...ink} strokeWidth={5} />
+      {/* má phồng khi ngậm tuyết */}
+      {snow > 0 ? <path d={`M 300 300 Q ${300 + 16 * snow} 316 300 334`} fill="none" stroke={C.ink} strokeWidth={4} opacity={snow} /> : null}
+      {/* hơi nước */}
       {[0, 1, 2].map(puff)}
-      <g opacity={k}>
-        <path d={`M ${w * 0.47} ${h * 0.2} L ${w * 0.92} ${h * 0.75} M ${w * 0.92} ${h * 0.2} L ${w * 0.47} ${h * 0.75}`} stroke={RED} strokeWidth={16} strokeLinecap="round" />
+      {/* nắm tuyết bay vào miệng */}
+      {frame >= crossAt - 8 && frame < crossAt + 2 ? (
+        <g transform={`translate(${470 - 140 * snow} ${200 + 110 * snow})`}>
+          <circle r={18} fill="#ffffff" stroke={C.ink} strokeWidth={4} />
+          <circle cx={-5} cy={-5} r={5} fill="#dbe8f2" />
+        </g>
+      ) : null}
+      {/* nhãn trước / sau */}
+      <g opacity={1 - k}>
+        <text x={520} y={80} textAnchor="middle" fontFamily="Anton" fontSize={46} fill={RED}>
+          STEAM = TARGET
+        </text>
+        <path d="M 520 96 Q 540 140 510 180" fill="none" stroke={RED} strokeWidth={7} strokeLinecap="round" />
+        <path d="M 498 168 L 510 182 L 524 170" fill="none" stroke={RED} strokeWidth={7} strokeLinecap="round" />
       </g>
+      {k > 0 ? (
+        <g>
+          <g opacity={0.35 * k}>
+            <circle cx={500} cy={230} r={46} fill="none" stroke="#9fb0be" strokeWidth={4} strokeDasharray="10 8" />
+            <circle cx={560} cy={200} r={34} fill="none" stroke="#9fb0be" strokeWidth={4} strokeDasharray="10 8" />
+          </g>
+          <path d="M 440 140 L 640 300" stroke={RED} strokeWidth={16} strokeLinecap="round" pathLength={1} strokeDasharray={`${k} 1`} />
+          <text x={540} y={80} textAnchor="middle" fontFamily="Anton" fontSize={40} fill={C.ink} opacity={k}>
+            SNOW IN MOUTH
+          </text>
+          <text x={540} y={124} textAnchor="middle" fontFamily="Anton" fontSize={36} fill="#1f6fa8" opacity={k}>
+            NO STEAM
+          </text>
+        </g>
+      ) : null}
     </svg>
   );
 };
@@ -432,17 +496,51 @@ export const ForestHunt: React.FC<{w: number; h: number; enter: number; findAt: 
   );
 };
 
-/** Áo khoác trắng, rách lưng sau một loạt pháo. */
+/**
+ * Áo choàng tuyết nhìn từ sau lưng (mũ trùm buông xuống, tay áo, gấu áo có dây rút).
+ * Tới `tearAt`: mảnh đạn xé một lỗ ở lưng, sợi vải tưa ra, mảnh vụn bắn ra ngoài.
+ */
 export const TornCoat: React.FC<{w: number; h: number; tearAt: number}> = ({w, h, tearAt}) => {
   const frame = useCurrentFrame();
-  const k = interpolate(frame, [tearAt, tearAt + 6], [0, 1], clamp);
+  const k = interpolate(frame, [tearAt, tearAt + 5], [0, 1], clamp);
+  const fly = interpolate(frame, [tearAt, tearAt + 14], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+  const ink = {stroke: C.ink, strokeWidth: 6, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
+  const fold = {fill: 'none', stroke: '#c4ced8', strokeWidth: 5, strokeLinecap: 'round' as const};
+  const hole = 'M 196 210 L 222 188 L 236 214 L 262 190 L 276 220 L 306 206 L 298 240 L 322 258 L 292 272 L 300 304 L 268 290 L 250 318 L 232 288 L 202 300 L 210 268 L 184 252 L 208 238 Z';
   return (
-    <svg width={w} height={h} style={{position: 'absolute', inset: 0}}>
-      <path d={`M ${w * 0.3} ${h * 0.1} L ${w * 0.7} ${h * 0.1} L ${w * 0.95} ${h * 0.35} L ${w * 0.85} ${h * 0.45} L ${w * 0.78} ${h * 0.38} L ${w * 0.78} ${h * 0.92} L ${w * 0.22} ${h * 0.92} L ${w * 0.22} ${h * 0.38} L ${w * 0.15} ${h * 0.45} L ${w * 0.05} ${h * 0.35} Z`} fill="#f4f6f8" stroke={C.ink} strokeWidth={6} strokeLinejoin="round" />
-      <path d={`M ${w * 0.5} ${h * 0.1} L ${w * 0.5} ${h * 0.92}`} stroke="#c9d2db" strokeWidth={4} />
+    <svg width={w} height={h} viewBox="0 -40 500 600" preserveAspectRatio="xMidYMid meet" style={{position: 'absolute', inset: 0}}>
+      {/* tay áo */}
+      <path d="M 130 120 Q 70 150 40 300 L 30 380 L 92 392 L 112 300 Q 120 250 150 220 Z" fill="#eef1f4" {...ink} />
+      <path d="M 370 120 Q 430 150 460 300 L 470 380 L 408 392 L 388 300 Q 380 250 350 220 Z" fill="#eef1f4" {...ink} />
+      <path d="M 30 380 L 92 392 L 90 410 L 28 398 Z M 470 380 L 408 392 L 410 410 L 472 398 Z" fill="#dfe5ea" {...ink} strokeWidth={4} />
+      {/* thân */}
+      <path d="M 130 110 Q 250 86 370 110 L 388 300 Q 400 420 420 500 Q 250 528 80 500 Q 100 420 112 300 Z" fill="#f4f6f8" {...ink} />
+      <path d="M 82 486 Q 250 512 418 486" fill="none" stroke="#9aa8b4" strokeWidth={5} strokeDasharray="6 8" />
+      <circle cx={250} cy={506} r={7} fill="#9aa8b4" stroke={C.ink} strokeWidth={3} />
+      <path d="M 246 512 Q 240 530 232 540 M 254 512 Q 262 530 268 540" fill="none" stroke="#9aa8b4" strokeWidth={4} strokeLinecap="round" />
+      <path d="M 170 160 Q 160 330 150 480 M 330 160 Q 340 330 350 480 M 250 340 Q 246 420 250 500" {...fold} />
+      {/* mũ trùm buông sau lưng */}
+      <path d="M 170 104 Q 170 40 250 36 Q 330 40 330 104 Q 320 170 250 178 Q 180 170 170 104 Z" fill="#eef1f4" {...ink} />
+      <path d="M 196 100 Q 250 130 304 100" {...fold} />
+      <path d="M 214 70 Q 250 56 286 70" {...fold} />
+      {/* lỗ rách */}
       {k > 0 ? (
-        <g opacity={k}>
-          <path d={`M ${w * 0.36} ${h * 0.5} L ${w * 0.42} ${h * 0.44} L ${w * 0.47} ${h * 0.55} L ${w * 0.54} ${h * 0.46} L ${w * 0.6} ${h * 0.58} L ${w * 0.66} ${h * 0.5} L ${w * 0.62} ${h * 0.7} L ${w * 0.5} ${h * 0.64} L ${w * 0.4} ${h * 0.72} Z`} fill="#3a352e" stroke={C.ink} strokeWidth={5} />
+        <g>
+          <ellipse cx={252} cy={252} rx={110 * k} ry={88 * k} fill="#6b5a48" opacity={0.18} />
+          <g transform={`translate(252 252) scale(${k}) translate(-252 -252)`}>
+            <path d={hole} fill="#4a4136" {...ink} strokeWidth={5} />
+            <path d="M 214 232 Q 250 218 290 236 Q 280 270 250 280 Q 220 272 214 232 Z" fill="#7d6a52" opacity={0.85} />
+            {[[222, 188, 214, 172], [262, 190, 266, 170], [306, 206, 324, 196], [322, 258, 342, 262], [300, 304, 310, 324], [250, 318, 248, 340], [202, 300, 188, 316], [184, 252, 164, 250]].map(([x1, y1, x2, y2], i) => (
+              <path key={i} d={`M ${x1} ${y1} Q ${(x1 + x2) / 2 + 6} ${(y1 + y2) / 2 - 4} ${x2} ${y2}`} fill="none" stroke="#e1e6ea" strokeWidth={4} strokeLinecap="round" />
+            ))}
+          </g>
+          {fly < 1
+            ? new Array(9).fill(0).map((_, i) => {
+                const a = (i / 9) * Math.PI * 2 + 0.3;
+                const d = 30 + 170 * fly;
+                return <rect key={i} x={252 + Math.cos(a) * d - 6} y={252 + Math.sin(a) * d - 4} width={12} height={8} fill={i % 3 ? '#f4f6f8' : '#4a4136'} stroke={C.ink} strokeWidth={2} opacity={1 - fly} transform={`rotate(${i * 40 + fly * 200} ${252 + Math.cos(a) * d} ${252 + Math.sin(a) * d})`} />;
+              })
+            : null}
         </g>
       ) : null}
     </svg>

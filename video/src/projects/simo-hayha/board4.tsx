@@ -70,12 +70,12 @@ const HEADS = {x: 200, y: 800, w: 1100, h: 560};
 const GLINT = {x: 1420, y: 200, w: 900, h: 506};
 const MOSIN = {x: 1420, y: 800, w: 1100, h: 360};
 const CROSS = {x: 200, y: 1440, w: 1200, h: 700};
-const BREATH = {x: 1500, y: 1280, w: 700, h: 460};
+const BREATH = {x: 1480, y: 1250, w: 760, h: 500};
 const SUN = {x: 1500, y: 1820, w: 760, h: 460};
 const PHONE = {x: 2330, y: 1800, w: 420, h: 500};
 const POLA = {x: 2680, y: 180, w: 540, h: 640};
 const HUNT = {x: 2660, y: 1000, w: 1100, h: 760};
-const COAT = {x: 2900, y: 1840, w: 500, h: 480};
+const COAT = {x: 2920, y: 1800, w: 480, h: 540};
 const ctr = (b: {x: number; y: number; w: number; h: number}) => [b.x + b.w / 2, b.y + b.h / 2];
 
 const KEYS: CamKey[] = [
@@ -90,7 +90,7 @@ const KEYS: CamKey[] = [
   {at: T.l40 + 4, dur: 18, x: ctr(POLA)[0] + 120, y: ctr(POLA)[1] + 60, z: 1.3},
   {at: T.l42 + 2, dur: 16, x: 2700, y: 700, z: 0.95},
   {at: T.l43 + 4, dur: 16, x: ctr(HUNT)[0], y: ctr(HUNT)[1], z: 1.25},
-  {at: T.coat - 6, dur: 14, x: ctr(COAT)[0], y: ctr(COAT)[1] - 40, z: 1.4},
+  {at: T.coat - 6, dur: 14, x: ctr(COAT)[0] + 110, y: ctr(COAT)[1] - 20, z: 1.35},
   {at: T.l47end + 30, dur: 40, ease: 'smooth', x: WW / 2, y: WH / 2, z: 0.5},
 ];
 
@@ -194,6 +194,7 @@ export const Board4: React.FC = () => (
     <Cutout {...COAT} rot={-3} seed="b4coat" texture="kraft" pin at={T.l46 - 6}>
       <TornCoat w={COAT.w} h={COAT.h} tearAt={T.coat} />
     </Cutout>
+    <HandLabel x={3430} y={1900} text="the back of his smock" at={T.coat + 8} size={44} rot={-4} />
     <Stamp x={3600} y={2200} text="BACK TO WORK" at={T.work} rot={-8} size={60} />
 
     <Strings
@@ -204,7 +205,7 @@ export const Board4: React.FC = () => (
         {a: [1250, 900], b: [1800, 230], from: T.l33 - 14, to: T.l33},
         {a: [1900, 700], b: [1960, 830], from: T.l34 - 10, to: T.l34, sag: 0.02},
         {a: [1600, 1140], b: [800, 1460], from: T.l35 - 14, to: T.l35},
-        {a: [1350, 1500], b: [1850, 1300], from: T.l37 - 12, to: T.l37},
+        {a: [1300, 1180], b: [1860, 1268], from: T.l37 - 12, to: T.l37},
         {a: [1850, 1720], b: [1880, 1840], from: T.l38 - 10, to: T.l38, sag: 0.02},
         {a: [2200, 1950], b: [2540, 1820], from: T.l39 - 10, to: T.l39},
         {a: [2500, 1820], b: [2950, 200], from: T.l40 - 16, to: T.l40},
