@@ -71,7 +71,8 @@ Bạn là đạo diễn hoạt hình 2D cho một kênh lịch sử tiếng Vi�
   - Trang phục: thủy thủ, sĩ quan, com-lê, phi công, áo sơ mi
   - Mũ: thủy thủ, sĩ quan, mũ sắt, tai nghe, mũ phi công
   - Tóc bạc, kính
-- **Chữ:** chữ đập · thẻ tên · nhãn ngày/địa điểm · ruy băng · chữ đánh máy · bộ đếm số · phụ đề tô chữ đang đọc
+- **Chữ:** chữ đập · thẻ tên · nhãn ngày/địa điểm · ruy băng · chữ đánh máy · bộ đếm số · phụ đề tô chữ đang đọc · gạch xoá kỳ vọng (chữ bị gạch đỏ, chữ đúng bật ra bên dưới; có kiểu mảnh giấy đánh máy)
+- **Kể bằng hình:** ô tròn chèn cảnh cạnh nhân vật (có bong bóng nối, có thể nở ra thành cảnh chính) · bản đồ động vịnh Bắc Bộ (mũi tên tự vẽ theo kinh/vĩ độ, điểm chấm/nhấp nháy/nổ, zoom vào một điểm)
 - **Không khí và ánh sáng:** mưa xiên · chớp sáng/sét · khói tan · loé đầu nòng · vệt đạn · đèn báo động đỏ · hạt giấy · tối góc · ngả nâu hồi tưởng · mất màu
 - **Bối cảnh mẫu:**
   - Màn radar (đốm sáng, vạch quét, nhiễu, đốm hoá thành tàu địch, đốm tắt dần)
@@ -80,11 +81,11 @@ Bạn là đạo diễn hoạt hình 2D cho một kênh lịch sử tiếng Vi�
   - Phòng chỉ huy, cabin, phòng làm việc, phòng khách Hà Nội
   - Nhà Trắng, boong tàu sân bay, bờ biển núi đá vôi có pháo phòng không, Quốc hội, ngăn kéo có văn bản và con dấu
 - **Âm thanh:**
-  - Một tiếng: radar_beep, sonar_ping, alarm, radio_static, heartbeat, whoosh, whoosh_short, riser, hit, pop, tick, flash, tape_stop, rewind, thunder, cannon, explosion_far, machinegun_far, flak, jet_flyby, plane_down, boat_engine, typewriter, typewriter_bell, pen_scratch, gavel, teacup, paper
+  - Một tiếng: radar_beep, sonar_ping, alarm, radio_static, heartbeat, whoosh, whoosh_short, riser, hit, pop, tick, flash, tape_stop, rewind, thunder, cannon, explosion_far, machinegun_far, flak, jet_flyby, plane_down, boat_engine, typewriter, typewriter_bell, pen_scratch, gavel, teacup, paper, scribble, marker_draw
   - Lặp: rain_loop, sea_loop, wind_loop, room_hum_loop, ceiling_fan_loop, clock_loop, crowd_murmur_loop
   - Nhạc nền: tension, drums, reflective (tự hạ âm lượng khi có lời)
 
-Nếu cần thứ chưa có (bản đồ có mũi tên tự vẽ, ô tròn chèn cảnh, gạch xoá chữ, nhân vật đi bộ...), ghi rõ ở mục "Thành phần mới cần dựng", mô tả đủ để người dựng làm được.
+Nếu cần thứ chưa có (bản đồ vùng khác, nhân vật đi bộ, bóng thoại, nhép miệng theo giọng thật...), ghi rõ ở mục "Thành phần mới cần dựng", mô tả đủ để người dựng làm được.
 
 ## Định dạng đầu ra (bắt buộc)
 

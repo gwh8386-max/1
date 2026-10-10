@@ -22,7 +22,7 @@ const SCENES: Record<string, {C: React.FC; enter?: Transition}> = {
   C04: {C: S04, enter: {type: 'whip'}},
   C05: {C: S05},
   C06: {C: S06, enter: {type: 'flash', dur: 16}},
-  C07: {C: S07, enter: {type: 'zoomThrough', x: 72, y: 58}},
+  C07: {C: S07, enter: {type: 'zoomThrough', x: 72, y: 62}},
   C08: {C: S08, enter: {type: 'blur'}},
   C09: {C: S09, enter: {type: 'whip', dir: -1}},
   C10: {C: S10},

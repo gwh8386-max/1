@@ -1,12 +1,15 @@
 import React from 'react';
 import {AbsoluteFill, Freeze, interpolate, random, useCurrentFrame} from 'remotion';
 import {Character} from '../../components/Character';
+import {CircleInset} from '../../components/CircleInset';
+import {StrikeText} from '../../components/StrikeText';
 import {Camera} from '../../components/Camera';
 import {FlashAt, Grain, lerp, Rain, Vignette} from '../../components/Overlays';
 import {Sfx} from '../../components/Sfx';
 import {Counter, DateStamp, PunchText} from '../../components/Text';
 import {H, W} from '../../art/common';
 import {CICRoom} from '../../art/Interior';
+import {geo, geoPct, GulfMap} from '../../art/Map';
 import {Blip, Radar, sweepHits} from '../../art/Radar';
 import {DaySea, Destroyer, NightSea, TorpedoBoat, Tracer} from '../../art/Sea';
 import {C} from '../../lib/theme';
@@ -54,6 +57,7 @@ export const S02: React.FC = () => {
     return k < 0 || k > 1 ? 0 : k < 0.2 ? 1 : k < 0.35 ? 0.2 : 0.9 * (1 - k);
   })();
   const l04 = c.at('L04');
+  const inset = c.at('L04', 'tin');
   return (
     <AbsoluteFill>
       <Camera zoom={[1, 1.08]} x={45} y={60} duration={c.total} handheld={0.7}>
@@ -81,10 +85,14 @@ export const S02: React.FC = () => {
         </CICRoom>
       </Camera>
       <Vignette strength={0.6} />
+      <CircleInset at={inset} x={1500} y={330} r={230} zoom={0.55} tail={[1090, 640]}>
+        <Radar blips={RADAR_BLIPS.map((b) => ({...b, from: 0, to: c.total}))} />
+      </CircleInset>
       <Sfx name="rain_loop" at={0} dur={c.total} volume={0.45} fadeIn={10} />
       <Sfx name="room_hum_loop" at={0} dur={c.total} volume={0.3} />
       <Sfx name="thunder" at={bolt + 6} volume={0.75} />
-      <Sfx name="radar_beep" at={c.at('L04', 0, 0.6)} volume={0.3} />
+      <Sfx name="pop" at={inset} volume={0.7} />
+      <Sfx name="radar_beep" at={inset + 4} volume={0.45} />
     </AbsoluteFill>
   );
 };
@@ -242,43 +250,84 @@ export const S05: React.FC = () => {
 };
 
 // ---------------------------------------------------------------- C06
+/** Trận đụng độ ban ngày 2/8, hiện trong ô tròn trên bản đồ rồi nở ra toàn khung. */
+const DayBattle: React.FC<{clash: number}> = ({clash}) => {
+  const frame = useCurrentFrame();
+  const boatX = (i: number) => interpolate(frame, [clash - 60, clash + 90], [760 - i * 90, 1200 - i * 80]);
+  return (
+    <AbsoluteFill style={{filter: 'sepia(0.35) saturate(0.9)'}}>
+      <DaySea horizon={600}>
+        <Destroyer x={1390} y={690} s={0.75} lit={false} rock={0.6} flashes={frame > clash ? [clash + 4, clash + 18, clash + 34] : []} />
+        <TorpedoBoat x={boatX(0)} y={760} s={0.9} />
+        <TorpedoBoat x={boatX(1)} y={700} s={0.7} />
+        <TorpedoBoat x={boatX(2)} y={830} s={1} />
+        {frame > clash
+          ? new Array(8).fill(0).map((_, i) => {
+              const at = clash + i * 6;
+              const k = (frame - at) / 14;
+              if (k < 0 || k > 1) {
+                return null;
+              }
+              return <ellipse key={i} cx={1100 + random(`sp${i}`) * 300} cy={760 + random(`spy${i}`) * 80} rx={10 + 18 * k} ry={30 * (1 - k)} fill="#ffffff" opacity={1 - k} />;
+            })
+          : null}
+      </DaySea>
+    </AbsoluteFill>
+  );
+};
+
 export const S06: React.FC = () => {
   const c = useClock();
-  const frame = useCurrentFrame();
+  const routeFrom = c.at('L10') + 4;
+  const named = c.at('L11', 'maddox');
   const clash = c.at('L11', 'đụng');
-  const boatX = (i: number) => interpolate(frame, [0, c.total], [-260 - i * 160, 860 - i * 140]);
+  const three = c.at('L11', 'ba');
+  const expandAt = c.end('L11') - 4;
+  const [hx, hy] = geoPct(106.2, 19.45);
+  const [bx, by] = geo(106.31, 19.44);
+  const zoomAt = c.at('L11');
+  // Toạ độ điểm đụng độ trên màn hình sau khi máy quay zoom (để nối bong bóng của ô tròn).
+  const z = 1.85;
+  const ox = (hx / 100) * W;
+  const oy = (hy / 100) * H;
+  const tail: [number, number] = [ox + (bx - ox) * z, oy + (by - oy) * z];
   return (
     <AbsoluteFill>
-      <Camera zoom={[1, 1.07]} x={55} y={60} duration={c.total} shakes={[{at: clash, amp: 8, dur: 30}]} handheld={0.5}>
-        <AbsoluteFill style={{filter: 'sepia(0.35) saturate(0.9)'}}>
-          <DaySea horizon={600}>
-            <Destroyer x={1390} y={690} s={0.75} lit={false} rock={0.6} flashes={frame > clash ? [clash, clash + 14, clash + 30] : []} />
-            <TorpedoBoat x={boatX(0)} y={760} s={0.9} />
-            <TorpedoBoat x={boatX(1)} y={700} s={0.7} />
-            <TorpedoBoat x={boatX(2)} y={830} s={1} />
-            {frame > clash
-              ? new Array(8).fill(0).map((_, i) => {
-                  const at = clash + i * 6;
-                  const k = (frame - at) / 14;
-                  if (k < 0 || k > 1) {
-                    return null;
-                  }
-                  return <ellipse key={i} cx={1100 + random(`sp${i}`) * 300} cy={760 + random(`spy${i}`) * 80} rx={10 + 18 * k} ry={30 * (1 - k)} fill="#ffffff" opacity={1 - k} />;
-                })
-              : null}
-          </DaySea>
+      <Camera zoom={[1, 1.03]} x={hx} y={hy} duration={c.total} snaps={[{at: zoomAt, to: 1.8, x: hx, y: hy}]} shakes={[{at: clash + 12, amp: 10, dur: 14}]} handheld={0.2}>
+        <AbsoluteFill style={{filter: 'sepia(0.25)'}}>
+          <GulfMap
+            arrows={[
+              {pts: [[107.9, 17.3], [107.3, 18.0], [106.75, 18.65], [106.45, 19.05], [106.38, 19.36]], from: routeFrom, to: named, color: C.navyDark, width: 10, label: 'USS MADDOX', labelAt: named},
+              {pts: [[105.86, 19.62], [106.05, 19.56], [106.24, 19.5]], from: clash - 12, to: clash + 8, color: C.blood, width: 7},
+              {pts: [[105.84, 19.44], [106.04, 19.45], [106.23, 19.46]], from: clash - 9, to: clash + 10, color: C.blood, width: 7},
+              {pts: [[105.88, 19.24], [106.06, 19.32], [106.24, 19.42]], from: clash - 6, to: clash + 12, color: C.blood, width: 7},
+            ]}
+            markers={[
+              {ll: [105.92, 19.37], at: zoomAt + 4, kind: 'dot', color: C.ink, label: 'HÒN MÊ', labelSide: 'left', size: 0.7},
+              {ll: [106.31, 19.44], at: clash + 12, kind: 'burst', size: 0.5},
+            ]}
+          />
         </AbsoluteFill>
       </Camera>
+      <CircleInset at={three} x={1420} y={430} r={280} fx={1100} fy={700} zoom={0.8} tail={tail} expandAt={expandAt}>
+        <DayBattle clash={three} />
+      </CircleInset>
       <Grain opacity={0.16} />
       <Vignette strength={0.45} color="60,40,10" />
       <DateStamp text="2/8/1964 · HAI NGÀY TRƯỚC" at={8} />
       <Sfx name="flash" at={0} volume={0.7} />
       <Sfx name="rewind" at={0} volume={0.55} />
-      <Sfx name="boat_engine" at={10} volume={0.5} />
-      <Sfx name="boat_engine" at={110} volume={0.5} />
-      <Sfx name="machinegun_far" at={clash} volume={0.65} />
-      <Sfx name="cannon" at={clash + 14} volume={0.45} />
-      <Sfx name="sea_loop" at={0} dur={c.total} volume={0.3} />
+      <Sfx name="marker_draw" at={routeFrom} volume={0.55} />
+      <Sfx name="marker_draw" at={routeFrom + 45} volume={0.5} />
+      <Sfx name="whoosh_short" at={zoomAt} volume={0.5} />
+      <Sfx name="whoosh_short" at={clash - 10} volume={0.55} />
+      <Sfx name="hit" at={clash + 12} volume={0.75} />
+      <Sfx name="pop" at={three} volume={0.7} />
+      <Sfx name="boat_engine" at={three} volume={0.5} />
+      <Sfx name="machinegun_far" at={three + 4} volume={0.6} />
+      <Sfx name="cannon" at={three + 18} volume={0.45} />
+      <Sfx name="whoosh" at={expandAt - 4} volume={0.6} />
+      <Sfx name="sea_loop" at={three} dur={Math.max(1, c.total - three)} volume={0.3} fadeIn={10} />
     </AbsoluteFill>
   );
 };
@@ -302,6 +351,9 @@ export const S07: React.FC = () => {
         <Radar blips={blips} noise={0.9} morphAt={morph} />
       </Camera>
       <AbsoluteFill style={{background: `radial-gradient(ellipse at center, rgba(120,0,0,0) 45%, rgba(120,0,0,${lerp(frame, morph - 20, morph + 20, 0.2, 0.65)}) 100%)`}} />
+      <StrikeText text="ĐỐM NHIỄU" at={c.at('L13', 'đốm')} strikeAt={morph} replace="TÀU ĐỊCH" replaceAt={c.at('L13', 'tàu')} replaceColor="#ff5a4a" x={W / 2} y={170} size={104} />
+      <Sfx name="pop" at={c.at('L13', 'đốm')} volume={0.6} />
+      <Sfx name="scribble" at={morph} volume={0.85} />
       <Sfx name="heartbeat" at={c.at('L12')} volume={0.7} />
       <Sfx name="heartbeat" at={c.at('L12') + 120} volume={0.8} />
       <Sfx name="radio_static" at={0} volume={0.35} />

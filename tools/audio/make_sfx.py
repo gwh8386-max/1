@@ -395,6 +395,29 @@ def paper():
     return stereo(fade(x))
 
 
+@sfx('scribble')
+def scribble():
+    """Nét bút gạch mạnh hai lần (gạch xoá chữ)."""
+    out = np.zeros(int(0.6 * SR))
+    for k, at in enumerate((0.0, 0.14)):
+        d = 0.16
+        t = t_axis(d)
+        x = sweep_bandpass(white(d, 151 + k), 1500 + 2500 * np.sin(np.pi * t / d), q=1.8) * np.sin(np.pi * t / d) ** 0.7
+        place(out, x, at, 1.0 - 0.15 * k)
+    return stereo(fade(out, 0.002, 0.05))
+
+
+@sfx('marker_draw')
+def marker_draw():
+    """Bút dạ kéo trên giấy (vẽ đường trên bản đồ)."""
+    d = 1.6
+    t = t_axis(d)
+    grain = lowpass((rng(153).random(len(t)) > 0.5).astype(float), 30)
+    x = bandpass(white(d, 152), 1200, 6000) * (0.45 + 0.55 * grain)
+    x *= np.minimum(1, t / 0.04) * np.minimum(1, (d - t) / 0.2) * (0.8 + 0.2 * np.sin(2 * np.pi * 1.3 * t))
+    return stereo(x * 0.7)
+
+
 @sfx('crowd_murmur_loop', loop=True)
 def crowd_murmur_loop():
     d = 16.0

@@ -1,6 +1,8 @@
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, random, useCurrentFrame} from 'remotion';
 import {Character} from '../../components/Character';
+import {CircleInset} from '../../components/CircleInset';
+import {StrikeText} from '../../components/StrikeText';
 import {Camera} from '../../components/Camera';
 import {Grain, lerp, Vignette} from '../../components/Overlays';
 import {Sfx} from '../../components/Sfx';
@@ -110,7 +112,23 @@ export const S09: React.FC = () => {
       />
       <Banner text="WASHINGTON" at={c.at('L18')} out={cut - 6} y={150} size={70} />
       <DateStamp text="5/8/1964" at={cut + 8} corner="tr" />
+      <StrikeText
+        text="KIỂM TRA KỸ"
+        paper
+        at={c.at('L18')}
+        strikeAt={c.at('L18', 'không')}
+        replace="NÉM BOM"
+        replaceAt={c.at('L19', 'ném')}
+        out={c.end('L19') + 6}
+        x={640}
+        y={420}
+        size={120}
+        rotate={-3}
+      />
       <Vignette strength={0.5} />
+      <Sfx name="paper" at={c.at('L18')} volume={0.7} />
+      <Sfx name="scribble" at={c.at('L18', 'không')} volume={0.9} />
+      <Sfx name="hit" at={c.at('L19', 'ném')} volume={0.8} />
       <Sfx name="wind_loop" at={0} dur={cut} volume={0.2} fadeOut={10} />
       <Sfx name="clock_loop" at={0} dur={cut} volume={0.25} />
       <Sfx name="whoosh" at={cut - 8} volume={0.7} />
@@ -297,6 +315,17 @@ export const S13: React.FC = () => {
   const frame = useCurrentFrame();
   const ask = [c.at('L29', 2), c.end('L29')];
   const answer = c.at('L30', 'không');
+  const inset = c.at('L29', 'đêm');
+  const vanish = [5, 6, 7, 8].map((i) => c.at('L30', i));
+  vanish.push(vanish[3] + 5);
+  const closeAt = c.end('L30') + 8;
+  const ghosts: Blip[] = [
+    {theta: 40, r0: 250, r1: 230},
+    {theta: 58, r0: 300, r1: 280},
+    {theta: 75, r0: 220, r1: 205},
+    {theta: 95, r0: 320, r1: 300},
+    {theta: 120, r0: 260, r1: 245},
+  ];
   return (
     <AbsoluteFill>
       <Camera zoom={[1, 1.04]} x={35} y={45} duration={c.total} snaps={[{at: c.at('L30'), to: 1.3, x: 30, y: 38}]} handheld={0.3}>
@@ -330,8 +359,16 @@ export const S13: React.FC = () => {
         </HanoiRoom>
       </Camera>
       <DateStamp text="HÀ NỘI · 11/1995" at={c.at('L28', 'hà')} out={c.at('L30') - 4} corner="tr" />
-      <PunchText text="KHÔNG CÓ GÌ CẢ." at={answer} x={W / 2} y={190} size={110} color={C.white} rotate={0} />
       <Vignette strength={0.4} />
+      <CircleInset at={inset} out={closeAt} x={980} y={330} r={200} zoom={0.45} tail={[640, 610]}>
+        <Radar blips={ghosts} noise={0.3} morphAt={inset - 30} fadeAt={vanish} />
+      </CircleInset>
+      <Sfx name="pop" at={inset} volume={0.6} />
+      <Sfx name="radar_beep" at={inset + 4} volume={0.4} />
+      {vanish.map((v) => (
+        <Sfx key={v} name="tick" at={v} volume={0.55} />
+      ))}
+      <Sfx name="whoosh_short" at={closeAt} volume={0.4} />
       <Sfx name="ceiling_fan_loop" at={0} dur={c.total} volume={0.4} fadeIn={15} />
       <Sfx name="teacup" at={c.at('L28') + 10} volume={0.6} />
     </AbsoluteFill>

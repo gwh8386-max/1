@@ -169,6 +169,16 @@
     "duration": 0.5,
     "loop": false
   },
+  "scribble": {
+    "file": "sfx/scribble.wav",
+    "duration": 0.6,
+    "loop": false
+  },
+  "marker_draw": {
+    "file": "sfx/marker_draw.wav",
+    "duration": 1.6,
+    "loop": false
+  },
   "crowd_murmur_loop": {
     "file": "sfx/crowd_murmur_loop.wav",
     "duration": 15.0,
