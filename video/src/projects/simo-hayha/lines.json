@@ -1,0 +1,6911 @@
+{
+ "title": "The White Death",
+ "lang": "en",
+ "source": "voice",
+ "duration": 436.98,
+ "scenes": [
+  {
+   "id": "C01",
+   "title": "The last morning",
+   "meta": {
+    "visual": "evidence board in near-darkness; torn-paper map of Finland's eastern border, pin on the Kollaa River; a cut-out of a small figure in white lying in snow, rifle along his cheek",
+    "text": "stamp MARCH 6, 1940 · label KOLLAA RIVER, FINLAND",
+    "sfx": "wind through pines, snow creak, distant artillery",
+    "transition": "fade up from black"
+   },
+   "lines": [
+    "L01",
+    "L02",
+    "L03"
+   ],
+   "start": 0.0,
+   "end": 18.32
+  },
+  {
+   "id": "C02",
+   "title": "The hit",
+   "meta": {
+    "visual": "hard flash to white; the cut-out tilts and falls; two comic-style soldiers drag a body across the snow on a sled; red circle on the jaw of a profile sketch",
+    "text": "typed tag \"WOUNDED · MARCH 6\"",
+    "sfx": "single rifle crack, ringing silence, dragging sled",
+    "transition": "flash"
+   },
+   "lines": [
+    "L04",
+    "L05",
+    "L06"
+   ],
+   "start": 18.32,
+   "end": 30.26
+  },
+  {
+   "id": "C03",
+   "title": "The claim",
+   "meta": {
+    "visual": "camera follows red string to a tally board; tally marks pile up fast into a block reading 500+; a rifle diagram slides in, the empty space above the barrel circled in red with \"NO SCOPE\"",
+    "text": "500+ · ~98 DAYS · NO SCOPE",
+    "sfx": "rapid pencil scratches, counter ticks, stamp thud",
+    "transition": "whip-pan along the string"
+   },
+   "lines": [
+    "L07",
+    "L08",
+    "L09",
+    "L10"
+   ],
+   "start": 30.26,
+   "end": 54.16
+  },
+  {
+   "id": "C04",
+   "title": "The farmer",
+   "meta": {
+    "visual": "polaroid of young Simo pinned up; a hand-drawn farm, a cut-out of a hunter on skis; height ruler beside him stops at 1.52 m",
+    "text": "label RAUTJÄRVI · 1905 · ruler 5'3\" / 1.52 m",
+    "sfx": "soft room tone, birdsong, an axe on wood",
+    "transition": "zoom through the polaroid"
+   },
+   "lines": [
+    "L11",
+    "L12",
+    "L13",
+    "L14"
+   ],
+   "start": 54.16,
+   "end": 80.08
+  },
+  {
+   "id": "C05",
+   "title": "Invasion",
+   "meta": {
+    "visual": "map darkens; red arrows punch across the whole Finnish border; cut-out bombers drift over a tiny Helsinki",
+    "text": "stamp NOV 30, 1939 · \"NO DECLARATION OF WAR\"",
+    "sfx": "air-raid siren, bomber drone, distant blasts",
+    "transition": "hard cut on the siren"
+   },
+   "lines": [
+    "L15",
+    "L16",
+    "L17",
+    "L18"
+   ],
+   "start": 80.08,
+   "end": 107.0
+  },
+  {
+   "id": "C06",
+   "title": "Kollaa",
+   "meta": {
+    "visual": "camera slides north of Lake Ladoga; a road drawn in pencil, a small Finnish flag pinned beside it; red arrows bunch up against it",
+    "text": "label KOLLAA · INFANTRY REGIMENT 34 · 6TH COMPANY",
+    "sfx": "marching boots in snow, wind",
+    "transition": "pan along the string"
+   },
+   "lines": [
+    "L19",
+    "L20",
+    "L21"
+   ],
+   "start": 107.0,
+   "end": 124.68
+  },
+  {
+   "id": "C07",
+   "title": "Roads and forests",
+   "meta": {
+    "visual": "overhead map; a long red Soviet column of cut-out trucks and tanks jammed on a single pencil road; tiny white Finnish skiers slip out of the trees and cut the column into pieces, each piece circled like a woodpile",
+    "text": "label MOTTI = \"a stack of firewood\"",
+    "sfx": "idling engines, skis hissing on snow, a log pile clunk",
+    "transition": "zoom out to the overhead map"
+   },
+   "lines": [
+    "L22",
+    "L23",
+    "L24",
+    "L25"
+   ],
+   "start": 124.68,
+   "end": 152.89
+  },
+  {
+   "id": "C08",
+   "title": "The other side of the clearing",
+   "meta": {
+    "visual": "point of view from the Soviet line: white trees, white ground, a thermometer cut-out dropping to -40; a clock face shows daylight shrinking to a thin slice",
+    "text": "-40° · DAYLIGHT: ~6 HRS",
+    "sfx": "teeth chattering, ice cracking, very low drone",
+    "transition": "freeze, color drains, camera turns around"
+   },
+   "lines": [
+    "L26",
+    "L27",
+    "L28",
+    "L29"
+   ],
+   "start": 152.89,
+   "end": 175.6
+  },
+  {
+   "id": "C09",
+   "title": "Why no scope",
+   "meta": {
+    "visual": "back on the board; a scope cut-out catches a sun flare, then fogs over with frost; a profile sketch of a head rising a few inches, red arrow marks the gap",
+    "text": "GLARE · FROST · HEAD UP 3–4\"",
+    "sfx": "glint chime, frost crackle, marker squeak",
+    "transition": "whip-pan back to the board"
+   },
+   "lines": [
+    "L30",
+    "L31",
+    "L32",
+    "L33",
+    "L34"
+   ],
+   "start": 175.6,
+   "end": 209.24
+  },
+  {
+   "id": "C10",
+   "title": "The tricks",
+   "meta": {
+    "visual": "cross-section of a snow position; a hand pats snow into a bank, water poured over it turns to ice; a cartoon puff of breath gets crossed out; a sun and moon swing over the figure",
+    "text": "ICED SNOWBANK · NO BREATH · STILL",
+    "sfx": "snow packing, water trickle freezing, clock ticking",
+    "transition": "zoom through the map into a cross-section"
+   },
+   "lines": [
+    "L35",
+    "L36",
+    "L37",
+    "L38",
+    "L39"
+   ],
+   "start": 209.24,
+   "end": 234.99
+  },
+  {
+   "id": "C11",
+   "title": "The captain",
+   "meta": {
+    "visual": "polaroid of a broad-shouldered officer with a big grin; a cut-out French Foreign Legion kepi drops onto his head; a stamp \"TERROR OF MOROCCO\"; a small slip of paper passes from his hand to Simo",
+    "text": "CAPT. AARNE JUUTILAINEN · \"THE TERROR OF MOROCCO\"",
+    "sfx": "march snare, paper slip",
+    "transition": "whip-pan along the string"
+   },
+   "lines": [
+    "L40",
+    "L41",
+    "L42"
+   ],
+   "start": 234.99,
+   "end": 256.23
+  },
+  {
+   "id": "C12",
+   "title": "The hunt for the hunter",
+   "meta": {
+    "visual": "red silhouettes of counter-snipers creep into the woods and vanish one by one; then the map fills with artillery blast stars; a coat cut-out with torn fabric at the back",
+    "text": "COUNTER-SNIPERS · ARTILLERY",
+    "sfx": "footsteps that stop, artillery salvo, cloth tearing",
+    "transition": "cut on the first shell"
+   },
+   "lines": [
+    "L43",
+    "L44",
+    "L45",
+    "L46",
+    "L47"
+   ],
+   "start": 256.23,
+   "end": 276.71
+  },
+  {
+   "id": "C13",
+   "title": "Who was counting?",
+   "meta": {
+    "visual": "three paper documents pinned side by side: a typed army report, a company ledger, a handwritten diary page; each with its own number; red string links them with question marks",
+    "text": "219 (FEB 17, 1940) · ~500 · +200?",
+    "sfx": "typewriter, page turns, pen scratch",
+    "transition": "pan along the board"
+   },
+   "lines": [
+    "L48",
+    "L49",
+    "L50",
+    "L51",
+    "L52",
+    "L53",
+    "L54",
+    "L55",
+    "L56"
+   ],
+   "start": 276.71,
+   "end": 331.48
+  },
+  {
+   "id": "C14",
+   "title": "The nickname",
+   "meta": {
+    "visual": "a Soviet-style leaflet and a Finnish newspaper clipping slide in; the words \"WHITE DEATH\" are cut out of the paper and pinned between them with a question mark",
+    "text": "\"WHITE DEATH\" · БЕЛАЯ СМЕРТЬ?",
+    "sfx": "newspaper rustle, scissors",
+    "transition": "cut"
+   },
+   "lines": [
+    "L57",
+    "L58"
+   ],
+   "start": 331.48,
+   "end": 344.46
+  },
+  {
+   "id": "C15",
+   "title": "March 13",
+   "meta": {
+    "visual": "return to the opening cut-out on the sled; a calendar tears from MAR 6 to MAR 13; a hospital bed sketch; the map of Finland loses a strip of Karelia in red hatching",
+    "text": "MAR 13, 1940 · PEACE SIGNED · ~10% OF TERRITORY CEDED",
+    "sfx": "heartbeat monitor, calendar pages, a distant bell",
+    "transition": "blur to the calendar"
+   },
+   "lines": [
+    "L59",
+    "L60",
+    "L61",
+    "L62",
+    "L63",
+    "L64",
+    "L65"
+   ],
+   "start": 344.46,
+   "end": 387.11
+  },
+  {
+   "id": "C16",
+   "title": "After the war",
+   "meta": {
+    "visual": "X-ray style sketch of a jaw with stitches; a rank insignia flips from corporal to second lieutenant; cartoon Simo with hunting dogs, a moose silhouette in the trees",
+    "text": "CORPORAL → 2ND LIEUTENANT",
+    "sfx": "soft piano note, dogs barking, forest ambience",
+    "transition": "iris out on the hospital sketch"
+   },
+   "lines": [
+    "L66",
+    "L67",
+    "L68",
+    "L69",
+    "L70"
+   ],
+   "start": 387.11,
+   "end": 416.21
+  },
+  {
+   "id": "C17",
+   "title": "The clearing",
+   "meta": {
+    "visual": "camera pulls back across the whole board, string by string, ending on the empty snowy clearing from Scene 07; the small white figure is gone, only an iced snowbank remains",
+    "text": "SIMO HÄYHÄ · 1905–2002 · title stamp THE WHITE DEATH",
+    "sfx": "wind, one distant rifle crack, silence",
+    "transition": "final pull-back, fade to white"
+   },
+   "lines": [
+    "L71",
+    "L72",
+    "L73"
+   ],
+   "start": 416.21,
+   "end": 436.98
+  }
+ ],
+ "lines": [
+  {
+   "id": "L01",
+   "scene": "C01",
+   "text": "March 6th, 1940. A frozen forest near the Kollaa River, in eastern Finland.",
+   "dir": "low, close to the mic, unhurried",
+   "pause": "",
+   "start": 0.65,
+   "end": 6.95,
+   "words": [
+    {
+     "w": "March",
+     "s": 0.65,
+     "e": 0.93
+    },
+    {
+     "w": "6th,",
+     "s": 0.93,
+     "e": 1.21
+    },
+    {
+     "w": "1940.",
+     "s": 1.389,
+     "e": 2.79
+    },
+    {
+     "w": "A",
+     "s": 3.43,
+     "e": 3.642
+    },
+    {
+     "w": "frozen",
+     "s": 3.642,
+     "e": 4.065
+    },
+    {
+     "w": "forest",
+     "s": 4.065,
+     "e": 4.488
+    },
+    {
+     "w": "near",
+     "s": 4.488,
+     "e": 4.699
+    },
+    {
+     "w": "the",
+     "s": 4.699,
+     "e": 4.911
+    },
+    {
+     "w": "Kollaa",
+     "s": 4.911,
+     "e": 5.334
+    },
+    {
+     "w": "River,",
+     "s": 5.334,
+     "e": 5.757
+    },
+    {
+     "w": "in",
+     "s": 5.892,
+     "e": 6.104
+    },
+    {
+     "w": "eastern",
+     "s": 6.104,
+     "e": 6.527
+    },
+    {
+     "w": "Finland.",
+     "s": 6.527,
+     "e": 6.95,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 3,
+     "s": 3.43
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "scene": "C01",
+   "text": "A small man in a white smock lies in the snow, his cheek pressed against an old bolt-action rifle.",
+   "dir": "quiet, steady",
+   "pause": "",
+   "start": 7.5,
+   "end": 13.53,
+   "words": [
+    {
+     "w": "A",
+     "s": 7.5,
+     "e": 7.755
+    },
+    {
+     "w": "small",
+     "s": 7.755,
+     "e": 8.01
+    },
+    {
+     "w": "man",
+     "s": 8.01,
+     "e": 8.265
+    },
+    {
+     "w": "in",
+     "s": 8.265,
+     "e": 8.52
+    },
+    {
+     "w": "a",
+     "s": 8.52,
+     "e": 8.775
+    },
+    {
+     "w": "white",
+     "s": 8.775,
+     "e": 9.03
+    },
+    {
+     "w": "smock",
+     "s": 9.03,
+     "e": 9.286
+    },
+    {
+     "w": "lies",
+     "s": 9.286,
+     "e": 9.541
+    },
+    {
+     "w": "in",
+     "s": 9.541,
+     "e": 9.796
+    },
+    {
+     "w": "the",
+     "s": 9.796,
+     "e": 10.051
+    },
+    {
+     "w": "snow,",
+     "s": 10.051,
+     "e": 10.306
+    },
+    {
+     "w": "his",
+     "s": 10.469,
+     "e": 10.724
+    },
+    {
+     "w": "cheek",
+     "s": 10.724,
+     "e": 10.979
+    },
+    {
+     "w": "pressed",
+     "s": 10.979,
+     "e": 11.234
+    },
+    {
+     "w": "against",
+     "s": 11.234,
+     "e": 11.744
+    },
+    {
+     "w": "an",
+     "s": 11.744,
+     "e": 12.0
+    },
+    {
+     "w": "old",
+     "s": 12.0,
+     "e": 12.255
+    },
+    {
+     "w": "bolt-action",
+     "s": 12.255,
+     "e": 13.02
+    },
+    {
+     "w": "rifle.",
+     "s": 13.02,
+     "e": 13.53
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L03",
+   "scene": "C01",
+   "text": "Somewhere across the clearing, a Soviet soldier sees him first.",
+   "dir": "tense, a touch faster",
+   "pause": "pause",
+   "start": 14.08,
+   "end": 17.64,
+   "words": [
+    {
+     "w": "Somewhere",
+     "s": 14.08,
+     "e": 14.722
+    },
+    {
+     "w": "across",
+     "s": 14.722,
+     "e": 15.15
+    },
+    {
+     "w": "the",
+     "s": 15.15,
+     "e": 15.364
+    },
+    {
+     "w": "clearing,",
+     "s": 15.364,
+     "e": 15.792
+    },
+    {
+     "w": "a",
+     "s": 15.928,
+     "e": 16.142
+    },
+    {
+     "w": "Soviet",
+     "s": 16.142,
+     "e": 16.57
+    },
+    {
+     "w": "soldier",
+     "s": 16.57,
+     "e": 16.998
+    },
+    {
+     "w": "sees",
+     "s": 16.998,
+     "e": 17.212
+    },
+    {
+     "w": "him",
+     "s": 17.212,
+     "e": 17.426
+    },
+    {
+     "w": "first.",
+     "s": 17.426,
+     "e": 17.64,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L04",
+   "scene": "C02",
+   "text": "The bullet hits his lower jaw.",
+   "dir": "sharp, then dropping away",
+   "pause": "beat",
+   "start": 18.67,
+   "end": 20.36,
+   "words": [
+    {
+     "w": "The",
+     "s": 18.67,
+     "e": 18.881
+    },
+    {
+     "w": "bullet",
+     "s": 18.881,
+     "e": 19.304
+    },
+    {
+     "w": "hits",
+     "s": 19.304,
+     "e": 19.515
+    },
+    {
+     "w": "his",
+     "s": 19.515,
+     "e": 19.726
+    },
+    {
+     "w": "lower",
+     "s": 19.726,
+     "e": 20.149
+    },
+    {
+     "w": "jaw.",
+     "s": 20.149,
+     "e": 20.36,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L05",
+   "scene": "C02",
+   "text": "His comrades drag him back unconscious. One of them later says half his face was gone.",
+   "dir": "quieter",
+   "pause": "",
+   "start": 20.94,
+   "end": 26.01,
+   "words": [
+    {
+     "w": "His",
+     "s": 20.94,
+     "e": 21.181
+    },
+    {
+     "w": "comrades",
+     "s": 21.181,
+     "e": 21.663
+    },
+    {
+     "w": "drag",
+     "s": 21.663,
+     "e": 21.904
+    },
+    {
+     "w": "him",
+     "s": 21.904,
+     "e": 22.146
+    },
+    {
+     "w": "back",
+     "s": 22.146,
+     "e": 22.387
+    },
+    {
+     "w": "unconscious.",
+     "s": 22.387,
+     "e": 23.11
+    },
+    {
+     "w": "One",
+     "s": 23.64,
+     "e": 23.855
+    },
+    {
+     "w": "of",
+     "s": 23.855,
+     "e": 24.071
+    },
+    {
+     "w": "them",
+     "s": 24.071,
+     "e": 24.286
+    },
+    {
+     "w": "later",
+     "s": 24.286,
+     "e": 24.717
+    },
+    {
+     "w": "says",
+     "s": 24.717,
+     "e": 24.933
+    },
+    {
+     "w": "half",
+     "s": 24.933,
+     "e": 25.148
+    },
+    {
+     "w": "his",
+     "s": 25.148,
+     "e": 25.364
+    },
+    {
+     "w": "face",
+     "s": 25.364,
+     "e": 25.579
+    },
+    {
+     "w": "was",
+     "s": 25.579,
+     "e": 25.795
+    },
+    {
+     "w": "gone.",
+     "s": 25.795,
+     "e": 26.01,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 6,
+     "s": 23.64
+    }
+   ]
+  },
+  {
+   "id": "L06",
+   "scene": "C02",
+   "text": "By then, he'd been on this front for about ninety-eight days.",
+   "dir": "dry, measured",
+   "pause": "",
+   "start": 26.56,
+   "end": 29.93,
+   "words": [
+    {
+     "w": "By",
+     "s": 26.56,
+     "e": 26.763
+    },
+    {
+     "w": "then,",
+     "s": 26.763,
+     "e": 26.965
+    },
+    {
+     "w": "he'd",
+     "s": 27.095,
+     "e": 27.5
+    },
+    {
+     "w": "been",
+     "s": 27.5,
+     "e": 27.702
+    },
+    {
+     "w": "on",
+     "s": 27.702,
+     "e": 27.905
+    },
+    {
+     "w": "this",
+     "s": 27.905,
+     "e": 28.107
+    },
+    {
+     "w": "front",
+     "s": 28.107,
+     "e": 28.31
+    },
+    {
+     "w": "for",
+     "s": 28.31,
+     "e": 28.512
+    },
+    {
+     "w": "about",
+     "s": 28.512,
+     "e": 28.917
+    },
+    {
+     "w": "ninety-eight",
+     "s": 28.917,
+     "e": 29.727
+    },
+    {
+     "w": "days.",
+     "s": 29.727,
+     "e": 29.93
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L07",
+   "scene": "C03",
+   "text": "In that time, depending on who's counting, he'd killed more than five hundred men.",
+   "dir": "building",
+   "pause": "",
+   "start": 30.61,
+   "end": 35.36,
+   "words": [
+    {
+     "w": "In",
+     "s": 30.61,
+     "e": 30.844
+    },
+    {
+     "w": "that",
+     "s": 30.844,
+     "e": 31.078
+    },
+    {
+     "w": "time,",
+     "s": 31.078,
+     "e": 31.313
+    },
+    {
+     "w": "depending",
+     "s": 31.463,
+     "e": 32.165
+    },
+    {
+     "w": "on",
+     "s": 32.165,
+     "e": 32.399
+    },
+    {
+     "w": "who's",
+     "s": 32.399,
+     "e": 32.868
+    },
+    {
+     "w": "counting,",
+     "s": 32.868,
+     "e": 33.336
+    },
+    {
+     "w": "he'd",
+     "s": 33.486,
+     "e": 33.955
+    },
+    {
+     "w": "killed",
+     "s": 33.955,
+     "e": 34.189
+    },
+    {
+     "w": "more",
+     "s": 34.189,
+     "e": 34.423,
+     "emph": true
+    },
+    {
+     "w": "than",
+     "s": 34.423,
+     "e": 34.657,
+     "emph": true
+    },
+    {
+     "w": "five",
+     "s": 34.657,
+     "e": 34.892,
+     "emph": true
+    },
+    {
+     "w": "hundred",
+     "s": 34.892,
+     "e": 35.126,
+     "emph": true
+    },
+    {
+     "w": "men.",
+     "s": 35.126,
+     "e": 35.36
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L08",
+   "scene": "C03",
+   "text": "With no telescopic sight. Just the iron sights on his rifle, and a lot of patience.",
+   "dir": "incredulous, slower",
+   "pause": "",
+   "start": 35.83,
+   "end": 41.87,
+   "words": [
+    {
+     "w": "With",
+     "s": 35.83,
+     "e": 36.117
+    },
+    {
+     "w": "no",
+     "s": 36.117,
+     "e": 36.404
+    },
+    {
+     "w": "telescopic",
+     "s": 36.404,
+     "e": 37.553
+    },
+    {
+     "w": "sight.",
+     "s": 37.553,
+     "e": 37.84
+    },
+    {
+     "w": "Just",
+     "s": 38.26,
+     "e": 38.457
+    },
+    {
+     "w": "the",
+     "s": 38.457,
+     "e": 38.654
+    },
+    {
+     "w": "iron",
+     "s": 38.654,
+     "e": 39.048
+    },
+    {
+     "w": "sights",
+     "s": 39.048,
+     "e": 39.245
+    },
+    {
+     "w": "on",
+     "s": 39.245,
+     "e": 39.443
+    },
+    {
+     "w": "his",
+     "s": 39.443,
+     "e": 39.64
+    },
+    {
+     "w": "rifle,",
+     "s": 39.64,
+     "e": 40.034
+    },
+    {
+     "w": "and",
+     "s": 40.52,
+     "e": 40.745
+    },
+    {
+     "w": "a",
+     "s": 40.745,
+     "e": 40.97
+    },
+    {
+     "w": "lot",
+     "s": 40.97,
+     "e": 41.195
+    },
+    {
+     "w": "of",
+     "s": 41.195,
+     "e": 41.42
+    },
+    {
+     "w": "patience.",
+     "s": 41.42,
+     "e": 41.87,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 4,
+     "s": 38.26
+    },
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 11,
+     "s": 40.52
+    }
+   ]
+  },
+  {
+   "id": "L09",
+   "scene": "C03",
+   "text": "His name was Simo Häyhä.",
+   "dir": "low, curious",
+   "pause": "pause",
+   "start": 42.42,
+   "end": 44.4,
+   "words": [
+    {
+     "w": "His",
+     "s": 42.42,
+     "e": 42.75
+    },
+    {
+     "w": "name",
+     "s": 42.75,
+     "e": 43.08
+    },
+    {
+     "w": "was",
+     "s": 43.08,
+     "e": 43.41
+    },
+    {
+     "w": "Simo",
+     "s": 43.41,
+     "e": 44.07
+    },
+    {
+     "w": "Häyhä.",
+     "s": 44.07,
+     "e": 44.4
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L10",
+   "scene": "C03",
+   "text": "So how does a farmer with an old rifle end up with the highest sniper count of any war? And is that number even real?",
+   "dir": "steady, leaning in",
+   "pause": "long",
+   "start": 45.25,
+   "end": 52.73,
+   "words": [
+    {
+     "w": "So",
+     "s": 45.25,
+     "e": 45.48
+    },
+    {
+     "w": "how",
+     "s": 45.48,
+     "e": 45.709
+    },
+    {
+     "w": "does",
+     "s": 45.709,
+     "e": 45.939
+    },
+    {
+     "w": "a",
+     "s": 45.939,
+     "e": 46.168
+    },
+    {
+     "w": "farmer",
+     "s": 46.168,
+     "e": 46.627
+    },
+    {
+     "w": "with",
+     "s": 46.627,
+     "e": 46.857
+    },
+    {
+     "w": "an",
+     "s": 46.857,
+     "e": 47.087
+    },
+    {
+     "w": "old",
+     "s": 47.087,
+     "e": 47.316
+    },
+    {
+     "w": "rifle",
+     "s": 47.316,
+     "e": 47.775
+    },
+    {
+     "w": "end",
+     "s": 47.775,
+     "e": 48.005
+    },
+    {
+     "w": "up",
+     "s": 48.005,
+     "e": 48.234
+    },
+    {
+     "w": "with",
+     "s": 48.234,
+     "e": 48.464
+    },
+    {
+     "w": "the",
+     "s": 48.464,
+     "e": 48.693
+    },
+    {
+     "w": "highest",
+     "s": 48.693,
+     "e": 49.153
+    },
+    {
+     "w": "sniper",
+     "s": 49.153,
+     "e": 49.612
+    },
+    {
+     "w": "count",
+     "s": 49.612,
+     "e": 49.841
+    },
+    {
+     "w": "of",
+     "s": 49.841,
+     "e": 50.071
+    },
+    {
+     "w": "any",
+     "s": 50.071,
+     "e": 50.3
+    },
+    {
+     "w": "war?",
+     "s": 50.3,
+     "e": 50.53
+    },
+    {
+     "w": "And",
+     "s": 51.11,
+     "e": 51.313
+    },
+    {
+     "w": "is",
+     "s": 51.313,
+     "e": 51.515
+    },
+    {
+     "w": "that",
+     "s": 51.515,
+     "e": 51.718
+    },
+    {
+     "w": "number",
+     "s": 51.718,
+     "e": 52.123
+    },
+    {
+     "w": "even",
+     "s": 52.123,
+     "e": 52.528
+    },
+    {
+     "w": "real?",
+     "s": 52.528,
+     "e": 52.73,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 19,
+     "s": 51.11
+    },
+    {
+     "kind": "dir",
+     "text": "quieter",
+     "word": 19,
+     "s": 51.11
+    }
+   ]
+  },
+  {
+   "id": "L11",
+   "scene": "C04",
+   "text": "Simo was born in 1905 in Rautjärvi, a farming parish a few miles from the Russian border.",
+   "dir": "warmer, unhurried",
+   "pause": "",
+   "start": 54.51,
+   "end": 60.51,
+   "words": [
+    {
+     "w": "Simo",
+     "s": 54.51,
+     "e": 54.944
+    },
+    {
+     "w": "was",
+     "s": 54.944,
+     "e": 55.161
+    },
+    {
+     "w": "born",
+     "s": 55.161,
+     "e": 55.378
+    },
+    {
+     "w": "in",
+     "s": 55.378,
+     "e": 55.595
+    },
+    {
+     "w": "1905",
+     "s": 55.595,
+     "e": 56.681
+    },
+    {
+     "w": "in",
+     "s": 56.681,
+     "e": 56.898
+    },
+    {
+     "w": "Rautjärvi,",
+     "s": 56.898,
+     "e": 57.332
+    },
+    {
+     "w": "a",
+     "s": 57.471,
+     "e": 57.688
+    },
+    {
+     "w": "farming",
+     "s": 57.688,
+     "e": 58.122
+    },
+    {
+     "w": "parish",
+     "s": 58.122,
+     "e": 58.556
+    },
+    {
+     "w": "a",
+     "s": 58.556,
+     "e": 58.773
+    },
+    {
+     "w": "few",
+     "s": 58.773,
+     "e": 58.99
+    },
+    {
+     "w": "miles",
+     "s": 58.99,
+     "e": 59.208
+    },
+    {
+     "w": "from",
+     "s": 59.208,
+     "e": 59.425
+    },
+    {
+     "w": "the",
+     "s": 59.425,
+     "e": 59.642
+    },
+    {
+     "w": "Russian",
+     "s": 59.642,
+     "e": 60.076
+    },
+    {
+     "w": "border.",
+     "s": 60.076,
+     "e": 60.51,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L12",
+   "scene": "C04",
+   "text": "He stood about five foot three. He farmed, he hunted, and he didn't talk much.",
+   "dir": "wry smile",
+   "pause": "",
+   "start": 61.06,
+   "end": 65.93,
+   "words": [
+    {
+     "w": "He",
+     "s": 61.06,
+     "e": 61.274
+    },
+    {
+     "w": "stood",
+     "s": 61.274,
+     "e": 61.489
+    },
+    {
+     "w": "about",
+     "s": 61.489,
+     "e": 61.917
+    },
+    {
+     "w": "five",
+     "s": 61.917,
+     "e": 62.131
+    },
+    {
+     "w": "foot",
+     "s": 62.131,
+     "e": 62.346
+    },
+    {
+     "w": "three.",
+     "s": 62.346,
+     "e": 62.56
+    },
+    {
+     "w": "He",
+     "s": 63.06,
+     "e": 63.314
+    },
+    {
+     "w": "farmed,",
+     "s": 63.314,
+     "e": 63.569
+    },
+    {
+     "w": "he",
+     "s": 63.732,
+     "e": 63.986
+    },
+    {
+     "w": "hunted,",
+     "s": 63.986,
+     "e": 64.241
+    },
+    {
+     "w": "and",
+     "s": 64.403,
+     "e": 64.658
+    },
+    {
+     "w": "he",
+     "s": 64.658,
+     "e": 64.912
+    },
+    {
+     "w": "didn't",
+     "s": 64.912,
+     "e": 65.421
+    },
+    {
+     "w": "talk",
+     "s": 65.421,
+     "e": 65.676
+    },
+    {
+     "w": "much.",
+     "s": 65.676,
+     "e": 65.93,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 6,
+     "s": 63.06
+    }
+   ]
+  },
+  {
+   "id": "L13",
+   "scene": "C04",
+   "text": "At seventeen he joined the Civil Guard, Finland's volunteer militia, and started winning shooting competitions.",
+   "dir": "matter-of-fact",
+   "pause": "",
+   "start": 66.47,
+   "end": 74.59,
+   "words": [
+    {
+     "w": "At",
+     "s": 66.47,
+     "e": 66.738
+    },
+    {
+     "w": "seventeen",
+     "s": 66.738,
+     "e": 67.543
+    },
+    {
+     "w": "he",
+     "s": 67.543,
+     "e": 67.811
+    },
+    {
+     "w": "joined",
+     "s": 67.811,
+     "e": 68.079
+    },
+    {
+     "w": "the",
+     "s": 68.079,
+     "e": 68.347
+    },
+    {
+     "w": "Civil",
+     "s": 68.347,
+     "e": 68.883
+    },
+    {
+     "w": "Guard,",
+     "s": 68.883,
+     "e": 69.152
+    },
+    {
+     "w": "Finland's",
+     "s": 69.323,
+     "e": 70.128
+    },
+    {
+     "w": "volunteer",
+     "s": 70.128,
+     "e": 70.932
+    },
+    {
+     "w": "militia,",
+     "s": 70.932,
+     "e": 71.737
+    },
+    {
+     "w": "and",
+     "s": 71.908,
+     "e": 72.177
+    },
+    {
+     "w": "started",
+     "s": 72.177,
+     "e": 72.445
+    },
+    {
+     "w": "winning",
+     "s": 72.445,
+     "e": 72.981
+    },
+    {
+     "w": "shooting",
+     "s": 72.981,
+     "e": 73.517,
+     "emph": true
+    },
+    {
+     "w": "competitions.",
+     "s": 73.517,
+     "e": 74.59
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L14",
+   "scene": "C04",
+   "text": "At paper targets, mostly. That changed in the winter of 1939.",
+   "dir": "dry",
+   "pause": "pause",
+   "start": 75.14,
+   "end": 79.4,
+   "words": [
+    {
+     "w": "At",
+     "s": 75.14,
+     "e": 75.304
+    },
+    {
+     "w": "paper",
+     "s": 75.304,
+     "e": 75.631
+    },
+    {
+     "w": "targets,",
+     "s": 75.631,
+     "e": 75.958
+    },
+    {
+     "w": "mostly.",
+     "s": 76.063,
+     "e": 76.39
+    },
+    {
+     "w": "That",
+     "s": 76.83,
+     "e": 77.044
+    },
+    {
+     "w": "changed",
+     "s": 77.044,
+     "e": 77.258
+    },
+    {
+     "w": "in",
+     "s": 77.258,
+     "e": 77.473
+    },
+    {
+     "w": "the",
+     "s": 77.473,
+     "e": 77.687
+    },
+    {
+     "w": "winter",
+     "s": 77.687,
+     "e": 78.115
+    },
+    {
+     "w": "of",
+     "s": 78.115,
+     "e": 78.329
+    },
+    {
+     "w": "1939.",
+     "s": 78.329,
+     "e": 79.4,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 4,
+     "s": 76.83
+    },
+    {
+     "kind": "dir",
+     "text": "quieter",
+     "word": 4,
+     "s": 76.83
+    }
+   ]
+  },
+  {
+   "id": "L15",
+   "scene": "C05",
+   "text": "On November 30th, the Soviet Union invades Finland.",
+   "dir": "urgent, picking up speed",
+   "pause": "",
+   "start": 80.43,
+   "end": 83.71,
+   "words": [
+    {
+     "w": "On",
+     "s": 80.43,
+     "e": 80.633
+    },
+    {
+     "w": "November",
+     "s": 80.633,
+     "e": 81.243
+    },
+    {
+     "w": "30th,",
+     "s": 81.243,
+     "e": 81.751
+    },
+    {
+     "w": "the",
+     "s": 81.881,
+     "e": 82.084
+    },
+    {
+     "w": "Soviet",
+     "s": 82.084,
+     "e": 82.491
+    },
+    {
+     "w": "Union",
+     "s": 82.491,
+     "e": 82.897
+    },
+    {
+     "w": "invades",
+     "s": 82.897,
+     "e": 83.304
+    },
+    {
+     "w": "Finland.",
+     "s": 83.304,
+     "e": 83.71,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L16",
+   "scene": "C05",
+   "text": "No declaration of war. Bombs on Helsinki on day one.",
+   "dir": "punchy",
+   "pause": "",
+   "start": 84.05,
+   "end": 87.94,
+   "words": [
+    {
+     "w": "No",
+     "s": 84.05,
+     "e": 84.259
+    },
+    {
+     "w": "declaration",
+     "s": 84.259,
+     "e": 85.093
+    },
+    {
+     "w": "of",
+     "s": 85.093,
+     "e": 85.301
+    },
+    {
+     "w": "war.",
+     "s": 85.301,
+     "e": 85.51
+    },
+    {
+     "w": "Bombs",
+     "s": 85.75,
+     "e": 86.024
+    },
+    {
+     "w": "on",
+     "s": 86.024,
+     "e": 86.297
+    },
+    {
+     "w": "Helsinki",
+     "s": 86.297,
+     "e": 87.119,
+     "emph": true
+    },
+    {
+     "w": "on",
+     "s": 87.119,
+     "e": 87.392
+    },
+    {
+     "w": "day",
+     "s": 87.392,
+     "e": 87.666
+    },
+    {
+     "w": "one.",
+     "s": 87.666,
+     "e": 87.94
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 4,
+     "s": 85.75
+    }
+   ]
+  },
+  {
+   "id": "L17",
+   "scene": "C05",
+   "text": "The math looks hopeless. Finland has under four million people. The Soviet Union has around one hundred seventy million.",
+   "dir": "punchy, hit every number",
+   "pause": "",
+   "start": 88.37,
+   "end": 95.36,
+   "words": [
+    {
+     "w": "The",
+     "s": 88.37,
+     "e": 88.617
+    },
+    {
+     "w": "math",
+     "s": 88.617,
+     "e": 88.863
+    },
+    {
+     "w": "looks",
+     "s": 88.863,
+     "e": 89.11
+    },
+    {
+     "w": "hopeless.",
+     "s": 89.11,
+     "e": 89.85
+    },
+    {
+     "w": "Finland",
+     "s": 90.07,
+     "e": 90.488
+    },
+    {
+     "w": "has",
+     "s": 90.488,
+     "e": 90.697
+    },
+    {
+     "w": "under",
+     "s": 90.697,
+     "e": 91.115
+    },
+    {
+     "w": "four",
+     "s": 91.115,
+     "e": 91.324
+    },
+    {
+     "w": "million",
+     "s": 91.324,
+     "e": 91.742
+    },
+    {
+     "w": "people.",
+     "s": 91.742,
+     "e": 92.16
+    },
+    {
+     "w": "The",
+     "s": 92.4,
+     "e": 92.597
+    },
+    {
+     "w": "Soviet",
+     "s": 92.597,
+     "e": 92.992
+    },
+    {
+     "w": "Union",
+     "s": 92.992,
+     "e": 93.387
+    },
+    {
+     "w": "has",
+     "s": 93.387,
+     "e": 93.584
+    },
+    {
+     "w": "around",
+     "s": 93.584,
+     "e": 93.979
+    },
+    {
+     "w": "one",
+     "s": 93.979,
+     "e": 94.176,
+     "emph": true
+    },
+    {
+     "w": "hundred",
+     "s": 94.176,
+     "e": 94.373,
+     "emph": true
+    },
+    {
+     "w": "seventy",
+     "s": 94.373,
+     "e": 94.965,
+     "emph": true
+    },
+    {
+     "w": "million.",
+     "s": 94.965,
+     "e": 95.36
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 4,
+     "s": 90.07
+    },
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 10,
+     "s": 92.4
+    }
+   ]
+  },
+  {
+   "id": "L18",
+   "scene": "C05",
+   "text": "Moscow plans for a short war. There's a story, maybe too good to be true, that some Red Army units were warned not to march into Sweden by mistake.",
+   "dir": "dry, deadpan",
+   "pause": "pause",
+   "start": 95.88,
+   "end": 106.32,
+   "words": [
+    {
+     "w": "Moscow",
+     "s": 95.88,
+     "e": 96.737
+    },
+    {
+     "w": "plans",
+     "s": 96.737,
+     "e": 97.166
+    },
+    {
+     "w": "for",
+     "s": 97.166,
+     "e": 97.594
+    },
+    {
+     "w": "a",
+     "s": 97.594,
+     "e": 98.023
+    },
+    {
+     "w": "short",
+     "s": 98.023,
+     "e": 98.451
+    },
+    {
+     "w": "war.",
+     "s": 98.451,
+     "e": 98.88
+    },
+    {
+     "w": "There's",
+     "s": 99.46,
+     "e": 99.899
+    },
+    {
+     "w": "a",
+     "s": 99.899,
+     "e": 100.118
+    },
+    {
+     "w": "story,",
+     "s": 100.118,
+     "e": 100.557
+    },
+    {
+     "w": "maybe",
+     "s": 100.697,
+     "e": 100.916
+    },
+    {
+     "w": "too",
+     "s": 100.916,
+     "e": 101.136
+    },
+    {
+     "w": "good",
+     "s": 101.136,
+     "e": 101.355
+    },
+    {
+     "w": "to",
+     "s": 101.355,
+     "e": 101.574
+    },
+    {
+     "w": "be",
+     "s": 101.574,
+     "e": 101.793
+    },
+    {
+     "w": "true,",
+     "s": 101.793,
+     "e": 102.013
+    },
+    {
+     "w": "that",
+     "s": 102.153,
+     "e": 102.372
+    },
+    {
+     "w": "some",
+     "s": 102.372,
+     "e": 102.592
+    },
+    {
+     "w": "Red",
+     "s": 102.592,
+     "e": 102.811
+    },
+    {
+     "w": "Army",
+     "s": 102.811,
+     "e": 103.25
+    },
+    {
+     "w": "units",
+     "s": 103.25,
+     "e": 103.688
+    },
+    {
+     "w": "were",
+     "s": 103.688,
+     "e": 103.908
+    },
+    {
+     "w": "warned",
+     "s": 103.908,
+     "e": 104.127
+    },
+    {
+     "w": "not",
+     "s": 104.127,
+     "e": 104.346
+    },
+    {
+     "w": "to",
+     "s": 104.346,
+     "e": 104.566
+    },
+    {
+     "w": "march",
+     "s": 104.566,
+     "e": 104.785
+    },
+    {
+     "w": "into",
+     "s": 104.785,
+     "e": 105.223
+    },
+    {
+     "w": "Sweden",
+     "s": 105.223,
+     "e": 105.662,
+     "emph": true
+    },
+    {
+     "w": "by",
+     "s": 105.662,
+     "e": 105.881
+    },
+    {
+     "w": "mistake.",
+     "s": 105.881,
+     "e": 106.32
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 6,
+     "s": 99.46
+    }
+   ]
+  },
+  {
+   "id": "L19",
+   "scene": "C06",
+   "text": "Simo's company, part of Infantry Regiment 34, is sent to the Kollaa River, north of Lake Ladoga.",
+   "dir": "low",
+   "pause": "",
+   "start": 107.35,
+   "end": 114.24,
+   "words": [
+    {
+     "w": "Simo's",
+     "s": 107.35,
+     "e": 107.988
+    },
+    {
+     "w": "company,",
+     "s": 107.988,
+     "e": 108.625
+    },
+    {
+     "w": "part",
+     "s": 108.761,
+     "e": 108.974
+    },
+    {
+     "w": "of",
+     "s": 108.974,
+     "e": 109.186
+    },
+    {
+     "w": "Infantry",
+     "s": 109.186,
+     "e": 109.824
+    },
+    {
+     "w": "Regiment",
+     "s": 109.824,
+     "e": 110.461
+    },
+    {
+     "w": "34,",
+     "s": 110.461,
+     "e": 110.993
+    },
+    {
+     "w": "is",
+     "s": 111.129,
+     "e": 111.341
+    },
+    {
+     "w": "sent",
+     "s": 111.341,
+     "e": 111.554
+    },
+    {
+     "w": "to",
+     "s": 111.554,
+     "e": 111.766
+    },
+    {
+     "w": "the",
+     "s": 111.766,
+     "e": 111.979
+    },
+    {
+     "w": "Kollaa",
+     "s": 111.979,
+     "e": 112.404
+    },
+    {
+     "w": "River,",
+     "s": 112.404,
+     "e": 112.829
+    },
+    {
+     "w": "north",
+     "s": 112.965,
+     "e": 113.177
+    },
+    {
+     "w": "of",
+     "s": 113.177,
+     "e": 113.39
+    },
+    {
+     "w": "Lake",
+     "s": 113.39,
+     "e": 113.602
+    },
+    {
+     "w": "Ladoga.",
+     "s": 113.602,
+     "e": 114.24,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L20",
+   "scene": "C06",
+   "text": "Their orders are simple. Hold the road.",
+   "dir": "steady, firm",
+   "pause": "",
+   "start": 114.79,
+   "end": 117.8,
+   "words": [
+    {
+     "w": "Their",
+     "s": 114.79,
+     "e": 115.028
+    },
+    {
+     "w": "orders",
+     "s": 115.028,
+     "e": 115.505
+    },
+    {
+     "w": "are",
+     "s": 115.505,
+     "e": 115.743
+    },
+    {
+     "w": "simple.",
+     "s": 115.743,
+     "e": 116.22
+    },
+    {
+     "w": "Hold",
+     "s": 116.65,
+     "e": 117.033
+    },
+    {
+     "w": "the",
+     "s": 117.033,
+     "e": 117.417
+    },
+    {
+     "w": "road.",
+     "s": 117.417,
+     "e": 117.8,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 4,
+     "s": 116.65
+    }
+   ]
+  },
+  {
+   "id": "L21",
+   "scene": "C06",
+   "text": "Finnish soldiers will sum up the next three months in two words. \"Kollaa holds.\"",
+   "dir": "quieter, let it land",
+   "pause": "pause",
+   "start": 118.35,
+   "end": 124.0,
+   "words": [
+    {
+     "w": "Finnish",
+     "s": 118.35,
+     "e": 118.911
+    },
+    {
+     "w": "soldiers",
+     "s": 118.911,
+     "e": 119.473
+    },
+    {
+     "w": "will",
+     "s": 119.473,
+     "e": 119.754
+    },
+    {
+     "w": "sum",
+     "s": 119.754,
+     "e": 120.034
+    },
+    {
+     "w": "up",
+     "s": 120.034,
+     "e": 120.315
+    },
+    {
+     "w": "the",
+     "s": 120.315,
+     "e": 120.596
+    },
+    {
+     "w": "next",
+     "s": 120.596,
+     "e": 120.876
+    },
+    {
+     "w": "three",
+     "s": 120.876,
+     "e": 121.157
+    },
+    {
+     "w": "months",
+     "s": 121.157,
+     "e": 121.438
+    },
+    {
+     "w": "in",
+     "s": 121.438,
+     "e": 121.719
+    },
+    {
+     "w": "two",
+     "s": 121.719,
+     "e": 121.999
+    },
+    {
+     "w": "words.",
+     "s": 121.999,
+     "e": 122.28
+    },
+    {
+     "w": "\"Kollaa",
+     "s": 122.75,
+     "e": 123.583
+    },
+    {
+     "w": "holds.\"",
+     "s": 123.583,
+     "e": 124.0,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 12,
+     "s": 122.75
+    }
+   ]
+  },
+  {
+   "id": "L22",
+   "scene": "C07",
+   "text": "The Red Army has tanks, artillery and planes. What it doesn't have, out here, is roads.",
+   "dir": "explaining, unhurried",
+   "pause": "",
+   "start": 125.03,
+   "end": 131.57,
+   "words": [
+    {
+     "w": "The",
+     "s": 125.03,
+     "e": 125.278
+    },
+    {
+     "w": "Red",
+     "s": 125.278,
+     "e": 125.527
+    },
+    {
+     "w": "Army",
+     "s": 125.527,
+     "e": 126.024
+    },
+    {
+     "w": "has",
+     "s": 126.024,
+     "e": 126.272
+    },
+    {
+     "w": "tanks,",
+     "s": 126.272,
+     "e": 126.52
+    },
+    {
+     "w": "artillery",
+     "s": 126.679,
+     "e": 127.673
+    },
+    {
+     "w": "and",
+     "s": 127.673,
+     "e": 127.922
+    },
+    {
+     "w": "planes.",
+     "s": 127.922,
+     "e": 128.17
+    },
+    {
+     "w": "What",
+     "s": 128.59,
+     "e": 128.88
+    },
+    {
+     "w": "it",
+     "s": 128.88,
+     "e": 129.17
+    },
+    {
+     "w": "doesn't",
+     "s": 129.17,
+     "e": 129.75
+    },
+    {
+     "w": "have,",
+     "s": 129.75,
+     "e": 130.039
+    },
+    {
+     "w": "out",
+     "s": 130.225,
+     "e": 130.515
+    },
+    {
+     "w": "here,",
+     "s": 130.515,
+     "e": 130.805
+    },
+    {
+     "w": "is",
+     "s": 130.99,
+     "e": 131.28
+    },
+    {
+     "w": "roads.",
+     "s": 131.28,
+     "e": 131.57,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 8,
+     "s": 128.59
+    }
+   ]
+  },
+  {
+   "id": "L23",
+   "scene": "C07",
+   "text": "Its columns crawl along narrow forest tracks, miles long, with snow up to a man's waist on either side.",
+   "dir": "steady",
+   "pause": "",
+   "start": 132.08,
+   "end": 139.11,
+   "words": [
+    {
+     "w": "Its",
+     "s": 132.08,
+     "e": 132.347
+    },
+    {
+     "w": "columns",
+     "s": 132.347,
+     "e": 132.882
+    },
+    {
+     "w": "crawl",
+     "s": 132.882,
+     "e": 133.15
+    },
+    {
+     "w": "along",
+     "s": 133.15,
+     "e": 133.685
+    },
+    {
+     "w": "narrow",
+     "s": 133.685,
+     "e": 134.22
+    },
+    {
+     "w": "forest",
+     "s": 134.22,
+     "e": 134.755
+    },
+    {
+     "w": "tracks,",
+     "s": 134.755,
+     "e": 135.023
+    },
+    {
+     "w": "miles",
+     "s": 135.194,
+     "e": 135.461
+    },
+    {
+     "w": "long,",
+     "s": 135.461,
+     "e": 135.729
+    },
+    {
+     "w": "with",
+     "s": 135.9,
+     "e": 136.167
+    },
+    {
+     "w": "snow",
+     "s": 136.167,
+     "e": 136.435
+    },
+    {
+     "w": "up",
+     "s": 136.435,
+     "e": 136.702
+    },
+    {
+     "w": "to",
+     "s": 136.702,
+     "e": 136.97
+    },
+    {
+     "w": "a",
+     "s": 136.97,
+     "e": 137.237
+    },
+    {
+     "w": "man's",
+     "s": 137.237,
+     "e": 137.772
+    },
+    {
+     "w": "waist",
+     "s": 137.772,
+     "e": 138.04,
+     "emph": true
+    },
+    {
+     "w": "on",
+     "s": 138.04,
+     "e": 138.307
+    },
+    {
+     "w": "either",
+     "s": 138.307,
+     "e": 138.842
+    },
+    {
+     "w": "side.",
+     "s": 138.842,
+     "e": 139.11
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L24",
+   "scene": "C07",
+   "text": "Finnish troops on skis come out of the trees, cut a column into pieces, and leave each piece to freeze.",
+   "dir": "picking up speed",
+   "pause": "",
+   "start": 139.53,
+   "end": 145.56,
+   "words": [
+    {
+     "w": "Finnish",
+     "s": 139.53,
+     "e": 140.027
+    },
+    {
+     "w": "troops",
+     "s": 140.027,
+     "e": 140.275
+    },
+    {
+     "w": "on",
+     "s": 140.275,
+     "e": 140.523
+    },
+    {
+     "w": "skis",
+     "s": 140.523,
+     "e": 140.772
+    },
+    {
+     "w": "come",
+     "s": 140.772,
+     "e": 141.02
+    },
+    {
+     "w": "out",
+     "s": 141.02,
+     "e": 141.268
+    },
+    {
+     "w": "of",
+     "s": 141.268,
+     "e": 141.517
+    },
+    {
+     "w": "the",
+     "s": 141.517,
+     "e": 141.765
+    },
+    {
+     "w": "trees,",
+     "s": 141.765,
+     "e": 142.013
+    },
+    {
+     "w": "cut",
+     "s": 142.172,
+     "e": 142.421
+    },
+    {
+     "w": "a",
+     "s": 142.421,
+     "e": 142.669
+    },
+    {
+     "w": "column",
+     "s": 142.669,
+     "e": 143.166
+    },
+    {
+     "w": "into",
+     "s": 143.166,
+     "e": 143.663
+    },
+    {
+     "w": "pieces,",
+     "s": 143.663,
+     "e": 143.911
+    },
+    {
+     "w": "and",
+     "s": 144.07,
+     "e": 144.318
+    },
+    {
+     "w": "leave",
+     "s": 144.318,
+     "e": 144.567
+    },
+    {
+     "w": "each",
+     "s": 144.567,
+     "e": 144.815
+    },
+    {
+     "w": "piece",
+     "s": 144.815,
+     "e": 145.063
+    },
+    {
+     "w": "to",
+     "s": 145.063,
+     "e": 145.312
+    },
+    {
+     "w": "freeze.",
+     "s": 145.312,
+     "e": 145.56,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L25",
+   "scene": "C07",
+   "text": "The Finns call those pockets motti. It's their word for a neat stack of firewood.",
+   "dir": "dry, deadpan",
+   "pause": "pause",
+   "start": 146.11,
+   "end": 152.21,
+   "words": [
+    {
+     "w": "The",
+     "s": 146.11,
+     "e": 146.52
+    },
+    {
+     "w": "Finns",
+     "s": 146.52,
+     "e": 146.93
+    },
+    {
+     "w": "call",
+     "s": 146.93,
+     "e": 147.34
+    },
+    {
+     "w": "those",
+     "s": 147.34,
+     "e": 147.75
+    },
+    {
+     "w": "pockets",
+     "s": 147.75,
+     "e": 148.57
+    },
+    {
+     "w": "motti.",
+     "s": 148.57,
+     "e": 149.39,
+     "emph": true
+    },
+    {
+     "w": "It's",
+     "s": 149.86,
+     "e": 150.252
+    },
+    {
+     "w": "their",
+     "s": 150.252,
+     "e": 150.447
+    },
+    {
+     "w": "word",
+     "s": 150.447,
+     "e": 150.643
+    },
+    {
+     "w": "for",
+     "s": 150.643,
+     "e": 150.839
+    },
+    {
+     "w": "a",
+     "s": 150.839,
+     "e": 151.035
+    },
+    {
+     "w": "neat",
+     "s": 151.035,
+     "e": 151.231
+    },
+    {
+     "w": "stack",
+     "s": 151.231,
+     "e": 151.427
+    },
+    {
+     "w": "of",
+     "s": 151.427,
+     "e": 151.622
+    },
+    {
+     "w": "firewood.",
+     "s": 151.622,
+     "e": 152.21
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 6,
+     "s": 149.86
+    }
+   ]
+  },
+  {
+   "id": "L26",
+   "scene": "C08",
+   "text": "Now picture yourself on the other side of that clearing.",
+   "dir": "close, second person",
+   "pause": "",
+   "start": 153.24,
+   "end": 155.88,
+   "words": [
+    {
+     "w": "Now",
+     "s": 153.24,
+     "e": 153.429
+    },
+    {
+     "w": "picture",
+     "s": 153.429,
+     "e": 153.806
+    },
+    {
+     "w": "yourself",
+     "s": 153.806,
+     "e": 154.183
+    },
+    {
+     "w": "on",
+     "s": 154.183,
+     "e": 154.371
+    },
+    {
+     "w": "the",
+     "s": 154.371,
+     "e": 154.56
+    },
+    {
+     "w": "other",
+     "s": 154.56,
+     "e": 154.937,
+     "emph": true
+    },
+    {
+     "w": "side",
+     "s": 154.937,
+     "e": 155.126
+    },
+    {
+     "w": "of",
+     "s": 155.126,
+     "e": 155.314
+    },
+    {
+     "w": "that",
+     "s": 155.314,
+     "e": 155.503
+    },
+    {
+     "w": "clearing.",
+     "s": 155.503,
+     "e": 155.88
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L27",
+   "scene": "C08",
+   "text": "You're a Red Army conscript, maybe from somewhere far to the south, and it's forty degrees below zero.",
+   "dir": "cold, slow",
+   "pause": "",
+   "start": 156.43,
+   "end": 162.76,
+   "words": [
+    {
+     "w": "You're",
+     "s": 156.43,
+     "e": 156.862
+    },
+    {
+     "w": "a",
+     "s": 156.862,
+     "e": 157.079
+    },
+    {
+     "w": "Red",
+     "s": 157.079,
+     "e": 157.295
+    },
+    {
+     "w": "Army",
+     "s": 157.295,
+     "e": 157.727
+    },
+    {
+     "w": "conscript,",
+     "s": 157.727,
+     "e": 158.159
+    },
+    {
+     "w": "maybe",
+     "s": 158.298,
+     "e": 158.514
+    },
+    {
+     "w": "from",
+     "s": 158.514,
+     "e": 158.73
+    },
+    {
+     "w": "somewhere",
+     "s": 158.73,
+     "e": 159.379
+    },
+    {
+     "w": "far",
+     "s": 159.379,
+     "e": 159.595
+    },
+    {
+     "w": "to",
+     "s": 159.595,
+     "e": 159.811
+    },
+    {
+     "w": "the",
+     "s": 159.811,
+     "e": 160.027
+    },
+    {
+     "w": "south,",
+     "s": 160.027,
+     "e": 160.244
+    },
+    {
+     "w": "and",
+     "s": 160.382,
+     "e": 160.598
+    },
+    {
+     "w": "it's",
+     "s": 160.598,
+     "e": 161.03
+    },
+    {
+     "w": "forty",
+     "s": 161.03,
+     "e": 161.463
+    },
+    {
+     "w": "degrees",
+     "s": 161.463,
+     "e": 161.895
+    },
+    {
+     "w": "below",
+     "s": 161.895,
+     "e": 162.328,
+     "emph": true
+    },
+    {
+     "w": "zero.",
+     "s": 162.328,
+     "e": 162.76
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L28",
+   "scene": "C08",
+   "text": "Daylight lasts about six hours. The trees are white, the ground is white, and every so often someone near you just drops.",
+   "dir": "tense, quiet",
+   "pause": "",
+   "start": 163.31,
+   "end": 171.71,
+   "words": [
+    {
+     "w": "Daylight",
+     "s": 163.31,
+     "e": 163.933
+    },
+    {
+     "w": "lasts",
+     "s": 163.933,
+     "e": 164.244
+    },
+    {
+     "w": "about",
+     "s": 164.244,
+     "e": 164.867
+    },
+    {
+     "w": "six",
+     "s": 164.867,
+     "e": 165.179
+    },
+    {
+     "w": "hours.",
+     "s": 165.179,
+     "e": 165.49
+    },
+    {
+     "w": "The",
+     "s": 165.92,
+     "e": 166.18
+    },
+    {
+     "w": "trees",
+     "s": 166.18,
+     "e": 166.44
+    },
+    {
+     "w": "are",
+     "s": 166.44,
+     "e": 166.7
+    },
+    {
+     "w": "white,",
+     "s": 166.7,
+     "e": 166.959
+    },
+    {
+     "w": "the",
+     "s": 167.126,
+     "e": 167.386
+    },
+    {
+     "w": "ground",
+     "s": 167.386,
+     "e": 167.646
+    },
+    {
+     "w": "is",
+     "s": 167.646,
+     "e": 167.905
+    },
+    {
+     "w": "white,",
+     "s": 167.905,
+     "e": 168.165
+    },
+    {
+     "w": "and",
+     "s": 168.332,
+     "e": 168.591
+    },
+    {
+     "w": "every",
+     "s": 168.591,
+     "e": 169.371
+    },
+    {
+     "w": "so",
+     "s": 169.371,
+     "e": 169.631
+    },
+    {
+     "w": "often",
+     "s": 169.631,
+     "e": 170.151
+    },
+    {
+     "w": "someone",
+     "s": 170.151,
+     "e": 170.67
+    },
+    {
+     "w": "near",
+     "s": 170.67,
+     "e": 170.93
+    },
+    {
+     "w": "you",
+     "s": 170.93,
+     "e": 171.19
+    },
+    {
+     "w": "just",
+     "s": 171.19,
+     "e": 171.45
+    },
+    {
+     "w": "drops.",
+     "s": 171.45,
+     "e": 171.71,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 5,
+     "s": 165.92
+    }
+   ]
+  },
+  {
+   "id": "L29",
+   "scene": "C08",
+   "text": "You never hear where it came from.",
+   "dir": "whisper",
+   "pause": "long",
+   "start": 172.26,
+   "end": 174.17,
+   "words": [
+    {
+     "w": "You",
+     "s": 172.26,
+     "e": 172.499
+    },
+    {
+     "w": "never",
+     "s": 172.499,
+     "e": 172.976
+    },
+    {
+     "w": "hear",
+     "s": 172.976,
+     "e": 173.215
+    },
+    {
+     "w": "where",
+     "s": 173.215,
+     "e": 173.454
+    },
+    {
+     "w": "it",
+     "s": 173.454,
+     "e": 173.692
+    },
+    {
+     "w": "came",
+     "s": 173.692,
+     "e": 173.931
+    },
+    {
+     "w": "from.",
+     "s": 173.931,
+     "e": 174.17,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L30",
+   "scene": "C09",
+   "text": "Here's the thing. A scope would have helped him see. It also would have helped the enemy see him.",
+   "dir": "curious, a touch brighter",
+   "pause": "",
+   "start": 175.95,
+   "end": 181.42,
+   "words": [
+    {
+     "w": "Here's",
+     "s": 175.95,
+     "e": 176.37
+    },
+    {
+     "w": "the",
+     "s": 176.37,
+     "e": 176.58
+    },
+    {
+     "w": "thing.",
+     "s": 176.58,
+     "e": 176.79
+    },
+    {
+     "w": "A",
+     "s": 177.21,
+     "e": 177.444
+    },
+    {
+     "w": "scope",
+     "s": 177.444,
+     "e": 177.679
+    },
+    {
+     "w": "would",
+     "s": 177.679,
+     "e": 177.913
+    },
+    {
+     "w": "have",
+     "s": 177.913,
+     "e": 178.147
+    },
+    {
+     "w": "helped",
+     "s": 178.147,
+     "e": 178.381
+    },
+    {
+     "w": "him",
+     "s": 178.381,
+     "e": 178.616
+    },
+    {
+     "w": "see.",
+     "s": 178.616,
+     "e": 178.85
+    },
+    {
+     "w": "It",
+     "s": 179.29,
+     "e": 179.467
+    },
+    {
+     "w": "also",
+     "s": 179.467,
+     "e": 179.822
+    },
+    {
+     "w": "would",
+     "s": 179.822,
+     "e": 180.0
+    },
+    {
+     "w": "have",
+     "s": 180.0,
+     "e": 180.177
+    },
+    {
+     "w": "helped",
+     "s": 180.177,
+     "e": 180.355
+    },
+    {
+     "w": "the",
+     "s": 180.355,
+     "e": 180.532
+    },
+    {
+     "w": "enemy",
+     "s": 180.532,
+     "e": 181.065
+    },
+    {
+     "w": "see",
+     "s": 181.065,
+     "e": 181.242
+    },
+    {
+     "w": "him.",
+     "s": 181.242,
+     "e": 181.42,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 3,
+     "s": 177.21
+    },
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 10,
+     "s": 179.29
+    }
+   ]
+  },
+  {
+   "id": "L31",
+   "scene": "C09",
+   "text": "The glass can catch the low winter sun and flash. And in that cold it can fog up or frost over.",
+   "dir": "explaining, unhurried",
+   "pause": "",
+   "start": 181.97,
+   "end": 188.39,
+   "words": [
+    {
+     "w": "The",
+     "s": 181.97,
+     "e": 182.26
+    },
+    {
+     "w": "glass",
+     "s": 182.26,
+     "e": 182.55
+    },
+    {
+     "w": "can",
+     "s": 182.55,
+     "e": 182.84
+    },
+    {
+     "w": "catch",
+     "s": 182.84,
+     "e": 183.13
+    },
+    {
+     "w": "the",
+     "s": 183.13,
+     "e": 183.42
+    },
+    {
+     "w": "low",
+     "s": 183.42,
+     "e": 183.71
+    },
+    {
+     "w": "winter",
+     "s": 183.71,
+     "e": 184.29
+    },
+    {
+     "w": "sun",
+     "s": 184.29,
+     "e": 184.58
+    },
+    {
+     "w": "and",
+     "s": 184.58,
+     "e": 184.87
+    },
+    {
+     "w": "flash.",
+     "s": 184.87,
+     "e": 185.16,
+     "emph": true
+    },
+    {
+     "w": "And",
+     "s": 185.54,
+     "e": 185.777
+    },
+    {
+     "w": "in",
+     "s": 185.777,
+     "e": 186.015
+    },
+    {
+     "w": "that",
+     "s": 186.015,
+     "e": 186.252
+    },
+    {
+     "w": "cold",
+     "s": 186.252,
+     "e": 186.49
+    },
+    {
+     "w": "it",
+     "s": 186.49,
+     "e": 186.727
+    },
+    {
+     "w": "can",
+     "s": 186.727,
+     "e": 186.965
+    },
+    {
+     "w": "fog",
+     "s": 186.965,
+     "e": 187.202
+    },
+    {
+     "w": "up",
+     "s": 187.202,
+     "e": 187.44
+    },
+    {
+     "w": "or",
+     "s": 187.44,
+     "e": 187.677
+    },
+    {
+     "w": "frost",
+     "s": 187.677,
+     "e": 187.915
+    },
+    {
+     "w": "over.",
+     "s": 187.915,
+     "e": 188.39
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 10,
+     "s": 185.54
+    }
+   ]
+  },
+  {
+   "id": "L32",
+   "scene": "C09",
+   "text": "A scope also makes you lift your head a few inches higher. Out there, a few inches is a lot.",
+   "dir": "matter-of-fact",
+   "pause": "",
+   "start": 188.86,
+   "end": 194.79,
+   "words": [
+    {
+     "w": "A",
+     "s": 188.86,
+     "e": 189.061
+    },
+    {
+     "w": "scope",
+     "s": 189.061,
+     "e": 189.261
+    },
+    {
+     "w": "also",
+     "s": 189.261,
+     "e": 189.663
+    },
+    {
+     "w": "makes",
+     "s": 189.663,
+     "e": 189.864
+    },
+    {
+     "w": "you",
+     "s": 189.864,
+     "e": 190.064
+    },
+    {
+     "w": "lift",
+     "s": 190.064,
+     "e": 190.265
+    },
+    {
+     "w": "your",
+     "s": 190.265,
+     "e": 190.466
+    },
+    {
+     "w": "head",
+     "s": 190.466,
+     "e": 190.666
+    },
+    {
+     "w": "a",
+     "s": 190.666,
+     "e": 190.867
+    },
+    {
+     "w": "few",
+     "s": 190.867,
+     "e": 191.068
+    },
+    {
+     "w": "inches",
+     "s": 191.068,
+     "e": 191.269
+    },
+    {
+     "w": "higher.",
+     "s": 191.269,
+     "e": 191.67
+    },
+    {
+     "w": "Out",
+     "s": 192.2,
+     "e": 192.5
+    },
+    {
+     "w": "there,",
+     "s": 192.5,
+     "e": 192.799
+    },
+    {
+     "w": "a",
+     "s": 192.991,
+     "e": 193.291
+    },
+    {
+     "w": "few",
+     "s": 193.291,
+     "e": 193.591
+    },
+    {
+     "w": "inches",
+     "s": 193.591,
+     "e": 193.891
+    },
+    {
+     "w": "is",
+     "s": 193.891,
+     "e": 194.19
+    },
+    {
+     "w": "a",
+     "s": 194.19,
+     "e": 194.49
+    },
+    {
+     "w": "lot.",
+     "s": 194.49,
+     "e": 194.79,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 12,
+     "s": 192.2
+    },
+    {
+     "kind": "dir",
+     "text": "dry",
+     "word": 12,
+     "s": 192.2
+    }
+   ]
+  },
+  {
+   "id": "L33",
+   "scene": "C09",
+   "text": "He knew about that flash because he spent his days looking for it on the other side.",
+   "dir": "wry smile",
+   "pause": "",
+   "start": 195.34,
+   "end": 199.39,
+   "words": [
+    {
+     "w": "He",
+     "s": 195.34,
+     "e": 195.533
+    },
+    {
+     "w": "knew",
+     "s": 195.533,
+     "e": 195.726
+    },
+    {
+     "w": "about",
+     "s": 195.726,
+     "e": 196.111
+    },
+    {
+     "w": "that",
+     "s": 196.111,
+     "e": 196.304
+    },
+    {
+     "w": "flash",
+     "s": 196.304,
+     "e": 196.497
+    },
+    {
+     "w": "because",
+     "s": 196.497,
+     "e": 196.883
+    },
+    {
+     "w": "he",
+     "s": 196.883,
+     "e": 197.076
+    },
+    {
+     "w": "spent",
+     "s": 197.076,
+     "e": 197.269
+    },
+    {
+     "w": "his",
+     "s": 197.269,
+     "e": 197.461
+    },
+    {
+     "w": "days",
+     "s": 197.461,
+     "e": 197.654
+    },
+    {
+     "w": "looking",
+     "s": 197.654,
+     "e": 198.04
+    },
+    {
+     "w": "for",
+     "s": 198.04,
+     "e": 198.233
+    },
+    {
+     "w": "it",
+     "s": 198.233,
+     "e": 198.426
+    },
+    {
+     "w": "on",
+     "s": 198.426,
+     "e": 198.619
+    },
+    {
+     "w": "the",
+     "s": 198.619,
+     "e": 198.811
+    },
+    {
+     "w": "other",
+     "s": 198.811,
+     "e": 199.197,
+     "emph": true
+    },
+    {
+     "w": "side.",
+     "s": 199.197,
+     "e": 199.39
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L34",
+   "scene": "C09",
+   "text": "So he used a Finnish copy of a Russian rifle, the old Mosin-Nagant, and pointed it back at the Red Army.",
+   "dir": "dry, deadpan",
+   "pause": "pause",
+   "start": 199.94,
+   "end": 208.56,
+   "words": [
+    {
+     "w": "So",
+     "s": 199.94,
+     "e": 200.273
+    },
+    {
+     "w": "he",
+     "s": 200.273,
+     "e": 200.605
+    },
+    {
+     "w": "used",
+     "s": 200.605,
+     "e": 201.27
+    },
+    {
+     "w": "a",
+     "s": 201.27,
+     "e": 201.603
+    },
+    {
+     "w": "Finnish",
+     "s": 201.603,
+     "e": 202.268
+    },
+    {
+     "w": "copy",
+     "s": 202.268,
+     "e": 202.933
+    },
+    {
+     "w": "of",
+     "s": 202.933,
+     "e": 203.266
+    },
+    {
+     "w": "a",
+     "s": 203.266,
+     "e": 203.598
+    },
+    {
+     "w": "Russian",
+     "s": 203.598,
+     "e": 204.264
+    },
+    {
+     "w": "rifle,",
+     "s": 204.264,
+     "e": 204.929
+    },
+    {
+     "w": "the",
+     "s": 205.142,
+     "e": 205.474
+    },
+    {
+     "w": "old",
+     "s": 205.474,
+     "e": 205.807
+    },
+    {
+     "w": "Mosin-Nagant,",
+     "s": 205.807,
+     "e": 207.137
+    },
+    {
+     "w": "and",
+     "s": 207.95,
+     "e": 208.018
+    },
+    {
+     "w": "pointed",
+     "s": 208.018,
+     "e": 208.086
+    },
+    {
+     "w": "it",
+     "s": 208.086,
+     "e": 208.153
+    },
+    {
+     "w": "back",
+     "s": 208.153,
+     "e": 208.221
+    },
+    {
+     "w": "at",
+     "s": 208.221,
+     "e": 208.289
+    },
+    {
+     "w": "the",
+     "s": 208.289,
+     "e": 208.357
+    },
+    {
+     "w": "Red",
+     "s": 208.357,
+     "e": 208.424,
+     "emph": true
+    },
+    {
+     "w": "Army.",
+     "s": 208.424,
+     "e": 208.56,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 13,
+     "s": 207.95
+    }
+   ]
+  },
+  {
+   "id": "L35",
+   "scene": "C10",
+   "text": "He had other tricks.",
+   "dir": "low, conspiratorial",
+   "pause": "",
+   "start": 209.59,
+   "end": 210.83,
+   "words": [
+    {
+     "w": "He",
+     "s": 209.59,
+     "e": 209.838
+    },
+    {
+     "w": "had",
+     "s": 209.838,
+     "e": 210.086
+    },
+    {
+     "w": "other",
+     "s": 210.086,
+     "e": 210.582
+    },
+    {
+     "w": "tricks.",
+     "s": 210.582,
+     "e": 210.83,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L36",
+   "scene": "C10",
+   "text": "He packed snow in front of his position and soaked it until it froze hard. That way the muzzle blast wouldn't kick up a puff of powder.",
+   "dir": "steady",
+   "pause": "",
+   "start": 211.31,
+   "end": 218.67,
+   "words": [
+    {
+     "w": "He",
+     "s": 211.31,
+     "e": 211.534
+    },
+    {
+     "w": "packed",
+     "s": 211.534,
+     "e": 211.758
+    },
+    {
+     "w": "snow",
+     "s": 211.758,
+     "e": 211.982
+    },
+    {
+     "w": "in",
+     "s": 211.982,
+     "e": 212.206
+    },
+    {
+     "w": "front",
+     "s": 212.206,
+     "e": 212.429
+    },
+    {
+     "w": "of",
+     "s": 212.429,
+     "e": 212.653
+    },
+    {
+     "w": "his",
+     "s": 212.653,
+     "e": 212.877
+    },
+    {
+     "w": "position",
+     "s": 212.877,
+     "e": 213.549
+    },
+    {
+     "w": "and",
+     "s": 213.549,
+     "e": 213.773
+    },
+    {
+     "w": "soaked",
+     "s": 213.773,
+     "e": 213.997
+    },
+    {
+     "w": "it",
+     "s": 213.997,
+     "e": 214.221
+    },
+    {
+     "w": "until",
+     "s": 214.221,
+     "e": 214.668
+    },
+    {
+     "w": "it",
+     "s": 214.668,
+     "e": 214.892
+    },
+    {
+     "w": "froze",
+     "s": 214.892,
+     "e": 215.116
+    },
+    {
+     "w": "hard.",
+     "s": 215.116,
+     "e": 215.34,
+     "emph": true
+    },
+    {
+     "w": "That",
+     "s": 215.75,
+     "e": 215.945
+    },
+    {
+     "w": "way",
+     "s": 215.945,
+     "e": 216.139
+    },
+    {
+     "w": "the",
+     "s": 216.139,
+     "e": 216.334
+    },
+    {
+     "w": "muzzle",
+     "s": 216.334,
+     "e": 216.723
+    },
+    {
+     "w": "blast",
+     "s": 216.723,
+     "e": 216.918
+    },
+    {
+     "w": "wouldn't",
+     "s": 216.918,
+     "e": 217.307
+    },
+    {
+     "w": "kick",
+     "s": 217.307,
+     "e": 217.502
+    },
+    {
+     "w": "up",
+     "s": 217.502,
+     "e": 217.697
+    },
+    {
+     "w": "a",
+     "s": 217.697,
+     "e": 217.891
+    },
+    {
+     "w": "puff",
+     "s": 217.891,
+     "e": 218.086
+    },
+    {
+     "w": "of",
+     "s": 218.086,
+     "e": 218.281
+    },
+    {
+     "w": "powder.",
+     "s": 218.281,
+     "e": 218.67
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 15,
+     "s": 215.75
+    }
+   ]
+  },
+  {
+   "id": "L37",
+   "scene": "C10",
+   "text": "He kept snow in his mouth, so his breath wouldn't steam in the cold air.",
+   "dir": "quieter",
+   "pause": "",
+   "start": 219.04,
+   "end": 223.37,
+   "words": [
+    {
+     "w": "He",
+     "s": 219.04,
+     "e": 219.3
+    },
+    {
+     "w": "kept",
+     "s": 219.3,
+     "e": 219.56
+    },
+    {
+     "w": "snow",
+     "s": 219.56,
+     "e": 219.821
+    },
+    {
+     "w": "in",
+     "s": 219.821,
+     "e": 220.081
+    },
+    {
+     "w": "his",
+     "s": 220.081,
+     "e": 220.341
+    },
+    {
+     "w": "mouth,",
+     "s": 220.341,
+     "e": 220.601
+    },
+    {
+     "w": "so",
+     "s": 220.768,
+     "e": 221.028
+    },
+    {
+     "w": "his",
+     "s": 221.028,
+     "e": 221.288
+    },
+    {
+     "w": "breath",
+     "s": 221.288,
+     "e": 221.548
+    },
+    {
+     "w": "wouldn't",
+     "s": 221.548,
+     "e": 222.069
+    },
+    {
+     "w": "steam",
+     "s": 222.069,
+     "e": 222.329,
+     "emph": true
+    },
+    {
+     "w": "in",
+     "s": 222.329,
+     "e": 222.589
+    },
+    {
+     "w": "the",
+     "s": 222.589,
+     "e": 222.85
+    },
+    {
+     "w": "cold",
+     "s": 222.85,
+     "e": 223.11
+    },
+    {
+     "w": "air.",
+     "s": 223.11,
+     "e": 223.37
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L38",
+   "scene": "C10",
+   "text": "And he lay still. For hours. Some days from before dawn until after dark.",
+   "dir": "slow, steady",
+   "pause": "",
+   "start": 223.87,
+   "end": 230.22,
+   "words": [
+    {
+     "w": "And",
+     "s": 223.87,
+     "e": 224.255
+    },
+    {
+     "w": "he",
+     "s": 224.255,
+     "e": 224.64
+    },
+    {
+     "w": "lay",
+     "s": 224.64,
+     "e": 225.025
+    },
+    {
+     "w": "still.",
+     "s": 225.025,
+     "e": 225.41,
+     "emph": true
+    },
+    {
+     "w": "For",
+     "s": 225.87,
+     "e": 226.37
+    },
+    {
+     "w": "hours.",
+     "s": 226.37,
+     "e": 226.87
+    },
+    {
+     "w": "Some",
+     "s": 227.31,
+     "e": 227.575
+    },
+    {
+     "w": "days",
+     "s": 227.575,
+     "e": 227.839
+    },
+    {
+     "w": "from",
+     "s": 227.839,
+     "e": 228.104
+    },
+    {
+     "w": "before",
+     "s": 228.104,
+     "e": 228.633
+    },
+    {
+     "w": "dawn",
+     "s": 228.633,
+     "e": 228.897
+    },
+    {
+     "w": "until",
+     "s": 228.897,
+     "e": 229.426
+    },
+    {
+     "w": "after",
+     "s": 229.426,
+     "e": 229.955
+    },
+    {
+     "w": "dark.",
+     "s": 229.955,
+     "e": 230.22
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 4,
+     "s": 225.87
+    },
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 6,
+     "s": 227.31
+    }
+   ]
+  },
+  {
+   "id": "L39",
+   "scene": "C10",
+   "text": "Most of us can't get through a two-hour movie without checking our phones.",
+   "dir": "dry, deadpan",
+   "pause": "pause",
+   "start": 230.72,
+   "end": 234.31,
+   "words": [
+    {
+     "w": "Most",
+     "s": 230.72,
+     "e": 230.919
+    },
+    {
+     "w": "of",
+     "s": 230.919,
+     "e": 231.119
+    },
+    {
+     "w": "us",
+     "s": 231.119,
+     "e": 231.318
+    },
+    {
+     "w": "can't",
+     "s": 231.318,
+     "e": 231.717
+    },
+    {
+     "w": "get",
+     "s": 231.717,
+     "e": 231.917
+    },
+    {
+     "w": "through",
+     "s": 231.917,
+     "e": 232.116
+    },
+    {
+     "w": "a",
+     "s": 232.116,
+     "e": 232.316
+    },
+    {
+     "w": "two-hour",
+     "s": 232.316,
+     "e": 232.714
+    },
+    {
+     "w": "movie",
+     "s": 232.714,
+     "e": 233.113
+    },
+    {
+     "w": "without",
+     "s": 233.113,
+     "e": 233.512
+    },
+    {
+     "w": "checking",
+     "s": 233.512,
+     "e": 233.911
+    },
+    {
+     "w": "our",
+     "s": 233.911,
+     "e": 234.111
+    },
+    {
+     "w": "phones.",
+     "s": 234.111,
+     "e": 234.31,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L40",
+   "scene": "C11",
+   "text": "His company commander was a very different kind of man. Captain Aarne Juutilainen, a former French Foreign Legionnaire, nicknamed \"the Terror of Morocco\".",
+   "dir": "wry smile",
+   "pause": "",
+   "start": 235.34,
+   "end": 245.2,
+   "words": [
+    {
+     "w": "His",
+     "s": 235.34,
+     "e": 235.536
+    },
+    {
+     "w": "company",
+     "s": 235.536,
+     "e": 236.126
+    },
+    {
+     "w": "commander",
+     "s": 236.126,
+     "e": 236.715
+    },
+    {
+     "w": "was",
+     "s": 236.715,
+     "e": 236.912
+    },
+    {
+     "w": "a",
+     "s": 236.912,
+     "e": 237.108
+    },
+    {
+     "w": "very",
+     "s": 237.108,
+     "e": 237.501
+    },
+    {
+     "w": "different",
+     "s": 237.501,
+     "e": 238.091
+    },
+    {
+     "w": "kind",
+     "s": 238.091,
+     "e": 238.287
+    },
+    {
+     "w": "of",
+     "s": 238.287,
+     "e": 238.484
+    },
+    {
+     "w": "man.",
+     "s": 238.484,
+     "e": 238.68
+    },
+    {
+     "w": "Captain",
+     "s": 239.04,
+     "e": 239.509
+    },
+    {
+     "w": "Aarne",
+     "s": 239.509,
+     "e": 239.743
+    },
+    {
+     "w": "Juutilainen,",
+     "s": 239.743,
+     "e": 240.681
+    },
+    {
+     "w": "a",
+     "s": 240.831,
+     "e": 241.065
+    },
+    {
+     "w": "former",
+     "s": 241.065,
+     "e": 241.534
+    },
+    {
+     "w": "French",
+     "s": 241.534,
+     "e": 241.768
+    },
+    {
+     "w": "Foreign",
+     "s": 241.768,
+     "e": 242.237
+    },
+    {
+     "w": "Legionnaire,",
+     "s": 242.237,
+     "e": 242.94
+    },
+    {
+     "w": "nicknamed",
+     "s": 243.09,
+     "e": 243.559
+    },
+    {
+     "w": "\"the",
+     "s": 243.559,
+     "e": 243.794
+    },
+    {
+     "w": "Terror",
+     "s": 243.794,
+     "e": 244.262
+    },
+    {
+     "w": "of",
+     "s": 244.262,
+     "e": 244.497
+    },
+    {
+     "w": "Morocco\".",
+     "s": 244.497,
+     "e": 245.2,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 10,
+     "s": 239.04
+    }
+   ]
+  },
+  {
+   "id": "L41",
+   "scene": "C11",
+   "text": "Juutilainen worked out quickly what he had, and started sending Simo after the Soviet snipers who were picking off his men.",
+   "dir": "matter-of-fact",
+   "pause": "",
+   "start": 245.58,
+   "end": 252.28,
+   "words": [
+    {
+     "w": "Juutilainen",
+     "s": 245.58,
+     "e": 246.35
+    },
+    {
+     "w": "worked",
+     "s": 246.35,
+     "e": 246.542
+    },
+    {
+     "w": "out",
+     "s": 246.542,
+     "e": 246.735
+    },
+    {
+     "w": "quickly",
+     "s": 246.735,
+     "e": 247.12
+    },
+    {
+     "w": "what",
+     "s": 247.12,
+     "e": 247.312
+    },
+    {
+     "w": "he",
+     "s": 247.312,
+     "e": 247.504
+    },
+    {
+     "w": "had,",
+     "s": 247.504,
+     "e": 247.697
+    },
+    {
+     "w": "and",
+     "s": 248.13,
+     "e": 248.338
+    },
+    {
+     "w": "started",
+     "s": 248.338,
+     "e": 248.545
+    },
+    {
+     "w": "sending",
+     "s": 248.545,
+     "e": 248.96
+    },
+    {
+     "w": "Simo",
+     "s": 248.96,
+     "e": 249.375
+    },
+    {
+     "w": "after",
+     "s": 249.375,
+     "e": 249.79
+    },
+    {
+     "w": "the",
+     "s": 249.79,
+     "e": 249.998
+    },
+    {
+     "w": "Soviet",
+     "s": 249.998,
+     "e": 250.413
+    },
+    {
+     "w": "snipers",
+     "s": 250.413,
+     "e": 250.828
+    },
+    {
+     "w": "who",
+     "s": 250.828,
+     "e": 251.035
+    },
+    {
+     "w": "were",
+     "s": 251.035,
+     "e": 251.243
+    },
+    {
+     "w": "picking",
+     "s": 251.243,
+     "e": 251.658
+    },
+    {
+     "w": "off",
+     "s": 251.658,
+     "e": 251.865
+    },
+    {
+     "w": "his",
+     "s": 251.865,
+     "e": 252.073
+    },
+    {
+     "w": "men.",
+     "s": 252.073,
+     "e": 252.28,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 7,
+     "s": 248.13
+    }
+   ]
+  },
+  {
+   "id": "L42",
+   "scene": "C11",
+   "text": "A quiet farmer, a loud legionnaire. It worked.",
+   "dir": "dry",
+   "pause": "pause",
+   "start": 252.67,
+   "end": 255.55,
+   "words": [
+    {
+     "w": "A",
+     "s": 252.67,
+     "e": 252.79
+    },
+    {
+     "w": "quiet",
+     "s": 252.79,
+     "e": 252.911
+    },
+    {
+     "w": "farmer,",
+     "s": 252.911,
+     "e": 253.151
+    },
+    {
+     "w": "a",
+     "s": 253.228,
+     "e": 253.349
+    },
+    {
+     "w": "loud",
+     "s": 253.349,
+     "e": 253.469
+    },
+    {
+     "w": "legionnaire.",
+     "s": 253.469,
+     "e": 253.83
+    },
+    {
+     "w": "It",
+     "s": 254.15,
+     "e": 254.85
+    },
+    {
+     "w": "worked.",
+     "s": 254.85,
+     "e": 255.55,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 6,
+     "s": 254.15
+    }
+   ]
+  },
+  {
+   "id": "L43",
+   "scene": "C12",
+   "text": "The Red Army notices. They send counter-snipers into the woods to find him.",
+   "dir": "tense",
+   "pause": "",
+   "start": 256.58,
+   "end": 261.77,
+   "words": [
+    {
+     "w": "The",
+     "s": 256.58,
+     "e": 256.687
+    },
+    {
+     "w": "Red",
+     "s": 256.687,
+     "e": 256.793
+    },
+    {
+     "w": "Army",
+     "s": 256.793,
+     "e": 257.007
+    },
+    {
+     "w": "notices.",
+     "s": 257.007,
+     "e": 257.22
+    },
+    {
+     "w": "They",
+     "s": 257.59,
+     "e": 257.912
+    },
+    {
+     "w": "send",
+     "s": 257.912,
+     "e": 258.233
+    },
+    {
+     "w": "counter-snipers",
+     "s": 258.233,
+     "e": 259.519
+    },
+    {
+     "w": "into",
+     "s": 259.519,
+     "e": 260.162
+    },
+    {
+     "w": "the",
+     "s": 260.162,
+     "e": 260.484
+    },
+    {
+     "w": "woods",
+     "s": 260.484,
+     "e": 260.805
+    },
+    {
+     "w": "to",
+     "s": 260.805,
+     "e": 261.127
+    },
+    {
+     "w": "find",
+     "s": 261.127,
+     "e": 261.448
+    },
+    {
+     "w": "him.",
+     "s": 261.448,
+     "e": 261.77,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 4,
+     "s": 257.59
+    }
+   ]
+  },
+  {
+   "id": "L44",
+   "scene": "C12",
+   "text": "According to Finnish accounts, most of them don't come back.",
+   "dir": "dry",
+   "pause": "",
+   "start": 262.11,
+   "end": 265.08,
+   "words": [
+    {
+     "w": "According",
+     "s": 262.11,
+     "e": 262.68
+    },
+    {
+     "w": "to",
+     "s": 262.68,
+     "e": 262.87
+    },
+    {
+     "w": "Finnish",
+     "s": 262.87,
+     "e": 263.249
+    },
+    {
+     "w": "accounts,",
+     "s": 263.249,
+     "e": 263.629
+    },
+    {
+     "w": "most",
+     "s": 263.751,
+     "e": 263.941
+    },
+    {
+     "w": "of",
+     "s": 263.941,
+     "e": 264.131
+    },
+    {
+     "w": "them",
+     "s": 264.131,
+     "e": 264.32
+    },
+    {
+     "w": "don't",
+     "s": 264.32,
+     "e": 264.7
+    },
+    {
+     "w": "come",
+     "s": 264.7,
+     "e": 264.89
+    },
+    {
+     "w": "back.",
+     "s": 264.89,
+     "e": 265.08,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L45",
+   "scene": "C12",
+   "text": "So they try artillery, shelling whole stretches of forest where he might be.",
+   "dir": "building",
+   "pause": "",
+   "start": 265.4,
+   "end": 269.47,
+   "words": [
+    {
+     "w": "So",
+     "s": 265.4,
+     "e": 265.607
+    },
+    {
+     "w": "they",
+     "s": 265.607,
+     "e": 265.814
+    },
+    {
+     "w": "try",
+     "s": 265.814,
+     "e": 266.022
+    },
+    {
+     "w": "artillery,",
+     "s": 266.022,
+     "e": 266.851
+    },
+    {
+     "w": "shelling",
+     "s": 266.983,
+     "e": 267.398
+    },
+    {
+     "w": "whole",
+     "s": 267.398,
+     "e": 267.812
+    },
+    {
+     "w": "stretches",
+     "s": 267.812,
+     "e": 268.019
+    },
+    {
+     "w": "of",
+     "s": 268.019,
+     "e": 268.227
+    },
+    {
+     "w": "forest",
+     "s": 268.227,
+     "e": 268.641
+    },
+    {
+     "w": "where",
+     "s": 268.641,
+     "e": 268.848
+    },
+    {
+     "w": "he",
+     "s": 268.848,
+     "e": 269.056
+    },
+    {
+     "w": "might",
+     "s": 269.056,
+     "e": 269.263,
+     "emph": true
+    },
+    {
+     "w": "be.",
+     "s": 269.263,
+     "e": 269.47
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L46",
+   "scene": "C12",
+   "text": "One barrage reportedly shreds the back of his coat.",
+   "dir": "quieter",
+   "pause": "",
+   "start": 269.85,
+   "end": 272.67,
+   "words": [
+    {
+     "w": "One",
+     "s": 269.85,
+     "e": 270.067
+    },
+    {
+     "w": "barrage",
+     "s": 270.067,
+     "e": 270.501
+    },
+    {
+     "w": "reportedly",
+     "s": 270.501,
+     "e": 271.368
+    },
+    {
+     "w": "shreds",
+     "s": 271.368,
+     "e": 271.585
+    },
+    {
+     "w": "the",
+     "s": 271.585,
+     "e": 271.802
+    },
+    {
+     "w": "back",
+     "s": 271.802,
+     "e": 272.019
+    },
+    {
+     "w": "of",
+     "s": 272.019,
+     "e": 272.236
+    },
+    {
+     "w": "his",
+     "s": 272.236,
+     "e": 272.453
+    },
+    {
+     "w": "coat.",
+     "s": 272.453,
+     "e": 272.67,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L47",
+   "scene": "C12",
+   "text": "He gets up, and goes back to work.",
+   "dir": "wry, flat",
+   "pause": "long",
+   "start": 273.04,
+   "end": 275.28,
+   "words": [
+    {
+     "w": "He",
+     "s": 273.04,
+     "e": 273.299
+    },
+    {
+     "w": "gets",
+     "s": 273.299,
+     "e": 273.559
+    },
+    {
+     "w": "up,",
+     "s": 273.559,
+     "e": 273.818
+    },
+    {
+     "w": "and",
+     "s": 273.984,
+     "e": 274.243
+    },
+    {
+     "w": "goes",
+     "s": 274.243,
+     "e": 274.502
+    },
+    {
+     "w": "back",
+     "s": 274.502,
+     "e": 274.762
+    },
+    {
+     "w": "to",
+     "s": 274.762,
+     "e": 275.021
+    },
+    {
+     "w": "work.",
+     "s": 275.021,
+     "e": 275.28,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L48",
+   "scene": "C13",
+   "text": "Which raises a question. Who was counting?",
+   "dir": "curious, slower",
+   "pause": "",
+   "start": 277.06,
+   "end": 280.18,
+   "words": [
+    {
+     "w": "Which",
+     "s": 277.06,
+     "e": 277.34
+    },
+    {
+     "w": "raises",
+     "s": 277.34,
+     "e": 277.62
+    },
+    {
+     "w": "a",
+     "s": 277.62,
+     "e": 277.9
+    },
+    {
+     "w": "question.",
+     "s": 277.9,
+     "e": 278.46
+    },
+    {
+     "w": "Who",
+     "s": 278.95,
+     "e": 279.258
+    },
+    {
+     "w": "was",
+     "s": 279.258,
+     "e": 279.565
+    },
+    {
+     "w": "counting?",
+     "s": 279.565,
+     "e": 280.18,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 4,
+     "s": 278.95
+    }
+   ]
+  },
+  {
+   "id": "L49",
+   "scene": "C13",
+   "text": "On February 17th, 1940, a Finnish army report credited him with two hundred nineteen confirmed rifle kills.",
+   "dir": "explaining",
+   "pause": "",
+   "start": 280.73,
+   "end": 288.63,
+   "words": [
+    {
+     "w": "On",
+     "s": 280.73,
+     "e": 280.964
+    },
+    {
+     "w": "February",
+     "s": 280.964,
+     "e": 281.665
+    },
+    {
+     "w": "17th,",
+     "s": 281.665,
+     "e": 282.25
+    },
+    {
+     "w": "1940,",
+     "s": 282.4,
+     "e": 283.569
+    },
+    {
+     "w": "a",
+     "s": 283.719,
+     "e": 283.953
+    },
+    {
+     "w": "Finnish",
+     "s": 283.953,
+     "e": 284.42
+    },
+    {
+     "w": "army",
+     "s": 284.42,
+     "e": 284.888
+    },
+    {
+     "w": "report",
+     "s": 284.888,
+     "e": 285.356
+    },
+    {
+     "w": "credited",
+     "s": 285.356,
+     "e": 285.824
+    },
+    {
+     "w": "him",
+     "s": 285.824,
+     "e": 286.057
+    },
+    {
+     "w": "with",
+     "s": 286.057,
+     "e": 286.291
+    },
+    {
+     "w": "two",
+     "s": 286.291,
+     "e": 286.525
+    },
+    {
+     "w": "hundred",
+     "s": 286.525,
+     "e": 286.759
+    },
+    {
+     "w": "nineteen",
+     "s": 286.759,
+     "e": 287.461
+    },
+    {
+     "w": "confirmed",
+     "s": 287.461,
+     "e": 287.928
+    },
+    {
+     "w": "rifle",
+     "s": 287.928,
+     "e": 288.396,
+     "emph": true
+    },
+    {
+     "w": "kills.",
+     "s": 288.396,
+     "e": 288.63
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L50",
+   "scene": "C13",
+   "text": "Later counts, including his own wartime diary, put the figure at around five hundred.",
+   "dir": "matter-of-fact",
+   "pause": "",
+   "start": 288.96,
+   "end": 294.24,
+   "words": [
+    {
+     "w": "Later",
+     "s": 288.96,
+     "e": 289.434
+    },
+    {
+     "w": "counts,",
+     "s": 289.434,
+     "e": 289.671
+    },
+    {
+     "w": "including",
+     "s": 289.823,
+     "e": 290.534
+    },
+    {
+     "w": "his",
+     "s": 290.534,
+     "e": 290.771
+    },
+    {
+     "w": "own",
+     "s": 290.771,
+     "e": 291.008
+    },
+    {
+     "w": "wartime",
+     "s": 291.008,
+     "e": 291.482
+    },
+    {
+     "w": "diary,",
+     "s": 291.482,
+     "e": 291.955
+    },
+    {
+     "w": "put",
+     "s": 292.107,
+     "e": 292.344
+    },
+    {
+     "w": "the",
+     "s": 292.344,
+     "e": 292.581
+    },
+    {
+     "w": "figure",
+     "s": 292.581,
+     "e": 293.055
+    },
+    {
+     "w": "at",
+     "s": 293.055,
+     "e": 293.292
+    },
+    {
+     "w": "around",
+     "s": 293.292,
+     "e": 293.766
+    },
+    {
+     "w": "five",
+     "s": 293.766,
+     "e": 294.003,
+     "emph": true
+    },
+    {
+     "w": "hundred.",
+     "s": 294.003,
+     "e": 294.24,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L51",
+   "scene": "C13",
+   "text": "That diary only became public in 2017, fifteen years after his death.",
+   "dir": "curious",
+   "pause": "",
+   "start": 294.61,
+   "end": 299.8,
+   "words": [
+    {
+     "w": "That",
+     "s": 294.61,
+     "e": 294.798
+    },
+    {
+     "w": "diary",
+     "s": 294.798,
+     "e": 295.174
+    },
+    {
+     "w": "only",
+     "s": 295.174,
+     "e": 295.55
+    },
+    {
+     "w": "became",
+     "s": 295.55,
+     "e": 295.926
+    },
+    {
+     "w": "public",
+     "s": 295.926,
+     "e": 296.302
+    },
+    {
+     "w": "in",
+     "s": 296.302,
+     "e": 296.49
+    },
+    {
+     "w": "2017,",
+     "s": 296.49,
+     "e": 297.43
+    },
+    {
+     "w": "fifteen",
+     "s": 297.84,
+     "e": 298.4
+    },
+    {
+     "w": "years",
+     "s": 298.4,
+     "e": 298.68
+    },
+    {
+     "w": "after",
+     "s": 298.68,
+     "e": 299.24
+    },
+    {
+     "w": "his",
+     "s": 299.24,
+     "e": 299.52
+    },
+    {
+     "w": "death.",
+     "s": 299.52,
+     "e": 299.8,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 7,
+     "s": 297.84
+    }
+   ]
+  },
+  {
+   "id": "L52",
+   "scene": "C13",
+   "text": "Many books add roughly two hundred more with a submachine gun. Nobody could really verify those.",
+   "dir": "skeptical",
+   "pause": "",
+   "start": 300.15,
+   "end": 305.82,
+   "words": [
+    {
+     "w": "Many",
+     "s": 300.15,
+     "e": 300.611
+    },
+    {
+     "w": "books",
+     "s": 300.611,
+     "e": 300.842
+    },
+    {
+     "w": "add",
+     "s": 300.842,
+     "e": 301.073
+    },
+    {
+     "w": "roughly",
+     "s": 301.073,
+     "e": 301.534
+    },
+    {
+     "w": "two",
+     "s": 301.534,
+     "e": 301.765
+    },
+    {
+     "w": "hundred",
+     "s": 301.765,
+     "e": 301.995
+    },
+    {
+     "w": "more",
+     "s": 301.995,
+     "e": 302.226
+    },
+    {
+     "w": "with",
+     "s": 302.226,
+     "e": 302.457
+    },
+    {
+     "w": "a",
+     "s": 302.457,
+     "e": 302.687
+    },
+    {
+     "w": "submachine",
+     "s": 302.687,
+     "e": 303.379
+    },
+    {
+     "w": "gun.",
+     "s": 303.379,
+     "e": 303.61
+    },
+    {
+     "w": "Nobody",
+     "s": 304.0,
+     "e": 304.546
+    },
+    {
+     "w": "could",
+     "s": 304.546,
+     "e": 304.728
+    },
+    {
+     "w": "really",
+     "s": 304.728,
+     "e": 305.092
+    },
+    {
+     "w": "verify",
+     "s": 305.092,
+     "e": 305.638,
+     "emph": true
+    },
+    {
+     "w": "those.",
+     "s": 305.638,
+     "e": 305.82
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 11,
+     "s": 304.0
+    }
+   ]
+  },
+  {
+   "id": "L53",
+   "scene": "C13",
+   "text": "At Kollaa, \"confirmed\" usually meant another soldier saw a man fall. Nobody walked into that clearing to check.",
+   "dir": "dry",
+   "pause": "",
+   "start": 306.16,
+   "end": 313.27,
+   "words": [
+    {
+     "w": "At",
+     "s": 306.16,
+     "e": 306.405
+    },
+    {
+     "w": "Kollaa,",
+     "s": 306.405,
+     "e": 306.896
+    },
+    {
+     "w": "\"confirmed\"",
+     "s": 307.052,
+     "e": 307.543
+    },
+    {
+     "w": "usually",
+     "s": 307.543,
+     "e": 308.278
+    },
+    {
+     "w": "meant",
+     "s": 308.278,
+     "e": 308.523
+    },
+    {
+     "w": "another",
+     "s": 308.523,
+     "e": 309.259
+    },
+    {
+     "w": "soldier",
+     "s": 309.259,
+     "e": 309.749
+    },
+    {
+     "w": "saw",
+     "s": 309.749,
+     "e": 309.995
+    },
+    {
+     "w": "a",
+     "s": 309.995,
+     "e": 310.24
+    },
+    {
+     "w": "man",
+     "s": 310.24,
+     "e": 310.485
+    },
+    {
+     "w": "fall.",
+     "s": 310.485,
+     "e": 310.73
+    },
+    {
+     "w": "Nobody",
+     "s": 311.12,
+     "e": 311.706
+    },
+    {
+     "w": "walked",
+     "s": 311.706,
+     "e": 311.902
+    },
+    {
+     "w": "into",
+     "s": 311.902,
+     "e": 312.293
+    },
+    {
+     "w": "that",
+     "s": 312.293,
+     "e": 312.488
+    },
+    {
+     "w": "clearing",
+     "s": 312.488,
+     "e": 312.879
+    },
+    {
+     "w": "to",
+     "s": 312.879,
+     "e": 313.075
+    },
+    {
+     "w": "check.",
+     "s": 313.075,
+     "e": 313.27,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 11,
+     "s": 311.12
+    }
+   ]
+  },
+  {
+   "id": "L54",
+   "scene": "C13",
+   "text": "So the honest answer is, we don't know the exact number.",
+   "dir": "fair, measured",
+   "pause": "pause",
+   "start": 313.62,
+   "end": 316.97,
+   "words": [
+    {
+     "w": "So",
+     "s": 313.62,
+     "e": 313.821
+    },
+    {
+     "w": "the",
+     "s": 313.821,
+     "e": 314.023
+    },
+    {
+     "w": "honest",
+     "s": 314.023,
+     "e": 314.425
+    },
+    {
+     "w": "answer",
+     "s": 314.425,
+     "e": 314.828
+    },
+    {
+     "w": "is,",
+     "s": 314.828,
+     "e": 315.029
+    },
+    {
+     "w": "we",
+     "s": 315.158,
+     "e": 315.359
+    },
+    {
+     "w": "don't",
+     "s": 315.359,
+     "e": 315.762
+    },
+    {
+     "w": "know",
+     "s": 315.762,
+     "e": 315.963
+    },
+    {
+     "w": "the",
+     "s": 315.963,
+     "e": 316.165
+    },
+    {
+     "w": "exact",
+     "s": 316.165,
+     "e": 316.567,
+     "emph": true
+    },
+    {
+     "w": "number.",
+     "s": 316.567,
+     "e": 316.97
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L55",
+   "scene": "C13",
+   "text": "But take the lowest figure. Two hundred nineteen, in about eleven weeks.",
+   "dir": "building",
+   "pause": "",
+   "start": 317.82,
+   "end": 322.34,
+   "words": [
+    {
+     "w": "But",
+     "s": 317.82,
+     "e": 318.026
+    },
+    {
+     "w": "take",
+     "s": 318.026,
+     "e": 318.231
+    },
+    {
+     "w": "the",
+     "s": 318.231,
+     "e": 318.437
+    },
+    {
+     "w": "lowest",
+     "s": 318.437,
+     "e": 318.849
+    },
+    {
+     "w": "figure.",
+     "s": 318.849,
+     "e": 319.26
+    },
+    {
+     "w": "Two",
+     "s": 319.57,
+     "e": 319.789
+    },
+    {
+     "w": "hundred",
+     "s": 319.789,
+     "e": 320.008
+    },
+    {
+     "w": "nineteen,",
+     "s": 320.008,
+     "e": 320.666
+    },
+    {
+     "w": "in",
+     "s": 320.806,
+     "e": 321.025
+    },
+    {
+     "w": "about",
+     "s": 321.025,
+     "e": 321.463
+    },
+    {
+     "w": "eleven",
+     "s": 321.463,
+     "e": 322.121
+    },
+    {
+     "w": "weeks.",
+     "s": 322.121,
+     "e": 322.34,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 5,
+     "s": 319.57
+    }
+   ]
+  },
+  {
+   "id": "L56",
+   "scene": "C13",
+   "text": "Lyudmila Pavlichenko, the Soviet Union's most famous sniper, was credited with three hundred nine over about a year.",
+   "dir": "incredulous",
+   "pause": "pause",
+   "start": 322.84,
+   "end": 330.8,
+   "words": [
+    {
+     "w": "Lyudmila",
+     "s": 322.84,
+     "e": 323.58
+    },
+    {
+     "w": "Pavlichenko,",
+     "s": 323.58,
+     "e": 324.566
+    },
+    {
+     "w": "the",
+     "s": 324.724,
+     "e": 324.971
+    },
+    {
+     "w": "Soviet",
+     "s": 324.971,
+     "e": 325.464
+    },
+    {
+     "w": "Union's",
+     "s": 325.464,
+     "e": 326.204
+    },
+    {
+     "w": "most",
+     "s": 326.204,
+     "e": 326.45
+    },
+    {
+     "w": "famous",
+     "s": 326.45,
+     "e": 326.943
+    },
+    {
+     "w": "sniper,",
+     "s": 326.943,
+     "e": 327.437
+    },
+    {
+     "w": "was",
+     "s": 327.594,
+     "e": 327.841
+    },
+    {
+     "w": "credited",
+     "s": 327.841,
+     "e": 328.334
+    },
+    {
+     "w": "with",
+     "s": 328.334,
+     "e": 328.581
+    },
+    {
+     "w": "three",
+     "s": 328.581,
+     "e": 328.827
+    },
+    {
+     "w": "hundred",
+     "s": 328.827,
+     "e": 329.074
+    },
+    {
+     "w": "nine",
+     "s": 329.074,
+     "e": 329.321
+    },
+    {
+     "w": "over",
+     "s": 329.321,
+     "e": 329.814
+    },
+    {
+     "w": "about",
+     "s": 329.814,
+     "e": 330.307
+    },
+    {
+     "w": "a",
+     "s": 330.307,
+     "e": 330.553
+    },
+    {
+     "w": "year.",
+     "s": 330.553,
+     "e": 330.8,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L57",
+   "scene": "C14",
+   "text": "Same goes for the nickname. \"The White Death\" is supposed to be what the Soviets called him.",
+   "dir": "wry",
+   "pause": "",
+   "start": 331.83,
+   "end": 338.25,
+   "words": [
+    {
+     "w": "Same",
+     "s": 331.83,
+     "e": 332.282
+    },
+    {
+     "w": "goes",
+     "s": 332.282,
+     "e": 332.733
+    },
+    {
+     "w": "for",
+     "s": 332.733,
+     "e": 333.185
+    },
+    {
+     "w": "the",
+     "s": 333.185,
+     "e": 333.637
+    },
+    {
+     "w": "nickname.",
+     "s": 333.637,
+     "e": 334.54
+    },
+    {
+     "w": "\"The",
+     "s": 334.91,
+     "e": 335.149
+    },
+    {
+     "w": "White",
+     "s": 335.149,
+     "e": 335.387
+    },
+    {
+     "w": "Death\"",
+     "s": 335.387,
+     "e": 335.626
+    },
+    {
+     "w": "is",
+     "s": 335.626,
+     "e": 335.864
+    },
+    {
+     "w": "supposed",
+     "s": 335.864,
+     "e": 336.341
+    },
+    {
+     "w": "to",
+     "s": 336.341,
+     "e": 336.58
+    },
+    {
+     "w": "be",
+     "s": 336.58,
+     "e": 336.819
+    },
+    {
+     "w": "what",
+     "s": 336.819,
+     "e": 337.057
+    },
+    {
+     "w": "the",
+     "s": 337.057,
+     "e": 337.296
+    },
+    {
+     "w": "Soviets",
+     "s": 337.296,
+     "e": 337.773,
+     "emph": true
+    },
+    {
+     "w": "called",
+     "s": 337.773,
+     "e": 338.011
+    },
+    {
+     "w": "him.",
+     "s": 338.011,
+     "e": 338.25
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 5,
+     "s": 334.91
+    }
+   ]
+  },
+  {
+   "id": "L58",
+   "scene": "C14",
+   "text": "It may just as well have started in Finnish newspapers. Either way, it stuck.",
+   "dir": "dry",
+   "pause": "pause",
+   "start": 338.8,
+   "end": 343.78,
+   "words": [
+    {
+     "w": "It",
+     "s": 338.8,
+     "e": 339.032
+    },
+    {
+     "w": "may",
+     "s": 339.032,
+     "e": 339.265
+    },
+    {
+     "w": "just",
+     "s": 339.265,
+     "e": 339.497
+    },
+    {
+     "w": "as",
+     "s": 339.497,
+     "e": 339.729
+    },
+    {
+     "w": "well",
+     "s": 339.729,
+     "e": 339.962
+    },
+    {
+     "w": "have",
+     "s": 339.962,
+     "e": 340.194
+    },
+    {
+     "w": "started",
+     "s": 340.194,
+     "e": 340.426
+    },
+    {
+     "w": "in",
+     "s": 340.426,
+     "e": 340.659
+    },
+    {
+     "w": "Finnish",
+     "s": 340.659,
+     "e": 341.123
+    },
+    {
+     "w": "newspapers.",
+     "s": 341.123,
+     "e": 341.82,
+     "emph": true
+    },
+    {
+     "w": "Either",
+     "s": 342.24,
+     "e": 342.786
+    },
+    {
+     "w": "way,",
+     "s": 342.786,
+     "e": 343.059
+    },
+    {
+     "w": "it",
+     "s": 343.234,
+     "e": 343.507
+    },
+    {
+     "w": "stuck.",
+     "s": 343.507,
+     "e": 343.78
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 10,
+     "s": 342.24
+    }
+   ]
+  },
+  {
+   "id": "L59",
+   "scene": "C15",
+   "text": "Which brings us back to that morning in March.",
+   "dir": "low, slower",
+   "pause": "",
+   "start": 344.81,
+   "end": 347.53,
+   "words": [
+    {
+     "w": "Which",
+     "s": 344.81,
+     "e": 345.082
+    },
+    {
+     "w": "brings",
+     "s": 345.082,
+     "e": 345.354
+    },
+    {
+     "w": "us",
+     "s": 345.354,
+     "e": 345.626
+    },
+    {
+     "w": "back",
+     "s": 345.626,
+     "e": 345.898
+    },
+    {
+     "w": "to",
+     "s": 345.898,
+     "e": 346.17
+    },
+    {
+     "w": "that",
+     "s": 346.17,
+     "e": 346.442
+    },
+    {
+     "w": "morning",
+     "s": 346.442,
+     "e": 346.986
+    },
+    {
+     "w": "in",
+     "s": 346.986,
+     "e": 347.258
+    },
+    {
+     "w": "March.",
+     "s": 347.258,
+     "e": 347.53
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L60",
+   "scene": "C15",
+   "text": "The round that hit him is usually described as an explosive bullet.",
+   "dir": "quiet",
+   "pause": "",
+   "start": 348.08,
+   "end": 352.1,
+   "words": [
+    {
+     "w": "The",
+     "s": 348.08,
+     "e": 348.303
+    },
+    {
+     "w": "round",
+     "s": 348.303,
+     "e": 348.527
+    },
+    {
+     "w": "that",
+     "s": 348.527,
+     "e": 348.75
+    },
+    {
+     "w": "hit",
+     "s": 348.75,
+     "e": 348.973
+    },
+    {
+     "w": "him",
+     "s": 348.973,
+     "e": 349.197
+    },
+    {
+     "w": "is",
+     "s": 349.197,
+     "e": 349.42
+    },
+    {
+     "w": "usually",
+     "s": 349.42,
+     "e": 350.09
+    },
+    {
+     "w": "described",
+     "s": 350.09,
+     "e": 350.537
+    },
+    {
+     "w": "as",
+     "s": 350.537,
+     "e": 350.76
+    },
+    {
+     "w": "an",
+     "s": 350.76,
+     "e": 350.983
+    },
+    {
+     "w": "explosive",
+     "s": 350.983,
+     "e": 351.653,
+     "emph": true
+    },
+    {
+     "w": "bullet.",
+     "s": 351.653,
+     "e": 352.1
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L61",
+   "scene": "C15",
+   "text": "He's unconscious for about a week. He wakes up on March 13th, 1940.",
+   "dir": "slow",
+   "pause": "",
+   "start": 352.64,
+   "end": 358.05,
+   "words": [
+    {
+     "w": "He's",
+     "s": 352.64,
+     "e": 353.036
+    },
+    {
+     "w": "unconscious",
+     "s": 353.036,
+     "e": 353.63
+    },
+    {
+     "w": "for",
+     "s": 353.63,
+     "e": 353.828
+    },
+    {
+     "w": "about",
+     "s": 353.828,
+     "e": 354.224
+    },
+    {
+     "w": "a",
+     "s": 354.224,
+     "e": 354.422
+    },
+    {
+     "w": "week.",
+     "s": 354.422,
+     "e": 354.62
+    },
+    {
+     "w": "He",
+     "s": 355.19,
+     "e": 355.408
+    },
+    {
+     "w": "wakes",
+     "s": 355.408,
+     "e": 355.625
+    },
+    {
+     "w": "up",
+     "s": 355.625,
+     "e": 355.843
+    },
+    {
+     "w": "on",
+     "s": 355.843,
+     "e": 356.061
+    },
+    {
+     "w": "March",
+     "s": 356.061,
+     "e": 356.278
+    },
+    {
+     "w": "13th,",
+     "s": 356.278,
+     "e": 356.823
+    },
+    {
+     "w": "1940.",
+     "s": 356.962,
+     "e": 358.05
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 6,
+     "s": 355.19
+    }
+   ]
+  },
+  {
+   "id": "L62",
+   "scene": "C15",
+   "text": "The day the war ends.",
+   "dir": "quieter, let it land",
+   "pause": "long",
+   "start": 358.6,
+   "end": 360.52,
+   "words": [
+    {
+     "w": "The",
+     "s": 358.6,
+     "e": 358.984
+    },
+    {
+     "w": "day",
+     "s": 358.984,
+     "e": 359.368
+    },
+    {
+     "w": "the",
+     "s": 359.368,
+     "e": 359.752
+    },
+    {
+     "w": "war",
+     "s": 359.752,
+     "e": 360.136
+    },
+    {
+     "w": "ends.",
+     "s": 360.136,
+     "e": 360.52,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L63",
+   "scene": "C15",
+   "text": "Finland gives up roughly a tenth of its territory, including much of Karelia.",
+   "dir": "measured",
+   "pause": "",
+   "start": 362.12,
+   "end": 367.78,
+   "words": [
+    {
+     "w": "Finland",
+     "s": 362.12,
+     "e": 362.62
+    },
+    {
+     "w": "gives",
+     "s": 362.62,
+     "e": 362.87
+    },
+    {
+     "w": "up",
+     "s": 362.87,
+     "e": 363.12
+    },
+    {
+     "w": "roughly",
+     "s": 363.12,
+     "e": 363.62
+    },
+    {
+     "w": "a",
+     "s": 363.62,
+     "e": 363.87
+    },
+    {
+     "w": "tenth",
+     "s": 363.87,
+     "e": 364.12
+    },
+    {
+     "w": "of",
+     "s": 364.12,
+     "e": 364.37
+    },
+    {
+     "w": "its",
+     "s": 364.37,
+     "e": 364.62
+    },
+    {
+     "w": "territory,",
+     "s": 364.62,
+     "e": 365.62
+    },
+    {
+     "w": "including",
+     "s": 365.78,
+     "e": 366.53
+    },
+    {
+     "w": "much",
+     "s": 366.53,
+     "e": 366.78
+    },
+    {
+     "w": "of",
+     "s": 366.78,
+     "e": 367.03
+    },
+    {
+     "w": "Karelia.",
+     "s": 367.03,
+     "e": 367.78,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L64",
+   "scene": "C15",
+   "text": "But it stays an independent country. And Kollaa never fell.",
+   "dir": "firm",
+   "pause": "",
+   "start": 368.29,
+   "end": 372.74,
+   "words": [
+    {
+     "w": "But",
+     "s": 368.29,
+     "e": 368.518
+    },
+    {
+     "w": "it",
+     "s": 368.518,
+     "e": 368.746
+    },
+    {
+     "w": "stays",
+     "s": 368.746,
+     "e": 368.974
+    },
+    {
+     "w": "an",
+     "s": 368.974,
+     "e": 369.202
+    },
+    {
+     "w": "independent",
+     "s": 369.202,
+     "e": 370.114
+    },
+    {
+     "w": "country.",
+     "s": 370.114,
+     "e": 370.57
+    },
+    {
+     "w": "And",
+     "s": 371.03,
+     "e": 371.315
+    },
+    {
+     "w": "Kollaa",
+     "s": 371.315,
+     "e": 371.885
+    },
+    {
+     "w": "never",
+     "s": 371.885,
+     "e": 372.455
+    },
+    {
+     "w": "fell.",
+     "s": 372.455,
+     "e": 372.74,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 6,
+     "s": 371.03
+    }
+   ]
+  },
+  {
+   "id": "L65",
+   "scene": "C15",
+   "text": "Around twenty-five thousand Finns died in those hundred and five days. Soviet dead start at about one hundred twenty-six thousand, and some estimates go far higher.",
+   "dir": "low, heavy",
+   "pause": "pause",
+   "start": 373.29,
+   "end": 386.43,
+   "words": [
+    {
+     "w": "Around",
+     "s": 373.29,
+     "e": 374.259
+    },
+    {
+     "w": "twenty-five",
+     "s": 374.259,
+     "e": 375.713
+    },
+    {
+     "w": "thousand",
+     "s": 375.713,
+     "e": 376.683
+    },
+    {
+     "w": "Finns",
+     "s": 376.683,
+     "e": 377.167
+    },
+    {
+     "w": "died",
+     "s": 377.167,
+     "e": 377.652
+    },
+    {
+     "w": "in",
+     "s": 377.652,
+     "e": 378.137
+    },
+    {
+     "w": "those",
+     "s": 378.137,
+     "e": 378.621
+    },
+    {
+     "w": "hundred",
+     "s": 378.621,
+     "e": 379.106
+    },
+    {
+     "w": "and",
+     "s": 379.106,
+     "e": 379.591
+    },
+    {
+     "w": "five",
+     "s": 379.591,
+     "e": 380.075
+    },
+    {
+     "w": "days.",
+     "s": 380.075,
+     "e": 380.56
+    },
+    {
+     "w": "Soviet",
+     "s": 380.92,
+     "e": 381.386
+    },
+    {
+     "w": "dead",
+     "s": 381.386,
+     "e": 381.619
+    },
+    {
+     "w": "start",
+     "s": 381.619,
+     "e": 381.852
+    },
+    {
+     "w": "at",
+     "s": 381.852,
+     "e": 382.086
+    },
+    {
+     "w": "about",
+     "s": 382.086,
+     "e": 382.552
+    },
+    {
+     "w": "one",
+     "s": 382.552,
+     "e": 382.785,
+     "emph": true
+    },
+    {
+     "w": "hundred",
+     "s": 382.785,
+     "e": 383.018,
+     "emph": true
+    },
+    {
+     "w": "twenty-six",
+     "s": 383.018,
+     "e": 383.717,
+     "emph": true
+    },
+    {
+     "w": "thousand,",
+     "s": 383.717,
+     "e": 384.183,
+     "emph": true
+    },
+    {
+     "w": "and",
+     "s": 384.332,
+     "e": 384.565
+    },
+    {
+     "w": "some",
+     "s": 384.565,
+     "e": 384.799
+    },
+    {
+     "w": "estimates",
+     "s": 384.799,
+     "e": 385.498
+    },
+    {
+     "w": "go",
+     "s": 385.498,
+     "e": 385.731
+    },
+    {
+     "w": "far",
+     "s": 385.731,
+     "e": 385.964
+    },
+    {
+     "w": "higher.",
+     "s": 385.964,
+     "e": 386.43
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 11,
+     "s": 380.92
+    }
+   ]
+  },
+  {
+   "id": "L66",
+   "scene": "C16",
+   "text": "Simo needs years of surgery to rebuild his jaw.",
+   "dir": "warmer",
+   "pause": "",
+   "start": 387.46,
+   "end": 390.88,
+   "words": [
+    {
+     "w": "Simo",
+     "s": 387.46,
+     "e": 387.986
+    },
+    {
+     "w": "needs",
+     "s": 387.986,
+     "e": 388.249
+    },
+    {
+     "w": "years",
+     "s": 388.249,
+     "e": 388.512
+    },
+    {
+     "w": "of",
+     "s": 388.512,
+     "e": 388.776
+    },
+    {
+     "w": "surgery",
+     "s": 388.776,
+     "e": 389.565
+    },
+    {
+     "w": "to",
+     "s": 389.565,
+     "e": 389.828
+    },
+    {
+     "w": "rebuild",
+     "s": 389.828,
+     "e": 390.354
+    },
+    {
+     "w": "his",
+     "s": 390.354,
+     "e": 390.617
+    },
+    {
+     "w": "jaw.",
+     "s": 390.617,
+     "e": 390.88,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L67",
+   "scene": "C16",
+   "text": "Field Marshal Mannerheim promotes him from corporal straight to second lieutenant.",
+   "dir": "matter-of-fact",
+   "pause": "",
+   "start": 391.43,
+   "end": 395.69,
+   "words": [
+    {
+     "w": "Field",
+     "s": 391.43,
+     "e": 391.643
+    },
+    {
+     "w": "Marshal",
+     "s": 391.643,
+     "e": 392.069
+    },
+    {
+     "w": "Mannerheim",
+     "s": 392.069,
+     "e": 392.708
+    },
+    {
+     "w": "promotes",
+     "s": 392.708,
+     "e": 393.134
+    },
+    {
+     "w": "him",
+     "s": 393.134,
+     "e": 393.347
+    },
+    {
+     "w": "from",
+     "s": 393.347,
+     "e": 393.56
+    },
+    {
+     "w": "corporal",
+     "s": 393.56,
+     "e": 394.199
+    },
+    {
+     "w": "straight",
+     "s": 394.199,
+     "e": 394.412
+    },
+    {
+     "w": "to",
+     "s": 394.412,
+     "e": 394.625
+    },
+    {
+     "w": "second",
+     "s": 394.625,
+     "e": 395.051
+    },
+    {
+     "w": "lieutenant.",
+     "s": 395.051,
+     "e": 395.69,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L68",
+   "scene": "C16",
+   "text": "Then he goes home, breeds hunting dogs, and hunts moose, sometimes with the President of Finland.",
+   "dir": "wry smile",
+   "pause": "",
+   "start": 396.19,
+   "end": 401.89,
+   "words": [
+    {
+     "w": "Then",
+     "s": 396.19,
+     "e": 396.458
+    },
+    {
+     "w": "he",
+     "s": 396.458,
+     "e": 396.726
+    },
+    {
+     "w": "goes",
+     "s": 396.726,
+     "e": 396.994
+    },
+    {
+     "w": "home,",
+     "s": 396.994,
+     "e": 397.261
+    },
+    {
+     "w": "breeds",
+     "s": 397.433,
+     "e": 397.701
+    },
+    {
+     "w": "hunting",
+     "s": 397.701,
+     "e": 398.236
+    },
+    {
+     "w": "dogs,",
+     "s": 398.236,
+     "e": 398.504
+    },
+    {
+     "w": "and",
+     "s": 398.675,
+     "e": 398.943
+    },
+    {
+     "w": "hunts",
+     "s": 398.943,
+     "e": 399.211
+    },
+    {
+     "w": "moose,",
+     "s": 399.211,
+     "e": 399.479
+    },
+    {
+     "w": "sometimes",
+     "s": 399.92,
+     "e": 400.457
+    },
+    {
+     "w": "with",
+     "s": 400.457,
+     "e": 400.636
+    },
+    {
+     "w": "the",
+     "s": 400.636,
+     "e": 400.816
+    },
+    {
+     "w": "President",
+     "s": 400.816,
+     "e": 401.353,
+     "emph": true
+    },
+    {
+     "w": "of",
+     "s": 401.353,
+     "e": 401.532
+    },
+    {
+     "w": "Finland.",
+     "s": 401.532,
+     "e": 401.89
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 10,
+     "s": 399.92
+    }
+   ]
+  },
+  {
+   "id": "L69",
+   "scene": "C16",
+   "text": "Late in life, an interviewer asks how he got so good. He answers with one word.\" Practice.\"",
+   "dir": "curious",
+   "pause": "",
+   "start": 402.44,
+   "end": 410.2,
+   "words": [
+    {
+     "w": "Late",
+     "s": 402.44,
+     "e": 402.674
+    },
+    {
+     "w": "in",
+     "s": 402.674,
+     "e": 402.907
+    },
+    {
+     "w": "life,",
+     "s": 402.907,
+     "e": 403.141
+    },
+    {
+     "w": "an",
+     "s": 403.29,
+     "e": 403.524
+    },
+    {
+     "w": "interviewer",
+     "s": 403.524,
+     "e": 404.458
+    },
+    {
+     "w": "asks",
+     "s": 404.458,
+     "e": 404.692
+    },
+    {
+     "w": "how",
+     "s": 404.692,
+     "e": 404.926
+    },
+    {
+     "w": "he",
+     "s": 404.926,
+     "e": 405.159
+    },
+    {
+     "w": "got",
+     "s": 405.159,
+     "e": 405.393
+    },
+    {
+     "w": "so",
+     "s": 405.393,
+     "e": 405.627
+    },
+    {
+     "w": "good.",
+     "s": 405.627,
+     "e": 405.86
+    },
+    {
+     "w": "He",
+     "s": 406.38,
+     "e": 406.827
+    },
+    {
+     "w": "answers",
+     "s": 406.827,
+     "e": 407.72
+    },
+    {
+     "w": "with",
+     "s": 407.72,
+     "e": 408.167
+    },
+    {
+     "w": "one",
+     "s": 408.167,
+     "e": 408.613
+    },
+    {
+     "w": "word.\"",
+     "s": 408.613,
+     "e": 409.06
+    },
+    {
+     "w": "Practice.\"",
+     "s": 409.49,
+     "e": 410.2,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 11,
+     "s": 406.38
+    },
+    {
+     "kind": "dir",
+     "text": "dry, flat",
+     "word": 11,
+     "s": 406.38
+    },
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 16,
+     "s": 409.49
+    }
+   ]
+  },
+  {
+   "id": "L70",
+   "scene": "C16",
+   "text": "Asked if he regretted the killing, he said he did what he was told, as well as he could.",
+   "dir": "quieter, serious",
+   "pause": "pause",
+   "start": 410.74,
+   "end": 415.53,
+   "words": [
+    {
+     "w": "Asked",
+     "s": 410.74,
+     "e": 410.939
+    },
+    {
+     "w": "if",
+     "s": 410.939,
+     "e": 411.138
+    },
+    {
+     "w": "he",
+     "s": 411.138,
+     "e": 411.337
+    },
+    {
+     "w": "regretted",
+     "s": 411.337,
+     "e": 411.735
+    },
+    {
+     "w": "the",
+     "s": 411.735,
+     "e": 411.935
+    },
+    {
+     "w": "killing,",
+     "s": 411.935,
+     "e": 412.333
+    },
+    {
+     "w": "he",
+     "s": 412.46,
+     "e": 412.659
+    },
+    {
+     "w": "said",
+     "s": 412.659,
+     "e": 412.858
+    },
+    {
+     "w": "he",
+     "s": 412.858,
+     "e": 413.057
+    },
+    {
+     "w": "did",
+     "s": 413.057,
+     "e": 413.256
+    },
+    {
+     "w": "what",
+     "s": 413.256,
+     "e": 413.455
+    },
+    {
+     "w": "he",
+     "s": 413.455,
+     "e": 413.655
+    },
+    {
+     "w": "was",
+     "s": 413.655,
+     "e": 413.854
+    },
+    {
+     "w": "told,",
+     "s": 413.854,
+     "e": 414.053
+    },
+    {
+     "w": "as",
+     "s": 414.55,
+     "e": 414.746
+    },
+    {
+     "w": "well",
+     "s": 414.746,
+     "e": 414.942
+    },
+    {
+     "w": "as",
+     "s": 414.942,
+     "e": 415.138
+    },
+    {
+     "w": "he",
+     "s": 415.138,
+     "e": 415.334
+    },
+    {
+     "w": "could.",
+     "s": 415.334,
+     "e": 415.53,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 14,
+     "s": 414.55
+    }
+   ]
+  },
+  {
+   "id": "L71",
+   "scene": "C17",
+   "text": "Simo Häyhä died in 2002, at ninety-six, in a veterans' home in Hamina.",
+   "dir": "warm, slower",
+   "pause": "",
+   "start": 416.56,
+   "end": 422.24,
+   "words": [
+    {
+     "w": "Simo",
+     "s": 416.56,
+     "e": 416.992
+    },
+    {
+     "w": "Häyhä",
+     "s": 416.992,
+     "e": 417.209
+    },
+    {
+     "w": "died",
+     "s": 417.209,
+     "e": 417.425
+    },
+    {
+     "w": "in",
+     "s": 417.425,
+     "e": 417.641
+    },
+    {
+     "w": "2002,",
+     "s": 417.641,
+     "e": 418.721
+    },
+    {
+     "w": "at",
+     "s": 418.86,
+     "e": 419.076
+    },
+    {
+     "w": "ninety-six,",
+     "s": 419.076,
+     "e": 419.94
+    },
+    {
+     "w": "in",
+     "s": 420.079,
+     "e": 420.295
+    },
+    {
+     "w": "a",
+     "s": 420.295,
+     "e": 420.511
+    },
+    {
+     "w": "veterans'",
+     "s": 420.511,
+     "e": 421.159
+    },
+    {
+     "w": "home",
+     "s": 421.159,
+     "e": 421.376
+    },
+    {
+     "w": "in",
+     "s": 421.376,
+     "e": 421.592
+    },
+    {
+     "w": "Hamina.",
+     "s": 421.592,
+     "e": 422.24,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L72",
+   "scene": "C17",
+   "text": "In all those years, he never seemed very interested in the number everyone kept asking him about.",
+   "dir": "quiet",
+   "pause": "",
+   "start": 422.79,
+   "end": 427.95,
+   "words": [
+    {
+     "w": "In",
+     "s": 422.79,
+     "e": 422.984
+    },
+    {
+     "w": "all",
+     "s": 422.984,
+     "e": 423.178
+    },
+    {
+     "w": "those",
+     "s": 423.178,
+     "e": 423.371
+    },
+    {
+     "w": "years,",
+     "s": 423.371,
+     "e": 423.565
+    },
+    {
+     "w": "he",
+     "s": 423.689,
+     "e": 423.883
+    },
+    {
+     "w": "never",
+     "s": 423.883,
+     "e": 424.27
+    },
+    {
+     "w": "seemed",
+     "s": 424.27,
+     "e": 424.464
+    },
+    {
+     "w": "very",
+     "s": 424.464,
+     "e": 424.851
+    },
+    {
+     "w": "interested",
+     "s": 424.851,
+     "e": 425.432
+    },
+    {
+     "w": "in",
+     "s": 425.432,
+     "e": 425.626
+    },
+    {
+     "w": "the",
+     "s": 425.626,
+     "e": 425.819
+    },
+    {
+     "w": "number",
+     "s": 425.819,
+     "e": 426.207
+    },
+    {
+     "w": "everyone",
+     "s": 426.207,
+     "e": 426.788
+    },
+    {
+     "w": "kept",
+     "s": 426.788,
+     "e": 426.982
+    },
+    {
+     "w": "asking",
+     "s": 426.982,
+     "e": 427.369
+    },
+    {
+     "w": "him",
+     "s": 427.369,
+     "e": 427.563
+    },
+    {
+     "w": "about.",
+     "s": 427.563,
+     "e": 427.95,
+     "emph": true
+    }
+   ],
+   "cues": []
+  },
+  {
+   "id": "L73",
+   "scene": "C17",
+   "text": "The soldiers across that clearing didn't need a number. They just learned not to stand up.",
+   "dir": "dry, then dropping",
+   "pause": "long",
+   "start": 428.48,
+   "end": 433.88,
+   "words": [
+    {
+     "w": "The",
+     "s": 428.48,
+     "e": 428.678
+    },
+    {
+     "w": "soldiers",
+     "s": 428.678,
+     "e": 429.074
+    },
+    {
+     "w": "across",
+     "s": 429.074,
+     "e": 429.469
+    },
+    {
+     "w": "that",
+     "s": 429.469,
+     "e": 429.667
+    },
+    {
+     "w": "clearing",
+     "s": 429.667,
+     "e": 430.063
+    },
+    {
+     "w": "didn't",
+     "s": 430.063,
+     "e": 430.459
+    },
+    {
+     "w": "need",
+     "s": 430.459,
+     "e": 430.657
+    },
+    {
+     "w": "a",
+     "s": 430.657,
+     "e": 430.854
+    },
+    {
+     "w": "number.",
+     "s": 430.854,
+     "e": 431.25
+    },
+    {
+     "w": "They",
+     "s": 431.75,
+     "e": 432.054
+    },
+    {
+     "w": "just",
+     "s": 432.054,
+     "e": 432.359
+    },
+    {
+     "w": "learned",
+     "s": 432.359,
+     "e": 432.663
+    },
+    {
+     "w": "not",
+     "s": 432.663,
+     "e": 432.967
+    },
+    {
+     "w": "to",
+     "s": 432.967,
+     "e": 433.272
+    },
+    {
+     "w": "stand",
+     "s": 433.272,
+     "e": 433.576
+    },
+    {
+     "w": "up.",
+     "s": 433.576,
+     "e": 433.88,
+     "emph": true
+    }
+   ],
+   "cues": [
+    {
+     "kind": "beat",
+     "text": "beat",
+     "word": 9,
+     "s": 431.75
+    },
+    {
+     "kind": "dir",
+     "text": "whisper",
+     "word": 9,
+     "s": 431.75
+    }
+   ]
+  }
+ ]
+}

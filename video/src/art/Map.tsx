@@ -9,8 +9,8 @@ const LON1 = 113.4;
 const LAT0 = 16.5;
 const LAT1 = 22.3;
 
-type LL = [number, number]; // [kinh độ, vĩ độ]
-type XY = [number, number];
+export type LL = [number, number]; // [kinh độ, vĩ độ]
+export type XY = [number, number];
 
 export const geo = (lon: number, lat: number): XY => [((lon - LON0) / (LON1 - LON0)) * W, ((LAT1 - lat) / (LAT1 - LAT0)) * H];
 
@@ -21,7 +21,7 @@ export const geoPct = (lon: number, lat: number): XY => {
 };
 
 /** Làm mượt đường gấp khúc bằng spline Catmull-Rom. */
-const smooth = (pts: XY[], steps = 10): XY[] => {
+export const smooth = (pts: XY[], steps = 10): XY[] => {
   if (pts.length < 3) {
     return pts;
   }
@@ -44,7 +44,7 @@ const smooth = (pts: XY[], steps = 10): XY[] => {
   return out;
 };
 
-const toD = (pts: XY[], close = false) => `M ${pts.map((p) => `${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' L ')}${close ? ' Z' : ''}`;
+export const toD = (pts: XY[], close = false) => `M ${pts.map((p) => `${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' L ')}${close ? ' Z' : ''}`;
 
 // Bờ biển từ phía đông (Quảng Đông) vòng qua bán đảo Lôi Châu, dọc bờ biển Việt Nam xuống phía nam.
 const COAST: LL[] = [
@@ -94,13 +94,13 @@ export type MapMarker = {ll: LL; at: number; kind?: 'pulse' | 'burst' | 'dot'; c
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 /** Mũi tên tự vẽ dọc theo đường đi, đầu mũi tên luôn ở điểm đang vẽ tới. */
-const Arrow: React.FC<{a: MapArrow}> = ({a}) => {
+export const Arrow: React.FC<{a: MapArrow; proj?: (lon: number, lat: number) => XY; font?: number}> = ({a, proj = geo, font = 34}) => {
   const frame = useCurrentFrame();
   const p = interpolate(frame, [a.from, a.to], [0, 1], {...clamp, easing: Easing.inOut(Easing.quad)});
   if (p <= 0) {
     return null;
   }
-  const pts = smooth(a.pts.map(([lo, la]) => geo(lo, la)), 12);
+  const pts = smooth(a.pts.map(([lo, la]) => proj(lo, la)), 12);
   const seg = pts.slice(1).map((q, i) => Math.hypot(q[0] - pts[i][0], q[1] - pts[i][1]));
   const total = seg.reduce((s, v) => s + v, 0);
   let left = total * p;
@@ -124,7 +124,7 @@ const Arrow: React.FC<{a: MapArrow}> = ({a}) => {
         <path d={`M ${w * 2.6} 0 L ${-w * 1.2} ${-w * 2} L ${-w * 0.4} 0 L ${-w * 1.2} ${w * 2} Z`} fill={col} stroke={C.ink} strokeWidth={4} strokeLinejoin="round" />
       </g>
       {labelK > 0 ? (
-        <text x={tip[0] + 30} y={tip[1] + 56} fontFamily="Anton" fontSize={34} fill={col} stroke={C.paper} strokeWidth={8} paintOrder="stroke" opacity={labelK}>
+        <text x={tip[0] + 30} y={tip[1] + 56} fontFamily="Anton" fontSize={font} fill={col} stroke={C.paper} strokeWidth={8} paintOrder="stroke" opacity={labelK}>
           {a.label}
         </text>
       ) : null}
@@ -132,12 +132,12 @@ const Arrow: React.FC<{a: MapArrow}> = ({a}) => {
   );
 };
 
-const Marker: React.FC<{m: MapMarker}> = ({m}) => {
+export const Marker: React.FC<{m: MapMarker; proj?: (lon: number, lat: number) => XY}> = ({m, proj = geo}) => {
   const frame = useCurrentFrame();
   if (frame < m.at) {
     return null;
   }
-  const [x, y] = geo(...m.ll);
+  const [x, y] = proj(...m.ll);
   const k = frame - m.at;
   const pop = interpolate(k, [0, 5, 9], [0, 1.35, 1], clamp) * (m.size ?? 1);
   const col = m.color ?? C.blood;

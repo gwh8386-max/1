@@ -208,5 +208,30 @@
     "file": "sfx/crowd_murmur_loop.wav",
     "duration": 15.0,
     "loop": true
+  },
+  "rifle_shot": {
+    "file": "sfx/rifle_shot.wav",
+    "duration": 5.4,
+    "loop": false
+  },
+  "air_raid": {
+    "file": "sfx/air_raid.wav",
+    "duration": 8.8,
+    "loop": false
+  },
+  "bomber_drone": {
+    "file": "sfx/bomber_drone.wav",
+    "duration": 5.0,
+    "loop": false
+  },
+  "snow_step": {
+    "file": "sfx/snow_step.wav",
+    "duration": 1.0,
+    "loop": false
+  },
+  "ski_swish": {
+    "file": "sfx/ski_swish.wav",
+    "duration": 1.6,
+    "loop": false
   }
 }

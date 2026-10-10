@@ -4,8 +4,8 @@ import {noise2D} from '@remotion/noise';
 import {C, STROKE} from '../lib/theme';
 
 export type Expr = 'neutral' | 'worried' | 'scared' | 'shout' | 'stern' | 'sad' | 'blank' | 'smirk' | 'focused';
-export type Hat = 'none' | 'sailor' | 'officer' | 'helmet' | 'headset' | 'officerHeadset' | 'pilot';
-export type Outfit = 'sailor' | 'officer' | 'suit' | 'pilot' | 'shirt';
+export type Hat = 'none' | 'sailor' | 'officer' | 'helmet' | 'headset' | 'officerHeadset' | 'pilot' | 'hood' | 'ushanka' | 'kepi' | 'cap';
+export type Outfit = 'sailor' | 'officer' | 'suit' | 'pilot' | 'shirt' | 'snow' | 'greatcoat';
 export type Arm = {a: number; bend?: number; len?: number};
 
 export type CharacterProps = {
@@ -44,6 +44,8 @@ const OUTFIT_FILL: Record<Outfit, string> = {
   suit: C.suit,
   pilot: C.olive,
   shirt: '#d9d2c3',
+  snow: '#f4f6f8',
+  greatcoat: '#7a6f4f',
 };
 
 const armPath = (side: -1 | 1, arm: Arm) => {
@@ -150,6 +152,39 @@ const HatShape: React.FC<{hat: Hat}> = ({hat}) => {
       );
     case 'headset':
       return <Headset />;
+    case 'hood':
+      // mũ trùm áo choàng tuyết: ôm quanh mặt
+      return (
+        <g>
+          <path d="M -74 -214 Q -84 -306 0 -312 Q 84 -306 74 -214 Q 70 -190 52 -184 Q 62 -236 40 -270 Q 0 -292 -40 -270 Q -62 -236 -52 -184 Q -70 -190 -74 -214 Z" fill="#f4f6f8" {...s} />
+          <path d="M -30 -296 Q 0 -304 30 -296" fill="none" stroke="#c9d2db" strokeWidth={5} />
+        </g>
+      );
+    case 'ushanka':
+      return (
+        <g>
+          <path d="M -62 -270 Q -64 -324 0 -326 Q 64 -324 62 -270 Z" fill="#8a7a5c" {...s} />
+          <path d="M -72 -278 Q 0 -298 72 -278 L 70 -258 Q 0 -276 -70 -258 Z" fill="#a8956c" {...s} />
+          <path d="M -70 -262 Q -84 -230 -72 -198 L -56 -206 Q -62 -236 -56 -258 Z" fill="#a8956c" {...s} />
+          <path d="M 70 -262 Q 84 -230 72 -198 L 56 -206 Q 62 -236 56 -258 Z" fill="#a8956c" {...s} />
+          <path d="M 0 -306 l 5 10 l 11 1 l -8 7 l 3 11 l -11 -6 l -11 6 l 3 -11 l -8 -7 l 11 -1 Z" fill={C.blood} stroke={C.ink} strokeWidth={2.5} />
+        </g>
+      );
+    case 'kepi':
+      return (
+        <g>
+          <path d="M -46 -282 L -40 -338 Q 0 -346 40 -338 L 46 -282 Z" fill="#f2efe6" {...s} />
+          <rect x={-42} y={-346} width={84} height={14} rx={4} fill="#2b3a57" {...s} />
+          <path d="M -50 -282 Q 0 -266 56 -282 Q 46 -262 -44 -266 Z" fill={C.ink} {...s} />
+        </g>
+      );
+    case 'cap':
+      return (
+        <g>
+          <path d="M -60 -270 Q -62 -318 0 -320 Q 62 -318 60 -270 Z" fill="#5e6a4c" {...s} />
+          <path d="M -12 -274 Q 40 -280 84 -266 Q 70 -256 -8 -262 Z" fill="#4a5440" {...s} />
+        </g>
+      );
     default:
       return null;
   }
@@ -212,6 +247,21 @@ const Torso: React.FC<{outfit: Outfit; breathe: number}> = ({outfit, breathe}) =
           <path d="M -24 -174 L -6 -110 M 24 -174 L 6 -110" stroke={C.ink} strokeWidth={4} fill="none" />
           <circle cx={0} cy={-80} r={4} fill={C.ink} />
           <circle cx={0} cy={-58} r={4} fill={C.ink} />
+        </g>
+      ) : null}
+      {outfit === 'snow' ? (
+        <g stroke="#b8c3ce" strokeWidth={4} fill="none" strokeLinecap="round">
+          <path d="M -30 -150 Q -38 -100 -30 -40 M 26 -150 Q 34 -100 28 -42 M -6 -170 L -4 -120" />
+        </g>
+      ) : null}
+      {outfit === 'greatcoat' ? (
+        <g>
+          <path d="M -30 -172 L 0 -120 L 30 -172" fill="none" stroke={C.ink} strokeWidth={4} />
+          <path d="M 0 -120 L 0 -24" stroke={C.ink} strokeWidth={3} />
+          <path d="M -60 -96 L 60 -96" stroke="#3e3626" strokeWidth={10} />
+          {[-104, -70, -50].map((y) => (
+            <circle key={y} cx={-12} cy={y} r={4} fill="#3e3626" />
+          ))}
         </g>
       ) : null}
       {outfit === 'pilot' ? (

@@ -487,6 +487,69 @@ def crowd_murmur_loop():
     return make_loop(np.stack([L, R], axis=1), 1.0)
 
 
+# ---------- Chiến tranh Mùa đông ----------
+
+@sfx('rifle_shot')
+def rifle_shot():
+    """Một phát súng trường xa trong rừng tuyết: tiếng nổ khô, vang dội giữa cây."""
+    d = 3.0
+    t = t_axis(d)
+    crack = highpass(white(d, 301), 1500) * env_ad(len(t), 0.0003, 0.02, 6)
+    body = lowpass(white(d, 302), 1800) * env_ad(len(t), 0.0005, 0.09, 5) * 0.8
+    thump = np.sin(2 * np.pi * (110 - 50 * np.clip(t / 0.15, 0, 1)) * t) * env_ad(len(t), 0.0005, 0.18, 4) * 0.6
+    out = crack + body + thump
+    echo = np.zeros(len(t))
+    place(echo, lowpass(out, 1200)[: int(0.6 * SR)], 0.38, 0.35)
+    place(echo, lowpass(out, 800)[: int(0.6 * SR)], 0.9, 0.18)
+    return stereo(reverb(softclip(out + echo, 1.6), 2.4, 0.35), 0.5)
+
+
+@sfx('air_raid')
+def air_raid():
+    """Còi báo động phòng không: lên, giữ, xuống."""
+    d = 6.0
+    t = t_axis(d)
+    f = 260 + 380 * np.clip(t / 1.6, 0, 1) - 300 * np.clip((t - 4.2) / 1.8, 0, 1)
+    ph = np.cumsum(f) / SR
+    x = np.sin(2 * np.pi * ph) + 0.45 * np.sin(4 * np.pi * ph) + 0.2 * np.sin(6 * np.pi * ph)
+    x = lowpass(x, 2400) * fade(np.ones(len(t)), 0.4, 1.2)
+    return stereo(reverb(x * 0.6, 2.8, 0.5), 0.4)
+
+
+@sfx('bomber_drone')
+def bomber_drone():
+    """Tiếng máy bay ném bom bay ngang, ù ù trầm."""
+    d = 5.0
+    t = t_axis(d)
+    prox = 1 / (1 + ((t - 2.5) / 1.4) ** 2)
+    f1 = 78 * (1 + 0.04 * np.tanh(-(t - 2.5)))
+    eng = signal_saw(np.cumsum(f1) / SR) + 0.7 * signal_saw(np.cumsum(f1 * 1.013) / SR)
+    x = lowpass(eng, 420) * (0.2 + prox) + lowpass(pink(d, 311), 600) * 0.3 * prox
+    return pan(fade(x, 0.6, 0.8), np.tanh((t - 2.5) / 1.2) * 0.7)
+
+
+@sfx('snow_step')
+def snow_step():
+    """Hai bước chân lún tuyết."""
+    d = 1.0
+    out = np.zeros(int(d * SR))
+    tt = t_axis(0.22)
+    for k, at in enumerate([0.02, 0.48]):
+        crunch = bandpass(white(0.22, 320 + k), 900, 5000) * env_ad(len(tt), 0.01, 0.16, 2)
+        crunch *= 0.6 + 0.4 * (rng(330 + k).random(len(tt)) > 0.6)
+        place(out, crunch, at, 0.8)
+    return stereo(out, 0.3)
+
+
+@sfx('ski_swish')
+def ski_swish():
+    """Ván trượt lướt trên tuyết."""
+    d = 1.6
+    t = t_axis(d)
+    x = sweep_bandpass(pink(d, 340), 1400 + 1800 * np.sin(np.pi * t / d), q=1.4) * np.sin(np.pi * t / d) ** 2
+    return pan(x, np.linspace(-0.6, 0.6, len(t)))
+
+
 def main() -> None:
     manifest = {}
     for name, (fn, loop) in REGISTRY.items():

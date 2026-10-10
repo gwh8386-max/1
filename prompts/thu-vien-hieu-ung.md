@@ -137,6 +137,25 @@ Mẫu đầy đủ: `video/src/projects/tonkin-hook/Video.tsx`. Cả video là *
 
 **Chữ nhấn trong lời thoại = điểm nhấn hình.** Các chữ `*Tonkin*`, `*torpedoes*`, `*never*`, `*blank check*`, `*zero*` lần lượt có: khoanh vịnh, nhãn đánh máy, vệt dạ quang + zoom, khoanh ô số tiền, số 0 bật ra.
 
+## 6b. Bộ mùa đông (video "The White Death", `SimoHayha`)
+
+Mẫu: `video/src/projects/simo-hayha/`. Video dài chia thành **nhiều bảng điều tra** (mỗi chương một bảng, `board1.tsx`…`board6.tsx`), đổi bảng bằng loé trắng `SnowCut` + whoosh. Mốc chữ nhấn lấy bằng `em('L30')` (chữ nhấn thứ nhất của dòng) trong `clock.ts`.
+
+| Tên | Dùng khi | Gọi | Xem ở |
+|---|---|---|---|
+| Rừng tuyết nhiều lớp | Mọi cảnh ngoài trời mùa đông | `<SnowForest seed horizon snow dim>{nhân vật}</SnowForest>` (`art/Winter.tsx`) | 0:07 |
+| Tuyết rơi | Lớp trên cùng cảnh tuyết | `<Snowfall count wind />` | cả video |
+| Xạ thủ nằm | Người bắn tỉa áp má vào súng; trúng đạn thì ngã đầu | `<ProneSniper x y s fire={[f]} hit={f} />` | 0:07, 0:19 |
+| Súng trường | Sơ đồ súng, có/không ống ngắm, ống ngắm loé/đóng sương | `<Rifle x y s scope glint={0..1} frost={0..1} />` | 0:43, 2:58 |
+| Xe trượt tuyết | Kéo người bị thương | `<Sled x y s />` | 0:22 |
+| Nhiệt kế tụt | Cái lạnh có số | `<Thermometer w h at dur from to />` | 2:40 |
+| Đồng hồ ánh ngày | Ngày ngắn | `<DaylightClock size at hours />` | 2:45 |
+| Bản đồ Phần Lan 1939–40 | Mũi tên xâm lược, vùng đất bị cắt (gạch đỏ hiện dần) | `<FinlandMap w h arrows markers ceded={frame} focusFinland={frame} />`, toạ độ bằng `finProj(w, h)` (`art/FinlandMap.tsx`) | 0:03, 1:21, 5:58 |
+| Bản đồ motti | Đoàn xe trên một con đường bị cắt khúc | `MottiMap` (riêng video) | 2:06 |
+| Nhân vật mùa đông | Áo choàng tuyết, áo khoác Hồng quân, mũ trùm, ushanka, kepi, mũ lưỡi trai | `outfit="snow" \| "greatcoat"`, `hat="hood" \| "ushanka" \| "kepi" \| "cap"` | 2:35 |
+| Đóng băng khung hoạt hình | Khoảnh khắc "chết" (trúng đạn) | `<Panel freezeAt={f}>` (`kit.tsx`) | 0:19 |
+| SFX mới | | `rifle_shot`, `air_raid`, `bomber_drone`, `snow_step`, `ski_swish` | |
+
 ## 7. Không khí, ánh sáng, màu
 
 | Tên | Gọi | Xem ở |
