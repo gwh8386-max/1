@@ -6,3 +6,5 @@ video/out/
 video/public/sfx/*.wav
 video/public/music/*.wav
 video/public/vox/
+# Track giọng đã khớp (41 MB): tạo lại bằng voice.py align từ file mp3 trong cùng thư mục
+video/public/projects/simo-hayha/voice.wav
