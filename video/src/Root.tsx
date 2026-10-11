@@ -1,7 +1,8 @@
 import React from 'react';
-import {Composition} from 'remotion';
+import {Composition, Still} from 'remotion';
 import {Lab} from './Lab';
 import {timeline as simo, SimoHayha, SimoProps} from './projects/simo-hayha/Video';
+import {SimoThumb} from './projects/simo-hayha/Thumbnail';
 import {loadFonts} from './lib/fonts';
 import {FPS, sec} from './lib/timeline';
 import {timeline as vbb, Video as VinhBacBo, VideoProps} from './projects/vinh-bac-bo/Video';
@@ -38,6 +39,7 @@ export const RemotionRoot: React.FC = () => (
       height={1080}
       defaultProps={{} as SimoProps}
     />
+    <Still id="SimoThumb" component={SimoThumb} width={1920} height={1080} />
     <Composition id="Lab" component={Lab} durationInFrames={60} fps={FPS} width={1920} height={1080} />
   </>
 );
