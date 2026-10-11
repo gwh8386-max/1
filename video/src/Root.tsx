@@ -2,6 +2,7 @@ import React from 'react';
 import {Composition, Still} from 'remotion';
 import {Lab} from './Lab';
 import {OurStoryAvatar} from './brand/Avatar';
+import {OurStoryBanner} from './brand/Banner';
 import {timeline as simo, SimoHayha, SimoProps} from './projects/simo-hayha/Video';
 import {SimoThumb} from './projects/simo-hayha/Thumbnail';
 import {SimoThumbTall} from './projects/simo-hayha/ThumbnailTall';
@@ -45,6 +46,7 @@ export const RemotionRoot: React.FC = () => (
     <Still id="SimoThumbTall" component={SimoThumbTall} width={1080} height={1920} />
     <Still id="AvatarYouTube" component={OurStoryAvatar} width={1080} height={1080} defaultProps={{tight: false}} />
     <Still id="AvatarTikTok" component={OurStoryAvatar} width={1080} height={1080} defaultProps={{tight: true}} />
+    <Still id="BannerYouTube" component={OurStoryBanner} width={2560} height={1440} defaultProps={{guides: false}} />
     <Composition id="Lab" component={Lab} durationInFrames={60} fps={FPS} width={1920} height={1080} />
   </>
 );

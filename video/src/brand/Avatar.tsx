@@ -12,7 +12,7 @@ const INK = C.ink;
 const st = {stroke: INK, strokeWidth: 6, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
 
 // Các biểu tượng lịch sử nhỏ, vẽ trong ô 160x160.
-const Pyramid = () => (
+export const Pyramid = () => (
   <g>
     <rect width={160} height={160} fill="#9fd0ea" />
     <circle cx={120} cy={42} r={18} fill={C.mustard} {...st} strokeWidth={4} />
@@ -21,7 +21,7 @@ const Pyramid = () => (
     <rect y={138} width={160} height={22} fill="#d8b96e" />
   </g>
 );
-const Ship = () => (
+export const Ship = () => (
   <g>
     <rect width={160} height={160} fill="#bfdbe8" />
     <path d="M 0 128 Q 40 118 80 128 T 160 128 L 160 160 L 0 160 Z" fill="#2f6f9a" />
@@ -32,7 +32,7 @@ const Ship = () => (
     <path d="M 80 24 L 100 30 L 80 36" fill={C.blood} />
   </g>
 );
-const Helmet = () => (
+export const Helmet = () => (
   <g>
     <rect width={160} height={160} fill="#e9dcc0" />
     <path d="M 36 120 Q 30 40 80 34 Q 130 40 124 120 L 104 120 L 104 92 L 56 92 L 56 120 Z" fill="#c9a24a" {...st} />
@@ -40,7 +40,7 @@ const Helmet = () => (
     <path d="M 80 34 Q 70 10 96 8 Q 120 10 112 30" fill={C.blood} {...st} strokeWidth={4} />
   </g>
 );
-const MapX = () => (
+export const MapX = () => (
   <g>
     <rect width={160} height={160} fill="#efe3c4" />
     <path d="M 20 40 Q 60 20 90 50 T 140 60 Q 150 110 110 130 T 30 120 Q 10 80 20 40 Z" fill="#d9c79b" {...st} strokeWidth={4} />
@@ -48,7 +48,7 @@ const MapX = () => (
     <path d="M 104 88 L 122 106 M 122 88 L 104 106" stroke={C.blood} strokeWidth={8} strokeLinecap="round" />
   </g>
 );
-const Hourglass = () => (
+export const Hourglass = () => (
   <g>
     <rect width={160} height={160} fill="#d7e3d0" />
     <rect x={40} y={20} width={80} height={14} rx={4} fill="#8a5a32" {...st} strokeWidth={4} />
@@ -66,10 +66,10 @@ export const Castle = () => (
   </g>
 );
 
-const ICONS = [Pyramid, Ship, Helmet, MapX, Hourglass, Castle];
+export const ICONS = [Pyramid, Ship, Helmet, MapX, Hourglass, Castle];
 
 /** Mảnh giấy ảnh cắt dán (SVG), xoay, có bóng và ghim đỏ. */
-const Card: React.FC<{cx: number; cy: number; rot: number; size: number; Icon: React.FC}> = ({cx, cy, rot, size, Icon}) => {
+export const Card: React.FC<{cx: number; cy: number; rot: number; size: number; Icon: React.FC}> = ({cx, cy, rot, size, Icon}) => {
   const k = size / 160;
   return (
     <g transform={`translate(${cx} ${cy}) rotate(${rot}) scale(${k}) translate(-95 -95)`}>
@@ -86,7 +86,7 @@ const Card: React.FC<{cx: number; cy: number; rot: number; size: number; Icon: R
 };
 
 /** Ruy băng đuôi én. */
-const Ribbon: React.FC<{cx: number; cy: number; w: number; h: number; text: string; size: number}> = ({cx, cy, w, h, text, size}) => {
+export const Ribbon: React.FC<{cx: number; cy: number; w: number; h: number; text: string; size: number}> = ({cx, cy, w, h, text, size}) => {
   const x0 = cx - w / 2;
   const x1 = cx + w / 2;
   const y0 = cy - h / 2;
@@ -107,6 +107,20 @@ const Ribbon: React.FC<{cx: number; cy: number; w: number; h: number; text: stri
     </g>
   );
 };
+
+/** Kính lúp soi một mắt của nhân vật: mắt phóng to sau tròng kính, cán gỗ chéo xuống. */
+export const Magnifier: React.FC<{eyeX: number; eyeY: number; lensR: number}> = ({eyeX, eyeY, lensR}) => (
+  <g>
+    <path d={`M ${eyeX + lensR * 0.7} ${eyeY + lensR * 0.7} L ${eyeX + lensR * 2.1} ${eyeY + lensR * 2.3}`} stroke="#6e4a2a" strokeWidth={lensR * 0.42} strokeLinecap="round" />
+    <circle cx={eyeX} cy={eyeY} r={lensR} fill="#eaf6ff" />
+    <ellipse cx={eyeX + 4} cy={eyeY + 6} rx={lensR * 0.42} ry={lensR * 0.52} fill={INK} />
+    <circle cx={eyeX + lensR * 0.18} cy={eyeY - lensR * 0.12} r={lensR * 0.15} fill="#fff" />
+    <path d={`M ${eyeX - lensR * 0.55} ${eyeY - lensR * 0.45} Q ${eyeX - lensR * 0.2} ${eyeY - lensR * 0.75} ${eyeX + lensR * 0.2} ${eyeY - lensR * 0.7}`} stroke="#ffffff" strokeWidth={10} fill="none" strokeLinecap="round" opacity={0.85} />
+    <circle cx={eyeX} cy={eyeY} r={lensR} fill="none" stroke="#c9a24a" strokeWidth={lensR * 0.2} />
+    <circle cx={eyeX} cy={eyeY} r={lensR * 1.1} fill="none" stroke={INK} strokeWidth={7} />
+    <circle cx={eyeX} cy={eyeY} r={lensR * 0.9} fill="none" stroke={INK} strokeWidth={5} />
+  </g>
+);
 
 export const OurStoryAvatar: React.FC<{tight?: boolean}> = ({tight}) => {
   const scale = tight ? 3.15 : 2.7;
@@ -176,17 +190,7 @@ export const OurStoryAvatar: React.FC<{tight?: boolean}> = ({tight}) => {
 
         {/* nhân vật kể chuyện */}
         <Character x={540} y={charY} scale={scale} headOnly expr="smirk" headTilt={-4} seed={4} />
-        {/* kính lúp soi một mắt: mắt phóng to trong tròng kính */}
-        <g>
-          <path d={`M ${eyeX + lensR * 0.7} ${eyeY + lensR * 0.7} L ${eyeX + lensR * 2.1} ${eyeY + lensR * 2.3}`} stroke="#6e4a2a" strokeWidth={lensR * 0.42} strokeLinecap="round" />
-          <circle cx={eyeX} cy={eyeY} r={lensR} fill="#eaf6ff" />
-          <ellipse cx={eyeX + 4} cy={eyeY + 6} rx={lensR * 0.42} ry={lensR * 0.52} fill={INK} />
-          <circle cx={eyeX + lensR * 0.18} cy={eyeY - lensR * 0.12} r={lensR * 0.15} fill="#fff" />
-          <path d={`M ${eyeX - lensR * 0.55} ${eyeY - lensR * 0.45} Q ${eyeX - lensR * 0.2} ${eyeY - lensR * 0.75} ${eyeX + lensR * 0.2} ${eyeY - lensR * 0.7}`} stroke="#ffffff" strokeWidth={10} fill="none" strokeLinecap="round" opacity={0.85} />
-          <circle cx={eyeX} cy={eyeY} r={lensR} fill="none" stroke="#c9a24a" strokeWidth={lensR * 0.2} />
-          <circle cx={eyeX} cy={eyeY} r={lensR * 1.1} fill="none" stroke={INK} strokeWidth={7} />
-          <circle cx={eyeX} cy={eyeY} r={lensR * 0.9} fill="none" stroke={INK} strokeWidth={5} />
-        </g>
+        <Magnifier eyeX={eyeX} eyeY={eyeY} lensR={lensR} />
 
         <Ribbon cx={540} cy={tight ? 822 : 806} w={tight ? 640 : 580} h={tight ? 160 : 140} text="OUR STORY" size={tight ? 132 : 116} />
       </svg>
